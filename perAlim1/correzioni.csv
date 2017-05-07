@@ -1,0 +1,100 @@
+# Questo file contiene le sostituzioni da fare.
+# Ogni riga è costituita da quattro colonne, separate da tabulazione:
+# 1) "auto" o "inter". Se è "auto", dice allo script di fare la sostituzione
+# 	automaticamente. Se è "inter", bisonga farla interattivamente,
+# 	cioè chiedendo conferma.
+# 2) la stringa da cancellare
+#	(che può essere anche una espressione regolare accettata
+#	dal modulo re di Python)
+# 3) la stringa da sostituire
+#	(che può essere vuota, indicando così che la stringa va
+#	semplicemente cancellata)
+#
+# Tutte le righe che non seguono questo formato (righe di commento o righe vuote)
+# devono iniziare con cancelletto (#).
+# 
+# Caveat: il formato di questo file non rende possibile sostituire due caratteri:
+# 1) il cancelletto (#)
+# 2) la tabulazione stessa
+#
+# Toglie tutti i class di questo tipo
+auto	(<\w*) CLASS="western"(>)	\1\2
+#
+#
+# Cancella i tag <P> inseriti da LibreOffice, ma controllali perché ci sono spezzature di rigo
+# In questo file non ce ne sono
+# Non ci sono <P CLASS="western">	<!-- inizio western -->
+# <\/P>	<BR><!-- fine western -->
+#
+# Ci sono un sacco di <FONT>. Li levo tutti.
+# Il punto interrogativo rende il * non-greedy
+auto	<FONT.*?>	cancella
+auto	<\/FONT.*?>	cancella
+#
+# Spesso si trovava sia il <P> sia il <BR>, che di fatto creava due righe vuote
+auto	<P STYLE="margin-bottom: 0cm"><BR>	cancella
+# Le andate a capo qui sono gestite sia con <P>, sia <BR>. Uniformo tutto a <BR>
+# altrimenti il browser lascia spazio tra le righe.
+auto	<P.*?>	cancella
+auto	<\/P>	<BR>
+# Inserisce un \n dopo ogni <BR> (per chiarezza del codice) se non c'è n'è già uno.
+# In Python, il punto "matches any character except a newline".
+auto	(<BR>)(.+)	\1\n\2
+auto	<SPAN.*?>	cancella
+auto	<\/SPAN>	cancella
+#
+#
+# Lista degli errori più comuni, proveniente da "Norme_ALIM_1.1.pdf", paragrafo 2.1
+# (in realtà sul file 'epis1 DamianiCORRETTO' 14 le sostituzioni che mi ha
+# proposto sulla base di questa lista erano tutte falsi positivi).
+# 
+# Ho  tolto la riga seguente, perché altrimenti sostituiva anche i numeri di pagina.
+#0	O
+# Ho  tolto anche la riga seguente, perché sostituiva 'competere' con 'compatere'
+#peter	pater
+# Attenzione alla seguente: rischia di sostituire "spontanee" con "spontanec".
+# Nella correzione di 'epis1 DamianiCORRETTO' ha dato almeno 2 falsi positivi
+inter	(\W)ahis(\W)	\1aliis\2
+inter	(\W)donee(\W)	\1donec\2
+inter	(\W)fun'(\W)	\1fuit\2
+# Attenzione alla seguente: 
+# Nella correzione di 'epis1 DamianiCORRETTO' ha dato almeno 4 falsi positivi
+inter	\Whie\W	hic
+# Attenzione alla seguente: rischia di sostituire "machinentur" con "machincntur"
+# Meno male che il mio script è interattivo, ma bisogna tenere gli occhi aperti.
+# Nella correzione di 'epis1 DamianiCORRETTO' ha dato almeno 1 falso positivo
+inter	(\W)hine(\W)	\1hinc\2
+inter	(\W)hoe(\W)	\1hoc\2
+inter	(\W)ilk(\W)	\1illi\2
+# Attenzione alla seguente: rischia di sostituire "spontanee" con "spontanec".
+# Nella correzione di 'epis1 DamianiCORRETTO' ha dato almeno 3 falsi positivi
+inter	(\W)nee(\W)	\1nec\2
+inter	onm	omn
+inter	(\W)snum(\W)	\1suum\2
+#
+# Sostituisce "pag." con "p."
+auto	^\s+pag\.	p.
+# In questo testo i numeri di pagina sono indicati così:
+# ----------pag. 1----------
+auto	----------	cancella
+#
+# Trasforma i doppi, tripli, quadrupli etc. spazi dopo "pag." in uno spazio solo.
+# La sintassi "\s{2,}" fa sì che un solo whitespace non attivi la sostituzione: i
+# whitespace devono essere 2 o più (ho omesso il numero dopo la virgola, quindi
+# significa "da 2 a infinito".
+# Ad esempio, cambia "pag.  332" (due spazi in mezzo) in "pag. 332" (un solo spazio
+# in mezzo). A destra sto usando "\s", l'escape per i whitespace nelle espressioni regolari
+# in Python, così becco anche eventuali tabulazioni o altri tipi di whitespace.
+# A destra, invece, devo usare semplicemente " " (spazio, not escaped), altrimenti
+# inserisce "\ " nel file di output.
+auto	^(p\.)\s{2,}(\d)	\1 \2
+#
+# Toglie gli eventuali (uno o più) spazi prima e dopo "pag. 23", ad esempio " pag. 23 "
+# L'asterisco dopo "\s" significa: "zero o più whitespaces" (anche se gli spazi
+# ripetuti in quella posizione dovrebbero già essere stati tolti).
+auto	^\s+(p\.\s*\d)\s+	\1
+#
+# La regola sembra essere che non ci siano punti fermi dopo i numeri di pagina,
+# quindi trasformo tutti i "pag. 344." in "pag. 344" (senza punto alla fine).
+# Il "+" dopo "\d" indica "una o più cifre"
+auto	^(p\.\s*\d+)\.	\1

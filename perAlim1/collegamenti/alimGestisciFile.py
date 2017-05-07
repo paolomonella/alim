@@ -1,0 +1,1 @@
+/home/ilbuonme/programmazione/python/alim/alimGestisciFile.py
