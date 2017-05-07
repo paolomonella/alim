@@ -1,5 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+""" Questo modulo contiene funzioni che facilitano
+    le sostituzioni di testo in un file.
+    """
 
 import re
 

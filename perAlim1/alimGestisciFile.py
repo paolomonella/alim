@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+""" Funzioni per gestire i file di input e di output """
+
 
 import os
 import re

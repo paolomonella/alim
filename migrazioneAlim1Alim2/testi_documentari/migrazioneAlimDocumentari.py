@@ -5,7 +5,7 @@
 #  Cancellale quando ho finito di lavorare sul file di Edoardo.]
 #
 # Questo script rinomina il file e opera i cambiamenti di base per
-# esportare un file XML/TEI di fonti documentari
+# esportare un file XML/TEI di fonti documentarie
 # da ALIM1 ad ALIM2 livello 0
 #
 # Come si usa:

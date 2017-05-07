@@ -61,4 +61,3 @@ for f in globList:
 ## Archivia il file di input originario (esportato dallo "strumentino" di ALIM1
 ## senza nessuna modifica nella cartella "ripostiglio"
 #os.rename(myInputFile, 'ripostiglio/'+prefix+' '+author+' - '+title+'_v1.0.xml')
-
