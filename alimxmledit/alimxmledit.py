@@ -137,7 +137,8 @@ def syllDash (myInputFile):
         """
     myOutputFile = 'edited_files/' + myInputFile
     of = open(myOutputFile, 'w')
-    tam = []    # List of lines to edit manually
+    tam_a = []    # List of lines to edit manually because the second line does not start with <lb/>
+    tam_b = []    # List of lines to edit manually because the word must be reunited in the second line
     with open(myInputFile, 'r') as f:
         lines = f.readlines()
         for i in range(len(lines)):
@@ -171,7 +172,7 @@ def syllDash (myInputFile):
                         if rest_check == '':
                         #if rest_of_second_line.strip() == '':
                             first = first + '<!-- Trattino da togliere a mano (riunire parola nella seconda riga) -->'
-                            tam.append('  ' + first + '\n  ' + second)
+                            tam_b.append('  ' + first + '\n  ' + second)
                         else:   # If the rest of the second line is not empty
                             first = first + '<anchor rend="-" type="sillabazione_fine_rigo"/>' + second_part # Join 2 parts of word
                             second = '<lb/>' + rest_of_second_line   # Add <lb/> back to the 2nd line
@@ -180,7 +181,7 @@ def syllDash (myInputFile):
                         # If the first line ends with '-' but the second line dows not start with <lb/>,
                         # write an XML comment at the end of the first line and do nothing
                         first = first + '<!-- Trattino da togliere a mano -->'
-                        tam.append('  ' + first + '\n  ' + second)
+                        tam_a.append('  ' + first + '\n  ' + second)
 
 
                     lines[i] = first
@@ -189,6 +190,10 @@ def syllDash (myInputFile):
 
     of.close()
                     
-    print('\nLines to edit manually (marked with an XML comment):\n')
-    for t in tam:
+    print('\n\n\n\n\n\n\nLines to edit manually (marked with an XML comment):\n')
+    print('\nA) The second line does not start with <lb/>:\n')
+    for t in tam_a:
+        print(t + '  ---')
+    print('\nB) The word must be reunited in the second line, not in the first:\n')
+    for t in tam_b:
         print(t + '  ---')
