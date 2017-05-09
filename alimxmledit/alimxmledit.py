@@ -112,11 +112,18 @@ def syllDash (myInputFile):
                 <lb/>omnia vani<anchor rend="-" type="sillabazione_fine_rigo"/>tas,
                 <lb/>dixit Qohelet
 
-        If the second line does not start with '<lb/>', the function does nothing,
+        If the second line does not start with '<lb/>', the function does nothing
         but adding an XML comment '<!-- Trattino da togliere a mano -->' after
         the dash in the first line. Output:
                 <lb/>omnia vani-<!-- Trattino da togliere a mano -->
                 <cb/>
+
+        If the only textual content of the second line is the final part of the
+        previously split word, function does nothing but adding an XML comment
+        '<!-- Trattino da togliere a mano (riunire parola nella seconda riga) -->'
+        after the dash in the first line. Output:
+            <lb/>Fuit non lon<!-- Trattino da togliere a mano (riunire parola nella seconda riga) -->
+            <lb/>ge...! <!-- Random comment previously included in the input file-->
 
         The function adds a trailing whitespace (' ') at the end of each line, and
         writes the output in a folder 'edited_files/'. Example:
@@ -182,8 +189,6 @@ def syllDash (myInputFile):
 
     of.close()
                     
-    """
     print('\nLines to edit manually (marked with an XML comment):\n')
     for t in tam:
         print(t + '  ---')
-        """
