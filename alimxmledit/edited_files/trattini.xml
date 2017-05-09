@@ -1,0 +1,2520 @@
+﻿<?xml version="1.0" encoding="UTF-8"?> 
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"> 
+  <teiHeader> 
+    <fileDesc> 
+ 
+      <titleStmt> 
+        <title>Historia Sicula ab ingressu Normannorum in Apuliam usque ad annum 1282</title> 
+        <author>Anonymus</author> 
+        <respStmt> 
+          <resp>Edizione critica a stampa a cura di</resp> 
+          <name>Johannes Baptista Caruso</name> 
+        </respStmt> 
+        <respStmt> 
+          <resp key="ALIM2_new">Edizione in formato TEI XML a cura di</resp> 
+          <name key="SR">Salvatore Russo</name> 
+          <name key="GP">Giuseppe Pipitone</name> 
+        </respStmt> 
+      </titleStmt> 
+ 
+      <extent> 
+        <measure quantity="159530" unit="words">Parole: 159530</measure> 
+        <measure quantity="941396" unit="characters_without_spaces">Caratteri (spazi esclusi): 941396</measure> 
+      </extent> 
+ 
+      <publicationStmt> 
+        <publisher> 
+	<ref target="http://alim.unisi.it/">ALIM</ref> 
+        </publisher> 
+        <date when="2016-09-08">08/09/2016</date> 
+        <availability> 
+          <p>Copyright 2016 - progetto ALIM</p> 
+        </availability> 
+      </publicationStmt> 
+ 
+      <sourceDesc> 
+        <biblStruct> 
+          <monogr> 
+            <author>Anonimo</author> 
+            <title>Historia Sicula ab ingressu Normannorum in Apuliam Usque ad Annum 1282</title> 
+            <editor>Johannes Baptista Caruso</editor> 
+            <imprint> 
+              <pubPlace>Mediolani</pubPlace> 
+              <publisher>Ex tipographia societatis Palatinae in Regia curia</publisher> 
+              <date>1726</date> 
+            </imprint> 
+          </monogr> 
+          <series> 
+            <title level="s">Rerum Italicarum Scriptores</title> 
+            <biblScope unit="volume">Tomus octavus</biblScope> 
+          </series> 
+        </biblStruct> 
+      </sourceDesc> 
+    </fileDesc> 
+ 
+    <encodingDesc> 
+      <projectDesc> 
+        <p>Testo codificato nel formato TEI XML, versione P5, per essere incluso fra i testi che compongono il progetto 
+          ALIM - Archivio della Latinità Italiana del Medioevo.</p> 
+      </projectDesc> 
+      <editorialDecl> 
+        <ab type="boilerplate">La codifica segue le norme standard stabilite dal progetto ALIM. In particolare: 
+        <list> 
+		<item>Non sono stati inseriti attributi @n per gli elementi lb (line break) perché nell'edizione a stampa 
+			di riferimento non c'era una numerazione delle singole righe.</item> 
+		</list> 
+        </ab> 
+        <ab type="level">ALIM2_1</ab> 
+	<ab type="specific"> 
+		<list> 
+			<item>Non sono state eliminate le sillabazioni presenti nel testo a stampa: 
+				le parole spezzate da un 'a capo' non sono state riunite.</item> 
+		</list> 
+        </ab> 
+      </editorialDecl> 
+    </encodingDesc> 
+ 
+    <profileDesc> 
+      <langUsage> 
+        <language ident="lat">Latino</language> 
+      </langUsage> 
+      <textClass> 
+        <keywords> 
+          <term type="form">Prosa</term> 
+          <term type="source">Letteraria</term> 
+          <term type="genre">Storiografia</term> 
+        </keywords> 
+      </textClass> 
+      <creation> 
+        <date>XIV sec.</date> 
+      </creation> 
+    </profileDesc> 
+ 
+    <revisionDesc> 
+      <change when="2017-05-06" who="GDM">Versione 3.8. GDM (Giorgio Di Maria) ha corretto vari 
+            errori di OCR. PM ha riportato le correzioni sul file XML inserendo commenti XML dopo la 
+            parola corretta, per tenere nota delle correzioni.</change> 
+      <change when="2016-12-19" who="PM">Versione 3.7. PM aggiunge una nota sulla numerazione dei versi ad 
+    	    editorialDecl e pubblica il testo sul portale ALIM alim.unisi.it 
+	    </change> 
+	    <change when="2016-10-22" who="PM">Versione 3.6. PM cambia il nome file da HSA_3.5.xml a 
+		    [PA-PM-1] Anonimo - Historia Sicula ab ingressu Normannorum in Apuliam.xml 
+	    </change> 
+	    <change when="2016-10-20" who="SR PM">Versione 3.5. PM inserisce nel file una correzione minore 
+		    sul secolo di composizione del testo in età medievale, correzione 
+		    suggerite da SR via email. 
+	    </change> 
+	    <change when="2016-10-02" who="SR">Versione 3.3. SR ha inserito le date orientative della fase 
+		    di creazione e revisione dell'OCR, mantenendo la data indicata da PM circa 
+		    la creazione del file XML. Nella prefazione non vi sono indicazioni 
+		    riguardanti la datazione dell'opera, quindi SR ha inserito una indicazione orientativa, "XIII sec.". 
+	    </change> 
+      <change when="2016-09-12" who="PM">Versione 3.2. Revisione del teiHeader; mancano ancora alcuni metadati</change> 
+      <change when="2016-09-08" who="SR PM">Prima codifica in XML TEI [livello 1]: SR e PM (Paolo Monella)</change> 
+      <change when="2016-08-20" who="SR">Revisione del testo risultante dall'OCR sull'originale a stampa 
+	      delle colonne 745-762</change> 
+      <change when="2016-08-29" who="GP">Revisione del testo risultante dall'OCR sull'originale a stampa 
+	      delle colonne 763-780, fatta da GP (Giuseppe Pipitone)</change> 
+      <change when="2016-07-15" who="SR">Scansione e OCR di SR (Salvo Russo)</change> 
+    </revisionDesc> 
+ 
+  </teiHeader> 
+ 
+<text> 
+<body> 
+<head>ANONYMI 
+<lb/>HISTORIA SICULA 
+<lb/>A NORMANNIS AD PETRUM ARAGONENSEM.</head> 
+<cb n="745"/> 
+<p> 
+<lb/>Fuit in partibus Normanniae non lon<!-- Trattino da togliere a mano (riunire parola nella seconda riga) --> 
+<lb/>ge...! <!-- Commento di prova, per rendere le cose più difficili --> 
+<lb/>ge a Civitate Constanciae mi<anchor rend="-" type="sillabazione_fine_rigo"/>les 
+<lb/>quidam nomine Tranche<anchor rend="-" type="sillabazione_fine_rigo"/>dus 
+<lb/>genere nobilis, et morum ho<anchor rend="-" type="sillabazione_fine_rigo"/>nestate 
+<lb/>praeclarus. Eratque uxor 
+<lb/>nobilissima Muriella nomine, nec minus facie, 
+<lb/>quam vitae integritate<!-- GDM il 2017-05-06 ha corretto l'errore OCR "integrate" --> formosa. Horum san<anchor rend="-" type="sillabazione_fine_rigo"/>ctissima 
+<lb/>conversatio cum tota in perpetuum 
+<lb/>digna memoria, et laudis admiratione apud 
+<lb/>homines habebatur, istud tamen prae ceteris 
+<lb/>apud omnes Christianae Religionis cultores di<anchor rend="-" type="sillabazione_fine_rigo"/>gnum 
+<lb/>celebri percunctatione recensetur, 
+<lb/>quod Terra Normanniae, cui maxime 
+<lb/>credendum est de hoc generaliter, et sine 
+<lb/>aliqua contradictione, et refert et testatur. 
+<lb/>Scribitur, quod numquam in sua vita 
+<lb/>carnali commistione se cognoverunt, nisi prius 
+<lb/>cum flexis genibus in terra, facta ad Domi<anchor rend="-" type="sillabazione_fine_rigo"/>num 
+<lb/>oratione, ut eis sobolem dignam, et sibi 
+<lb/>placituram praestaret. Quorum justissimam pe<anchor rend="-" type="sillabazione_fine_rigo"/>titionem, 
+<lb/>sicuti ipse per innumera 
+<lb/>deinde ostendit exempla, Dominum, 
+<lb/>qui justa poscentium vota non despicit, cer<anchor rend="-" type="sillabazione_fine_rigo"/>tum 
+<lb/>est exaudisse. Siquidem nati sunt ei 
+<lb/>quinque filii, quorum Primogenitus vocatus 
+<lb/>est Guilielmus, qui post cognominatus 
+<lb/>est Ferrabrachia. Secundus Decius. Ter<anchor rend="-" type="sillabazione_fine_rigo"/>tius 
+<lb/>Henfredus. Quartus Gaufridus. 
+<lb/>Quintus Serlo. Mortua vero Moriella, 
+<lb/>duxit aliam genere insignem, cujus nomen fuit 
+<lb/>Freessenda, de hac autem genuit septem 
+<lb/>filios, quorum primus fuit Robertus Bi<anchor rend="-" type="sillabazione_fine_rigo"/>scardus. 
+<lb/>Secundus Malgertus. Tertius 
+<lb/>Guilielmus. Quartus Alvendus. Quintus 
+<lb/>Vibertus. Sextus Tancredus. Septimus 
+<lb/>Rogerius, qui postea fuit Comes Siciliae ma<anchor rend="-" type="sillabazione_fine_rigo"/>gnificus. 
+<lb/>Hos autem non sine admiranda Dei 
+<lb/>dispensatione duodenarium complentes nume<anchor rend="-" type="sillabazione_fine_rigo"/>rum, 
+<lb/>quippe Sanctissimos Apostolicae Ec<anchor rend="-" type="sillabazione_fine_rigo"/>clesiae 
+<lb/>futuros defensores, et Saracenicae pra<anchor rend="-" type="sillabazione_fine_rigo"/>vitatis 
+<lb/>fortissimos extirpatores Pater Tran<anchor rend="-" type="sillabazione_fine_rigo"/>chedus 
+<lb/>honestissima sanctitate, qua et ipse 
+<lb/>pollebat, informavit. Ut vero Gulielmus, et 
+<lb/>Drogus, qui priores natu habebantur in aeta-<!-- Trattino da togliere a mano --> 
+<cb n="746"/> 
+<lb/>te<!-- GDM il 2017-05-06 ha tolto un trattino prima di "te" --> idonea pervenerunt, multiplicatis in 
+<lb/>eis tam viribus corporis, quam virtute ani<anchor rend="-" type="sillabazione_fine_rigo"/>mi, 
+<lb/>arma militaria a Patre suo acceperunt, 
+<lb/>et ab eodem honorifice, ut tales, et tanto vi<anchor rend="-" type="sillabazione_fine_rigo"/>ro 
+<lb/>genitos decebat, milites ordinati sunt. Ex 
+<lb/>illo tempore probitatis illorum immensitas, 
+<lb/>quae adhuc succrescentibus annis, et patris di<anchor rend="-" type="sillabazione_fine_rigo"/>ligenti 
+<lb/>commonitione elucescere, et per to<anchor rend="-" type="sillabazione_fine_rigo"/>tam 
+<lb/>Normanniam famosissima, atque laudabi<anchor rend="-" type="sillabazione_fine_rigo"/>lis 
+<lb/>coepit evagari<!-- GDM il 2017-05-06 ha corretto l'erorre OCR "evagar" -->. Nec multo <!-- GDM il 2017-05-06 ha corretto l'erorre OCR "multo multo" in "multo" --> post ipsi 
+<lb/>nimiae laudis avidi, cum eisdem amplificandi 
+<lb/>nominis ulterius potius locus, quam vires, 
+<lb/>aut strenua animositas deficeret, quippe feli<anchor rend="-" type="sillabazione_fine_rigo"/>cissimo, 
+<lb/>et gloriosissimo Comite Guilielmo 
+<lb/>Longoense in tranquilla pace temporis Nor<anchor rend="-" type="sillabazione_fine_rigo"/>manniam 
+<lb/>obtinente, ne virtus eorum, aut fa<anchor rend="-" type="sillabazione_fine_rigo"/>ma 
+<lb/>per otium torpesceret, et priori laudi suae 
+<lb/>gloria nova non supervenerit, silentio obscura 
+<lb/>haberetur, magis probitati suae, quam 
+<lb/>patrio, aut parente lachrimis consulen<anchor rend="-" type="sillabazione_fine_rigo"/>tes, 
+<lb/>quibusdam parentelae suae ex aliis 
+<lb/>probatissimis Viris, quamplurimis sibi as<anchor rend="-" type="sillabazione_fine_rigo"/>sociatis, 
+<lb/>divina ducente gratia, quae de 
+<lb/>eis, et per eos mira, et enarrabilia 
+<lb/>futura esse praeviderat, et multis, et magnis 
+<lb/>in via perpessis laboribus usque in Apuliam 
+<lb/>devenerunt, et primum cum Capuano Prin<anchor rend="-" type="sillabazione_fine_rigo"/>cipe 
+<lb/>non multo tempore commorati, re<anchor rend="-" type="sillabazione_fine_rigo"/>licta 
+<lb/>ejusdem avaritiae ignavia, ad Gaymarum 
+<lb/>Principem Salernitanorum profecti sunt. Ille 
+<lb/>vero qui tunc temporis Capuanus Princeps 
+<lb/>terram suam violenter inquietabat<!-- GDM il 2017-05-06 ha corretto l'erorre OCR "inquietabit" -->, gavisus de 
+<lb/>adventu eorum, ipsos honorifice, et cum ma<anchor rend="-" type="sillabazione_fine_rigo"/>xima 
+<lb/>donorum munificentia retinuit. Quo<anchor rend="-" type="sillabazione_fine_rigo"/>rum 
+<lb/>fideli, et audacissima protectione non 
+<lb/>mediocriter adversus Capuanum Princi<anchor rend="-" type="sillabazione_fine_rigo"/>pem, 
+<lb/>qui prius totam teram suam sibi velle, 
+<lb/>ac posse eripere videbatur, ita in paucis die<anchor rend="-" type="sillabazione_fine_rigo"/>bus 
+<lb/>versa fortuna coëgit<!-- GDM il 2017-05-06 ha corretto l'erorre OCR "coegit" -->, ut praemissa roga<anchor rend="-" type="sillabazione_fine_rigo"/>tione, 
+<lb/>et multa munerum oblatione, juxta 
+<lb/>voluntatem suam cum eo pacem pluribus Sa<anchor rend="-" type="sillabazione_fine_rigo"/>cramentis 
+<lb/>innodatam firmaret. 
+</p> 
+<p> 
+<lb/>Conformata vero pace inter Prin<anchor rend="-" type="sillabazione_fine_rigo"/>cipem 
+<lb/>Salernitanum, et Capuanum, Salerni-<!-- Trattino da togliere a mano --> 
+<cb n="747"/> 
+<lb/>-tani, qui prius Normannorum<!-- GDM il 2017-05-06 ha corretto l'erorre OCR "Normanuorum" --> nomen fere coe<anchor rend="-" type="sillabazione_fine_rigo"/>lestibus 
+<lb/>laudando coaequabant, eorumdem vir<anchor rend="-" type="sillabazione_fine_rigo"/>tute, 
+<lb/>et audacia a saeva Capuanorum oppres<anchor rend="-" type="sillabazione_fine_rigo"/>sione 
+<lb/>liberati, immutato animo simul cum 
+<lb/>fortuna alienae probitatis parum sibi de pro 
+<lb/>pria confidentes in honore malorum 
+<lb/>hominum plurimique detrahendo coeperunt in<anchor rend="-" type="sillabazione_fine_rigo"/>videre. 
+<lb/>Quorum primus venenosa detra<anchor rend="-" type="sillabazione_fine_rigo"/>ctio, 
+<lb/>quam privatis, et publicis consultatio<anchor rend="-" type="sillabazione_fine_rigo"/>nibus 
+<lb/>pusillanimitatem ipsius Principis so 
+<lb/>licitando, ne diutius in Terra Normannos re<anchor rend="-" type="sillabazione_fine_rigo"/>tinere 
+<lb/>auderet, effecerunt, quippe quos sa<anchor rend="-" type="sillabazione_fine_rigo"/>pientes, 
+<lb/>et bello probatissimos ipse indubitan<anchor rend="-" type="sillabazione_fine_rigo"/>ter 
+<lb/>esse cognoverat, ne si eorum ad hoc mo<anchor rend="-" type="sillabazione_fine_rigo"/>veretur 
+<lb/>animus, Principatum sibi eriperent, 
+<lb/>suis non multum confidens metuebat. In 
+<lb/>iisdem temporibus divina flagellatio, cujus 
+<lb/>occulta sunt judicia, totam Apuliam, 
+<lb/>atque Calabriam Constantinopolitano Impera<anchor rend="-" type="sillabazione_fine_rigo"/>tori 
+<lb/>non regnandas, sed lacerandas reli<anchor rend="-" type="sillabazione_fine_rigo"/>querat; 
+<lb/>ad quorum liberationem Deo 
+<lb/>miserante certum est Normannos advenisse; 
+<lb/>erat enim tanta, et tam miserabilis utrius<anchor rend="-" type="sillabazione_fine_rigo"/>que 
+<lb/>gentis oppressio, quod praeter importabi<anchor rend="-" type="sillabazione_fine_rigo"/>le 
+<lb/>onus servitii, et infinitos redditus, et tri<anchor rend="-" type="sillabazione_fine_rigo"/>buta, 
+<lb/>quae praedicto Tyranno ipsos oportebat 
+<lb/>solvere, non minus Saracenis per singulos an<anchor rend="-" type="sillabazione_fine_rigo"/>nos 
+<lb/>tributariae<!-- GDM il 2017-05-06 ha corretto l'erorre OCR "tributarie" --> pro redemptione suorum capi<anchor rend="-" type="sillabazione_fine_rigo"/>tum 
+<lb/>indefensi a suis Graecis cogerentur redde<anchor rend="-" type="sillabazione_fine_rigo"/>re, 
+<lb/>vel sine dubio mortem, aut captivitatem 
+<lb/>perpetuam sibi, et uxoribus suis, et liberis 
+<lb/>expectare. Et quia jam ad tantam cala<anchor rend="-" type="sillabazione_fine_rigo"/>mitatem 
+<lb/>res ipsa pervenerat, quod necesse 
+<lb/>erat Imperatorem, vel Terras illas omnino 
+<lb/>Saracenis relinquere, vel acrius, quam 
+<lb/>solitum erat ab eorumdem incursibus defensare, 
+<lb/>apud Regium Civitatem Calabriae maximum 
+<lb/>exercitum Graecorum, et Longobardorum<!-- GDM il 2017-05-06 ha corretto l'erorre OCR "Longorbadorum" --> per 
+<lb/>Maniacum, quem ipse toti Apuliae praefecerat, 
+<lb/>die determinato jussit convenire. Ad quem 
+<lb/>locum cum Princeps Salernitanus, sicut et alii 
+<lb/>Longobardi ex praecepto Imperatoris cum 
+<lb/>multitudine Militum atque peditum con<anchor rend="-" type="sillabazione_fine_rigo"/>venisset, 
+<lb/>Normanni in quibus semper 
+<lb/>confidebat animus virtutis suum nomen magis 
+<lb/>et magis extendere, nullo coacti imperio, sed 
+<lb/>delendae pravitatis Saracenicae, et Sanctae 
+<lb/>liberationis Ecclesiae accensi desiderio, omnes 
+<lb/>unanimiter convenere. 
+</p> 
+<p> 
+<lb/>Congregatis agminibus undique, et navibus 
+<lb/>peractis, favente aura omnes in Siciliam 
+<lb/>non longe a civitate Messana applicuerunt, 
+<lb/>deinde assumptis armis, et juxta praeceptum 
+<lb/>Maniachi, qui in eodem negotio vi<anchor rend="-" type="sillabazione_fine_rigo"/>cem 
+<lb/>Imperatoris obtinebat, Legionibus ordi<anchor rend="-" type="sillabazione_fine_rigo"/>natis 
+<lb/>paulatim, uti mos est bellantium, ad civi<anchor rend="-" type="sillabazione_fine_rigo"/>tatem 
+<lb/>coeperunt accedere. Et contraria 
+<lb/>parte<!-- GDM il 2017-05-06 ha corretto l'errore OCR "parve" --> Saraceni insolitam Graecorum auda<anchor rend="-" type="sillabazione_fine_rigo"/>ciam, 
+<lb/>de quibus semper triumphaverant admi<anchor rend="-" type="sillabazione_fine_rigo"/>rantes, 
+<lb/>et quod numquam in terram suam nisi 
+<lb/>pro tributis afferendis, et pace oranda 
+<cb n="748"/> 
+<lb/>venire praesumsissent indignantes, parumque 
+<lb/>aut numero prae multitudine eorum perterriti, 
+<lb/>apertis portis, et ordinatis agminibus 
+<lb/>ipsis festinant occurrere, atque uti exercitus 
+<lb/>ambo conveniunt, ferociter ibi impugna<anchor rend="-" type="sillabazione_fine_rigo"/>tur. 
+<lb/>Mox a principio fortuna Graecis 
+<lb/>adversante, quae numquam eis in bello nisi ra<anchor rend="-" type="sillabazione_fine_rigo"/>rissime 
+<lb/>solita est prospera accidere, multique 
+<lb/>occisi fuerunt, jamque ipsi poene superati, fu<anchor rend="-" type="sillabazione_fine_rigo"/>gam 
+<lb/>inire parabant, cum Dominus 
+<lb/>Princeps Normannorum morae longioris impa<anchor rend="-" type="sillabazione_fine_rigo"/>tiens, 
+<lb/>ne aliquis casus superveniens datam sibi 
+<lb/>opportunitatem pugnandi eriperet, primum 
+<lb/>socios ad audendum viriliter cohortatur, dato 
+<lb/>signo, laxis habenis inter ferocissi<anchor rend="-" type="sillabazione_fine_rigo"/>mos 
+<lb/>hostes, tamquam leo inter feras velocissi<anchor rend="-" type="sillabazione_fine_rigo"/>mus 
+<lb/>duxit, quem sui Normanni nullo 
+<lb/>tardati timore cum festinatione maxima in uno 
+<lb/>glomerati agmine consequuntur, ibique dextra, 
+<lb/>et sinistra more virorum audacissime pu<anchor rend="-" type="sillabazione_fine_rigo"/>gnando 
+<lb/>innumeras hostium catervas interfi<anchor rend="-" type="sillabazione_fine_rigo"/>ciunt. 
+<lb/>Sicque factum est, ut Saraceni feroces 
+<lb/>incursus Normannorum nequaquam diutius su<anchor rend="-" type="sillabazione_fine_rigo"/>stinentes, 
+<lb/>nullamque ulterius nisi infra muros 
+<lb/>salutem sibi expectantes, in fugam convertun<anchor rend="-" type="sillabazione_fine_rigo"/>tur, 
+<lb/>quos Guilielmus, et socii sui plenam 
+<lb/>de iis victoriam habere cupientes, concitato 
+<lb/>cursu per apertas portas (ut praeceptum 
+<lb/>Maniachi<!-- GDM il 2017-06-05 ha corretto l'errore OCR "Monachi" -->, qui in eodem negotio vicem Impe<anchor rend="-" type="sillabazione_fine_rigo"/>ratoris 
+<lb/>obtinebat, legionibus<!-- GDM il 2017-06-05 ha corretto l'errore OCR "legionibu" --> ordinatis paula<anchor rend="-" type="sillabazione_fine_rigo"/>tim 
+<lb/>ultimo est bellatum, ad civitatem coepe<anchor rend="-" type="sillabazione_fine_rigo"/>runt 
+<lb/>accedentes), quas non licuit claudere. 
+<lb/>Semper undique feriendo comitantur, 
+<lb/>deinde Graecis, et Langobardis sequentibus; 
+<lb/>et Saracenis omnibus interfectis, praeter eos, 
+<lb/>quos servitio retinere placuit, audaci 
+<lb/>virtute Normannorum capta est civitas. 
+<lb/>Capta vero urbe, et praesidiis in ea ordinatis, 
+<lb/>pugnandi Maniacus cum exercitu suo 
+<lb/>apud Syragusiam iter aggreditur, cui ci<anchor rend="-" type="sillabazione_fine_rigo"/>vitatem 
+<lb/>appropinquanti Syragusani obviam oc<anchor rend="-" type="sillabazione_fine_rigo"/>currerunt, 
+<lb/>et convenientibus utrinque exerci<anchor rend="-" type="sillabazione_fine_rigo"/>tibus 
+<lb/>maxima vi inter se tentatum est. 
+<lb/>Erat autem ex parte Saracenorum quidam vo<anchor rend="-" type="sillabazione_fine_rigo"/>catus 
+<lb/>Archaydus, idem legis Doctor, vel 
+<lb/>Princeps, cui tantae vires, tantaque ani<anchor rend="-" type="sillabazione_fine_rigo"/>mositas 
+<lb/>inerat, quod nullus Graecorum, vel 
+<lb/>Longobardorum ei numquam impu<anchor rend="-" type="sillabazione_fine_rigo"/>ne 
+<lb/>occurrebat; cumque jam multos occidisset, 
+<lb/>magnamque eorum partem, ceu lupus oves, 
+<lb/>in fugam convertisset, Guilielmus Ferabrachia, 
+<lb/>cujus virtus semper tendebat ad ardua, 
+<lb/>damna suae partis diutius non sustinens, 
+<lb/>deducto accitus in eum equo per hastam, 
+<lb/>quam ipse gestabat, solita virtute per 
+<lb/>medium pectus illius contorsit. Itaque mortuo 
+<lb/>jam illo, in quo tota salus civitatis nite<anchor rend="-" type="sillabazione_fine_rigo"/>batur, 
+<lb/>casu subito conterriti Saraceni infra 
+<lb/>muros se recipiunt, et clausis portis, telis et 
+<lb/>lapidibus potius quam mucrone, vel lancea 
+<lb/>eminus se tuentur. Sed quia civitas natura 
+<cb n="749"/> 
+<lb/>loci, et artificio, defensoribus munita satis<!-- GDM il 2017-06-05 ha corretto l'errore OCR "fatis" --> 
+<lb/>habebatur, Maniachus, ne plus eum ibi amit<anchor rend="-" type="sillabazione_fine_rigo"/>tere, 
+<lb/>quam prope lucrari contingeret, ea re<anchor rend="-" type="sillabazione_fine_rigo"/>licta 
+<lb/>versus Trajanum agmen deducit. Erat 
+<lb/>autem Trajanum in supercilio montis con<anchor rend="-" type="sillabazione_fine_rigo"/>stitutum, 
+<lb/>tantoque naturaliter ex omni parte 
+<lb/>praecipitio munitum, quod nullum gentis, 
+<lb/>quantumcumque foret, timeret accessum. 
+</p> 
+<p> 
+<lb/>Ex tota Sicilia plusquam XV. 
+<lb/>millia Saracenorum, non causa defendendi, 
+<lb/>sed contra Christianos pugnandi convenerant, 
+<lb/>quorum maxima pars cum eos adventare 
+<lb/>cognovisset, ipsis oviam processit. Normanni 
+<lb/>quorum audaciae fortuna semper favebat, ne<anchor rend="-" type="sillabazione_fine_rigo"/>que 
+<lb/>prae eorum multitudinem, neque prae loci 
+<lb/>difficultate morati, acerrime ipsis occurrunt, 
+<lb/>et sine mora multis eorum interfectis alios in<anchor rend="-" type="sillabazione_fine_rigo"/>fra 
+<lb/>moenia retrudunt. 
+</p> 
+<p> 
+<lb/>Cum Normanni ita viriliter hostes fugarent, 
+<lb/>Graeci, quibus erat studium potius alio<anchor rend="-" type="sillabazione_fine_rigo"/>rum 
+<lb/>facta a longe aspicere, quam pro<anchor rend="-" type="sillabazione_fine_rigo"/>pria 
+<lb/>ostendendo se periculis objectare, maxi<anchor rend="-" type="sillabazione_fine_rigo"/>mam 
+<lb/>praedam aliunde, quae in partibus 
+<lb/>illis relicta sine custode pascebat, nullo vetan<anchor rend="-" type="sillabazione_fine_rigo"/>te 
+<lb/>ad castra deduxerunt, quam inter se divi<anchor rend="-" type="sillabazione_fine_rigo"/>dentes 
+<lb/>partem nullam Normannis fecerunt. 
+<lb/>Hic autem Maniachus ex perversissima inten<anchor rend="-" type="sillabazione_fine_rigo"/>tione 
+<lb/>ita fieri praeceperat, erat enim jam Nor<anchor rend="-" type="sillabazione_fine_rigo"/>mannorum 
+<lb/>probitas valde sibi formidosa; et 
+<lb/>quidquid de eis Salernitanus Princeps, dum 
+<lb/>secum morarentur, timuerat, idem sibi 
+<lb/>ac Domino suo, non multum Graecorum 
+<lb/>probitati confidens, posse accidere verebatur. 
+<lb/>Hac de causa, et maxime ex invidia, quae 
+<lb/>raro a gente sua removetur, impulsus, 
+<lb/>prae tantis actorum meritis non minus, 
+<lb/>quam mortem sibi fallaciter moliebatur. 
+<lb/>Putabat<!-- GDM il 2017-06-05 ha corretto l'errore OCR "Pu-tabat" --> siquidem eos, quos ultra mundum 
+<lb/>audaces, et semper ad vindicanda para<anchor rend="-" type="sillabazione_fine_rigo"/>tos 
+<lb/>esse cognoverat, partibus praedae sibi ne<anchor rend="-" type="sillabazione_fine_rigo"/>gatis, 
+<lb/>cito ad iracundiam deinde ad minas 
+<lb/>posse provocari, sicque ex justa causa cum 
+<lb/>multitudine Graecorum armata illos paucos, 
+<lb/>et inermes ex improviso detruncare. 
+<lb/>Misso itaque a Guilielmo quodam milite pro 
+<lb/>parte praedae repetendae<!-- GDM il 2017-06-05 ha corretto l'errore OCR "repetundae" --> Maniachus non solum 
+<lb/>partem non misit, sed ipsi Legato prius ver<anchor rend="-" type="sillabazione_fine_rigo"/>beribus 
+<lb/>afflicto in despectum Normannorum 
+<lb/>barbam propriis unguibus depilavit, quod 
+<lb/>apud Graecos pro summo habetur op<anchor rend="-" type="sillabazione_fine_rigo"/>probrio. 
+<lb/>Hoc Normannis audito (quid<anchor rend="-" type="sillabazione_fine_rigo"/>nam 
+<lb/>concilii caperet<!-- GDM il 2017-06-05 ha corretto l'errore OCR "capert" --> diu incerto habuere) 
+<lb/>alii namque continuo arma sumere, et prae 
+<lb/>ulciscenda injuria mortem contemnere suade<anchor rend="-" type="sillabazione_fine_rigo"/>bant. 
+<lb/>Alii autem, qui majori pollebant 
+<lb/>audacia, et quae ex nimia festinatione solent 
+<lb/>accidere, subtilius praevidentes, ultionem dif<anchor rend="-" type="sillabazione_fine_rigo"/>ferrre, 
+<lb/>et sapienter ad praesens<!-- GDM il 2017-06-05 ha corretto l'errore OCR "praefens" --> injuriam dissi<anchor rend="-" type="sillabazione_fine_rigo"/>mulare, 
+<lb/>et monent, et praecipiunt. Tandem 
+<lb/>animis ad hoc confortatis, insequente no<anchor rend="-" type="sillabazione_fine_rigo"/>cte 
+<lb/>relicto exercitu, et Maniacho nesciente, 
+<lb/>apud Messanam gressu expedito proficiscuntur, 
+<lb/>deinde transcurso Faro, postquam Calabriam 
+<cb n="750"/> 
+<lb/>intraverant; quantum de illata sibi injuria do<anchor rend="-" type="sillabazione_fine_rigo"/>luissent, 
+<lb/>praedationibus infinitis, et ca<anchor rend="-" type="sillabazione_fine_rigo"/>strorum, 
+<lb/>atque Urbium, subversione, et 
+<lb/>vinearum extirpatione, manifeste coeperunt 
+<lb/>ostendere, et sic terram Graecorum quocum<anchor rend="-" type="sillabazione_fine_rigo"/>que 
+<lb/>transitum faciebant modis omnibus vastan<anchor rend="-" type="sillabazione_fine_rigo"/>do, 
+<lb/>pervenientes in Apuliam, Civitatem, 
+<lb/>que dicitur Melfium ibidem constituere, ubi Gui<anchor rend="-" type="sillabazione_fine_rigo"/>lielmum 
+<lb/>Ferabrachium, utpote hominem mori<anchor rend="-" type="sillabazione_fine_rigo"/>bus 
+<lb/>omnibus praestantissimum, sibi ac civitati 
+<lb/>Comitem ac Dominum unanimiter elegerunt. 
+<lb/>Cognito Graecis Normannos contra dignita<anchor rend="-" type="sillabazione_fine_rigo"/>tem 
+<lb/>sui Imperii non solum civitatem in terra, 
+<lb/>quam suam esse dicebant constituisse, ve<anchor rend="-" type="sillabazione_fine_rigo"/>rum 
+<lb/>et ad totius Apuliae dominationem anima<anchor rend="-" type="sillabazione_fine_rigo"/>tos 
+<lb/>esse, congregato maximo exercitu apud 
+<lb/>Melfium festinant accedere, quibus acceden<anchor rend="-" type="sillabazione_fine_rigo"/>tibus, 
+<lb/>prius aliter quam bello fortunam pla<anchor rend="-" type="sillabazione_fine_rigo"/>cuit 
+<lb/>tentare. Nuntiaverunt itaque Norman<anchor rend="-" type="sillabazione_fine_rigo"/>nis, 
+<lb/>vel ipsi infra diem tertium relicta 
+<lb/>omnino Apulia, numquam amplius reversuri, 
+<lb/>ad terram suam securi discendant, aut 
+<lb/>in crastino sine dubio belli fortunam expecta<anchor rend="-" type="sillabazione_fine_rigo"/>rent. 
+<lb/>Normanni vero responderunt plus 
+<lb/>sibi ad praesens bellum, quam fugam inhone<anchor rend="-" type="sillabazione_fine_rigo"/>stam 
+<lb/>placere, ac Graecis quam<anchor rend="-" type="sillabazione_fine_rigo"/>quam 
+<lb/>fama probitatis Normannorum maxi<anchor rend="-" type="sillabazione_fine_rigo"/>mum 
+<lb/>timorem incuteret; tamen 
+<lb/>eorum paucitate, et sua multi<anchor rend="-" type="sillabazione_fine_rigo"/>tudine 
+<lb/>confisi, armis parant contendere. 
+<lb/>Sequenti ergo die Comes Guilielmus, ne diutius 
+<lb/>bellum protrahendo Graecis animus augeretur, 
+<lb/>paucis suorum ad custodiam in civitate reli<anchor rend="-" type="sillabazione_fine_rigo"/>ctis, 
+<lb/>caeteros omnes milites, ac pedites 
+<lb/>armatos instructis ordinibus in quamdam pla<anchor rend="-" type="sillabazione_fine_rigo"/>nitiem 
+<lb/>prope hostium agmina deducit, 
+<lb/>postea invocato Dei auxilio Graecis audacissime 
+<lb/>occurrentes a primo congressu eos in 
+<lb/>fugam converterunt, quos dum nimis acriter 
+<lb/>prosequuntur, multis gladio interfectis, maxi<anchor rend="-" type="sillabazione_fine_rigo"/>mam 
+<lb/>aliorum multitudinem fluvius Cli<anchor rend="-" type="sillabazione_fine_rigo"/>vetus, 
+<lb/>qui tunc forte aquis abundabat, 
+<lb/>submergit. Graecis itaque superatis, et tota 
+<lb/>Apulia timore concussa, multitudo Lon<anchor rend="-" type="sillabazione_fine_rigo"/>gobardorum, 
+<lb/>et maxime illi, qui non multum 
+<lb/>remoti a Melfio habitabant, seipsos, et civi<anchor rend="-" type="sillabazione_fine_rigo"/>tates, 
+<lb/>et castra dominationi Normannorum 
+<lb/>subdiderunt, quorum multi, quibus ar<anchor rend="-" type="sillabazione_fine_rigo"/>morum 
+<lb/>doctrina potius, quam vires, aut ani<anchor rend="-" type="sillabazione_fine_rigo"/>mus 
+<lb/>olim defuerat, postquam virtutem Nor<anchor rend="-" type="sillabazione_fine_rigo"/>mannorum 
+<lb/>magnam imitari, quam invi<anchor rend="-" type="sillabazione_fine_rigo"/>diare 
+<lb/>studuerunt, optimi milites, et eorum in 
+<lb/>suis acquisitionibus fidelissimi adjutores postea 
+<lb/>facti sunt. Mallebant etenim, ut sapientes, 
+<lb/>ipsorum probitate, et prudentia regi, et con<anchor rend="-" type="sillabazione_fine_rigo"/>servari, 
+<lb/>quam sub Graecorum inertia quoti<anchor rend="-" type="sillabazione_fine_rigo"/>dianis 
+<lb/>Saracenorum depraedationibus exponi. 
+<lb/>Postquam belli eventu, et multiplici 
+<lb/>Normannorum acquisitione, Regi Constanti<anchor rend="-" type="sillabazione_fine_rigo"/>nopolitano 
+<lb/>indubitanter relatum est, 
+<lb/>ipsam infinitam multitudinem militum, atque 
+<lb/>peditum ex diversis partibus congregatam, 
+<lb/>per Ducheonum Praefectum suum in 
+<cb n="751"/> 
+<lb/>Apuliam transmisit<!-- GDM il 2017-06-05 ha corretto l'errore OCR "transmissit" -->; qui adjunctis sibi Longo<anchor rend="-" type="sillabazione_fine_rigo"/>bardis 
+<lb/>illis, qui nondum parti Normannorum 
+<lb/>consenserant, usque Melphim<!-- GDM il 2017-06-05 ha corretto l'errore OCR "Malphim" --> moram 
+<lb/>non fecerunt; illas autem, ut Melfium<!-- GDM il 2017-06-05 ha corretto l'errore OCR "Melfum" --> Comes 
+<lb/>Guilielmus advenisse cognovit, ne diuturniore 
+<lb/>mora posset aliquid innovari, li<anchor rend="-" type="sillabazione_fine_rigo"/>cet 
+<lb/>ipse tunc temporis quartanae febris incen<anchor rend="-" type="sillabazione_fine_rigo"/>dio 
+<lb/>molestaretur, cum armatis cuneis<!-- GDM il 2017-06-05 ha corretto l'errore OCR "cunei" --> eis ob<anchor rend="-" type="sillabazione_fine_rigo"/>vius 
+<lb/>a civitate descendit. 
+</p> 
+<p> 
+<lb/>Cumque jam more bellico pararet hostibus 
+<lb/>incurrere, febris venturae ejus gloriae invida, 
+<lb/>quia tunc forte et hora, et dies suae accessio<anchor rend="-" type="sillabazione_fine_rigo"/>nis 
+<lb/>advenerat, subito eum corripiens, fere 
+<lb/>omnino a viribus eum destituit, unde quoniam 
+<lb/>ad praesens bello interesse non poterat, primi<anchor rend="-" type="sillabazione_fine_rigo"/>tus 
+<lb/>suos multum in audaciam<!-- GDM il 2017-06-05 ha corretto l'errore OCR "audiaciam" --> cohortatur, et 
+<lb/>bellicosissimum fratrem suum Drogum in loco 
+<lb/>suo constituens, juxta vicinum<!-- GDM il 2017-06-05 ha corretto l'errore OCR "vincinum" --> montem, unde 
+<lb/>sibi facilis erat gentis utriusque prospectus, 
+<lb/>ascendit: at Graeci multum de innumerabili 
+<lb/>suorum multitudine confisi<!-- GDM il 2017-06-05 ha corretto l'errore OCR "consisi" -->, minus molliter, 
+<lb/>quam in superiori bello diu Normannis<!-- GDM il 2017-06-05 ha corretto l'errore OCR "Normanni" --> coepe<anchor rend="-" type="sillabazione_fine_rigo"/>runt 
+<lb/>resistere<!-- GDM il 2017-06-05 ha corretto l'errore OCR "reistere" -->, ipsosque mutatis<!-- GDM il 2017-06-05 ha corretto l'errore OCR "mtutatis" --> ordinibus un<anchor rend="-" type="sillabazione_fine_rigo"/>dique 
+<lb/>circumveniendo, non mediocriter fati<anchor rend="-" type="sillabazione_fine_rigo"/>gare, 
+<lb/>quod inclytus Comes a monte, ubi ja<anchor rend="-" type="sillabazione_fine_rigo"/>cebat, 
+<lb/>prospiciens, indignansque quod sui 
+<lb/>tandiu ad victoriam retardarent, fer<anchor rend="-" type="sillabazione_fine_rigo"/>vore 
+<lb/>animi omnino febrilem superante calo<anchor rend="-" type="sillabazione_fine_rigo"/>rem, 
+<lb/>equum quam velocissime armatus 
+<lb/>conscendit, et vocato Dei, de quo mul<anchor rend="-" type="sillabazione_fine_rigo"/>tum 
+<lb/>sperat auxilio, ad locum ubi ma<anchor rend="-" type="sillabazione_fine_rigo"/>ximus 
+<lb/>erat utriusque partis conflictus, rapidus 
+<lb/>tamquam fluvius occurrit, et mox per 
+<lb/>sui praesentiam multiplicata sociis auda<anchor rend="-" type="sillabazione_fine_rigo"/>cia, 
+<lb/>et fortitudine de Coelo eis adveniente, 
+<lb/>Graecorum multitudinem in qua belli victoria 
+<lb/>speranda non erat, Ducheanoque 
+<lb/>potenti dextra Comitis Guilielmi inter<anchor rend="-" type="sillabazione_fine_rigo"/>fecto, 
+<lb/>in fugam coegerunt. Graecis itaque se<anchor rend="-" type="sillabazione_fine_rigo"/>cundo, 
+<lb/>egregia virtute Normannorum supera<anchor rend="-" type="sillabazione_fine_rigo"/>tis, 
+<lb/>fere tota Apulia partim tracta par<anchor rend="-" type="sillabazione_fine_rigo"/>tim 
+<lb/>propria voluntate Guilielmo Comiti se 
+<lb/>subjiciebat; cujus gloriosissima fama jam fere 
+<lb/>per totius Mundi terminos elucescens, trans<anchor rend="-" type="sillabazione_fine_rigo"/>montanas 
+<lb/>partes, et praecipue Normanniam, 
+<lb/>referendo de suis successibus laetificave<anchor rend="-" type="sillabazione_fine_rigo"/>rat; 
+<lb/>fratresque suos omnes, duobus relictis, 
+<lb/>quorum aetas militiae nondum conveniens erat, 
+<lb/>congregatis sibi consanguineorum, atque vici<anchor rend="-" type="sillabazione_fine_rigo"/>norum 
+<lb/>probis quamplurimis, et viae labore 
+<lb/>contempto in Apuliam ad se vocaverat, ipsis<anchor rend="-" type="sillabazione_fine_rigo"/>que 
+<lb/>civitates, et castra, et alia haec omnia, 
+<lb/>prout quisque sibi dignus, et praevalens vide 
+<lb/>batur, larga manu distribuerat, diuque sub 
+<lb/>eo, et Normanni, et Longobardi beate, et 
+<lb/>pacifice regebantur; cum mors totius<!-- GDM il 2017-06-05 ha corretto l'errore OCR "toitus" --> prospe<anchor rend="-" type="sillabazione_fine_rigo"/>ritatis 
+<lb/>humanae terminus inevitabilis, nullique 
+<lb/>unquam dignitati, aut potentiae parcere con<anchor rend="-" type="sillabazione_fine_rigo"/>sueta, 
+<lb/>egregium Comitem, militiae<!-- GDM il 2017-06-05 ha corretto l'errore OCR "militae" --> de<anchor rend="-" type="sillabazione_fine_rigo"/>cus, 
+<lb/>super hostibus triumphatorem, cui 
+<lb/>nulla virtus ad perfectionem deerat, vita 
+<lb/>praesenti eripuit. 
+</p> 
+<p> 
+<lb/>Mortuo Guilielmo, et sepulto honorifice, 
+<cb n="752"/> 
+<lb/>ut tantum decebat virum, frater suus 
+<lb/>Drothus, qui post ipsum nativitate secundus 
+<lb/>habebatur, communi assensu Normannorum 
+<lb/>ad Consulatum sublimatus est. Iste tem<anchor rend="-" type="sillabazione_fine_rigo"/>pore 
+<lb/>suo, et fraterna probitate in nul<anchor rend="-" type="sillabazione_fine_rigo"/>lo 
+<lb/>degenerans, ejus acquisitioni multa, et ma<anchor rend="-" type="sillabazione_fine_rigo"/>xima 
+<lb/>adjunxit; unde Longobardorum multi, 
+<lb/>quia semper in omni regione malorum, quam 
+<lb/>bonorum majorem constat numerum esse, vir<anchor rend="-" type="sillabazione_fine_rigo"/>tutibus, 
+<lb/>et prosperitati Normannorum invi<anchor rend="-" type="sillabazione_fine_rigo"/>dentes, 
+<lb/>in perniciem pluribus locis per 
+<lb/>Apuliam occulte conjurarunt, et quamvis de 
+<lb/>aliis nunc praetermittam, quoddam facinus, et 
+<lb/>detestabile, et propter sui magnitudinem in 
+<lb/>omni aevo memorabile, quod apud 
+<lb/>Montallium excogitatum, et perpetratum fuis<anchor rend="-" type="sillabazione_fine_rigo"/>se 
+<lb/>constat, placet mihi efferre. Erat 
+<lb/>autem ibi quidam saevissimus<!-- GDM il 2017-06-05 ha corretto l'errore OCR "sevissimus" --> proditor 
+<lb/>Risus<!-- GDM il 2017-06-05 ha corretto l'errore OCR "Rifus" --> nomine, totus ex vitiis composi<anchor rend="-" type="sillabazione_fine_rigo"/>tus, 
+<lb/>et ut efficacior esset ad nocendum, Co<anchor rend="-" type="sillabazione_fine_rigo"/>mitis 
+<lb/>Compater est effectus. Hic dum forte 
+<lb/>venerabilis Comes nefandae conjurationis igna<anchor rend="-" type="sillabazione_fine_rigo"/>rus, 
+<lb/>apud praedictum castrum cum paucis mi<anchor rend="-" type="sillabazione_fine_rigo"/>litibus 
+<lb/>moraretur, quamplures sceleris sui par<anchor rend="-" type="sillabazione_fine_rigo"/>ticipes 
+<lb/>in Ecclesia quadam, ad quam Comes 
+<lb/>singulis diebus summo diluculo causa orationis 
+<lb/>solitus erat venire, armatos secum oc<anchor rend="-" type="sillabazione_fine_rigo"/>culte 
+<lb/>inclusit, et Comitem introeuntem Do<anchor rend="-" type="sillabazione_fine_rigo"/>minum 
+<lb/>suum et Compatrem, ignarum, et iner<anchor rend="-" type="sillabazione_fine_rigo"/>mem 
+<lb/>propriis manibus a tergo lancea pene<anchor rend="-" type="sillabazione_fine_rigo"/>travit, 
+<lb/>et multiplicatis in eum sociorum icti<anchor rend="-" type="sillabazione_fine_rigo"/>bus 
+<lb/>subito interfecit, idemque factum est 
+<lb/>de paucis, qui cum Comite ingressi<!-- GDM il 2017-06-05 ha corretto l'errore OCR "ingredii" --> fuerant,<!-- GDM il 2017-06-05 ha aggiunto la virgola che era mancante per errore OCR --> re<anchor rend="-" type="sillabazione_fine_rigo"/>liqui 
+<lb/>vero post eos venientes subito timore 
+<lb/>concussi, sub umbra adhuc vicinae noctis ad di<anchor rend="-" type="sillabazione_fine_rigo"/>versas 
+<lb/>partes effugerunt. Tali modo, et a 
+<lb/>talibus egregio Comite interfecto, Normanni ex 
+<lb/>diversis partibus Apuliae congregati ad ultio<anchor rend="-" type="sillabazione_fine_rigo"/>nem 
+<lb/>festinant, et prius elevato in Consulatum 
+<lb/>Humfrido, qui cognomine Abjerlandus 
+<lb/>vocabatur, Montelliam circumdatam ob<anchor rend="-" type="sillabazione_fine_rigo"/>sidione 
+<lb/>cinxerunt. De Riso<!-- GDM il 2017-06-05 ha corretto l'errore OCR "Rifo" --> tamen Principe 
+<lb/>conjurationis, et sceleris inventore, abscissis 
+<lb/>sibi singulis membris separatim per intervalla 
+<lb/>temporis, ut diu vivendo diu cruciaretur, sup<anchor rend="-" type="sillabazione_fine_rigo"/>plicium 
+<lb/>sumptum est, ad ultimum<!-- GDM il 2017-06-05 ha corretto l'errore OCR "ultimu" --> amissis om<anchor rend="-" type="sillabazione_fine_rigo"/>nibus 
+<lb/>membris, adhuc vivens terrae infoditur: 
+<lb/>caeteri vero solo suspendio nequitiae poenas de<anchor rend="-" type="sillabazione_fine_rigo"/>derunt; 
+<lb/>tandemque funesti proditores inde vio<anchor rend="-" type="sillabazione_fine_rigo"/>lenter 
+<lb/>extracti, non quantas meruerunt poenas, 
+<lb/>sed scelere suo multo majores sustinuerunt. 
+<lb/>Ex eo tempore Normannigenae, post viri 
+<lb/>perfidiam, invidorum solertius quam antea de<anchor rend="-" type="sillabazione_fine_rigo"/>vitantes 
+<lb/>odium quo poterant: et quia 
+<lb/>quo plus ad virtutem nitebantur, tanto 
+<lb/>magis ex antiqua consuetudine numerus eorum 
+<lb/>augebatur, Primates Apuliae, quibus 
+<lb/>Normannorum benignitas multas divitias, et 
+<lb/>multissima castra relinquerat, non prius 
+<lb/>auri Romani Pontificis falsis <!-- GDM il 2017-06-05 ha corretto l'errore OCR "polliciatio" -->pollicitatio<anchor rend="-" type="sillabazione_fine_rigo"/>nibus, 
+<lb/>et ipsi de Normannis<!-- GDM il 2017-06-05 ha corretto l'errore OCR "Normanni" --> maximum timorem 
+<lb/>incutiendo, neque eos omnino fe<anchor rend="-" type="sillabazione_fine_rigo"/>stinaret 
+<lb/>expellere, non minus quam ex-<!-- Trattino da togliere a mano --> 
+<cb n="753"/> 
+<lb/><!-- GDM il 2017-06-05 ha tolto il trattino che era a inizio riga (errore OCR) -->cidium Romano Imperio per eos esse ventu<anchor rend="-" type="sillabazione_fine_rigo"/>rum 
+<lb/>mentiendo, quievere sollicitare, quam 
+<lb/>ipsum cum maximo Normannorum, et 
+<lb/>Theodonicorum exercitu adversus Nor<anchor rend="-" type="sillabazione_fine_rigo"/>mannos 
+<lb/>in Apulia adduxerunt. At Comes 
+<lb/>imperterritus, ut primum de adventu eorum 
+<lb/>cognovit, congregavit agmina, quanta 
+<lb/>habere potuit, in extremis Apuliae finibus eis 
+<lb/>occurrens, multis Normannorum, et 
+<lb/>Alemannis gladio interfectis, omnibus ipsum 
+<lb/>Leonem Papam, hoc autem erat ei nomen, 
+<lb/>cum paucis<!-- GDM il 2017-06-05 ha corretto l'errore OCR "paucisi" --> sibi relictis in castrum, quod Ci<anchor rend="-" type="sillabazione_fine_rigo"/>vitas 
+<lb/>appellatur, fugam arripere coegit, quem 
+<lb/>ibi tandiu circumdata multitudine obsedit, 
+<lb/>quod ejusdem castri habitatores<!-- GDM il 2017-06-05 ha corretto l'errore OCR "habitatore" -->, partim 
+<lb/>timore necessariorum indigentia coacti, eum 
+<lb/>per muros, desuper emissum voluntate Comi<anchor rend="-" type="sillabazione_fine_rigo"/>tis 
+<lb/>tradiderunt. Sed Comes Venerabilis pieta<anchor rend="-" type="sillabazione_fine_rigo"/>te, 
+<lb/>et justitia effulgens, quae numquam a ge<anchor rend="-" type="sillabazione_fine_rigo"/>nere 
+<lb/>suo recesserunt, Deumque semper 
+<lb/>in actionibus suis proponens, quanta honorifi<anchor rend="-" type="sillabazione_fine_rigo"/>centia, 
+<lb/>quantaque supplicationis devotione, 
+<lb/>etiam usque ad lachrymarum effusionem, ipse 
+<lb/>et Normanni sui, et eum susceperunt, nec 
+<lb/>etiam illi quibus hoc praesentibus oculis licuit, 
+<lb/>prae magnitudine rei ad plenum verbo non 
+<lb/>potuerunt explicare. Quibus Papa<!-- GDM il 2017-06-05 ha aggiunto "Papa" che mancava (errore OCR) --> commotus, 
+<lb/>et de honestissima virtute Normannorum om<anchor rend="-" type="sillabazione_fine_rigo"/>nino, 
+<lb/>quam quae sibi a perfidis falsa relata fue<anchor rend="-" type="sillabazione_fine_rigo"/>rant 
+<lb/>certissime intelligens, atque ut Pius, et 
+<lb/>Sanctissimus Pater discrete, ut subtiliter 
+<lb/>utilitati Sanctae Ecclesiae praevidens, totam Apu<anchor rend="-" type="sillabazione_fine_rigo"/>liam, 
+<lb/>atque Calabriam a finibus Guarnerii 
+<lb/>usque ad Farum Comiti Humfredo, et suis 
+<lb/>Successoribus, nequaquam coactus in aliquo, 
+<lb/>sed sola spontanea voluntate, et suorum com<anchor rend="-" type="sillabazione_fine_rigo"/>muni 
+<lb/>consilio Cardinalium regendas, semper<anchor rend="-" type="sillabazione_fine_rigo"/>que 
+<lb/>possidendas permisit, et non solum cum eo 
+<lb/>pacem perpetuam foedavit<!-- GDM il 2017-06-05 ha corretto l'errore OCR "soedavit" -->, verum, et 
+<lb/>ipsum Romanae Matris Ecclesiae signiferum, et 
+<lb/>defensorem ordinavit, quae sapienter, at<anchor rend="-" type="sillabazione_fine_rigo"/>que 
+<lb/>ex paterno affectu constat fecisse, et tali 
+<lb/>modo praedictas terras a praesentibus, et futu<anchor rend="-" type="sillabazione_fine_rigo"/>ris 
+<lb/>calamitatibus liberasse. Pro certo enim ha<anchor rend="-" type="sillabazione_fine_rigo"/>bebat, 
+<lb/>tunc demum humanas res beatas fore, 
+<lb/>si a tantis, ac talibus viris universam regi 
+<lb/>Monarchiam contigisset. 
+</p> 
+<p> 
+<lb/>His peractis Romanus Pontifex multa, et 
+<lb/>pretiosa munera, quae sibi, et omnibus suis 
+<lb/>benignitas Comitis large distribuerat secum de<anchor rend="-" type="sillabazione_fine_rigo"/>ferens, 
+<lb/>ad Romanam Sedem regressus est. Co<anchor rend="-" type="sillabazione_fine_rigo"/>mes 
+<lb/>vero cum suis Normannis Melfium 
+<lb/>revertens, scilicet et Longobardorum maxima 
+<lb/>cura, duos fratres suos Malgerium, et 
+<lb/>Guilielmum eodem Patre genitos, eademque 
+<lb/>morum honestate conspicuos, Consules ordi<anchor rend="-" type="sillabazione_fine_rigo"/>navit; 
+<lb/>et Malgerio Capitaniam, Guilielmo 
+<lb/>Terram illam quae Principatus dicitur, di<anchor rend="-" type="sillabazione_fine_rigo"/>stribuit; 
+<lb/>sed Malgerius post paucos annos mo<anchor rend="-" type="sillabazione_fine_rigo"/>riens 
+<lb/>Consulatum suum fratri suo Guilielmo 
+<lb/>reliquit, quem postea Guilielmus Gaufri<anchor rend="-" type="sillabazione_fine_rigo"/>do 
+<lb/>fratri suo dedit. 
+<cb n="754"/> 
+<distinct type="verse" rend="italics"> 
+<lb/>Cum Comes Humfridus tranquilla pace regebat 
+<lb/>Apuliam, Valligracenses in arte premebat. 
+<lb/>Optimus ille Ducum, Normannae gloria gentis, 
+<lb/>Miles militiae decus, exemplum probitatis, 
+<lb/>Viribus expertus validis animoque Robertus 
+<lb/>Biscardus, cunctis animosior, atque secundus 
+<lb/>Nulli, quem solum timuit super omnia Mundus 
+<lb/>Totus, et audacem stupuit Mars ipse, sagacem 
+<lb/>Pallas, facundum Cyllenius, optima cujus, 
+<lb/>Ut breviter brevibus possit<!-- GDM il 2017-06-05 ha corretto l'errore OCR "possis" --> compraehendere verbis, 
+<lb/>Nec primum similem potuit, nec habere sequentem, 
+<lb/>Regibus exceptis, eadem quos dixit origo 
+<lb/>(Per quos diluerit faex, et pagana caligo.)</distinct> 
+<lb/>Hic jam Sanctum-Marcum firmaverat, et 
+<lb/>Petro Cyrreno in vinculis posito Bri<anchor rend="-" type="sillabazione_fine_rigo"/>simanum 
+<lb/>possidebat. Cusentinos omnes, 
+<lb/>et multos alios in partibus illis servire sibi coe<anchor rend="-" type="sillabazione_fine_rigo"/>gerat. 
+<lb/>Jamque mortuo Humfredo venerabili 
+<lb/>Consule dominationi totius Apuliae successe<anchor rend="-" type="sillabazione_fine_rigo"/>rat, 
+<lb/>et Rogerio fratri suo, qui postea Siciliam 
+<lb/>acquisivit, de ultra montes partes servan<anchor rend="-" type="sillabazione_fine_rigo"/>das, 
+<lb/>aliasque dextera, et sinistra acquirendas 
+<lb/>commiserat: cum suggerente invidia in<anchor rend="-" type="sillabazione_fine_rigo"/>ter 
+<lb/>duos fratres, ubi minime decebat, maxima 
+<lb/>orta est dissensio, et ad tantum malum perdu<anchor rend="-" type="sillabazione_fine_rigo"/>cta, 
+<lb/>ut se invicem nimis acriter inquietando 
+<lb/>famae penitus, et dignitatis suae obliti, 
+<lb/>coepta suae acquisitionis postponerent, et magis 
+<lb/>irae, quam rationi, aut consilio amicorum con<anchor rend="-" type="sillabazione_fine_rigo"/>cedentes. 
+<lb/>Graecis eorum infestissimis inimicis 
+<lb/>laetandi occasionem, (per quos diluitur 
+<lb/>foetum, et pagana caligo) praeberent. Quae 
+<lb/>res inde maxime videtur mihi sumpsisse ini<anchor rend="-" type="sillabazione_fine_rigo"/>tium, 
+<lb/>quia tanta in utroque viro erat magna<anchor rend="-" type="sillabazione_fine_rigo"/>nimitas, 
+<lb/>quod alter nullo modo sibi parem ha<anchor rend="-" type="sillabazione_fine_rigo"/>bere 
+<lb/>volebat, alter plurimum sibi confidens, 
+<lb/>super se majorem esse nesciebat. Nec creden<anchor rend="-" type="sillabazione_fine_rigo"/>dum 
+<lb/>est avaritiae venenum inter tantos viros 
+<lb/>potuisse aliunde discordiam seminare. Contigit 
+<lb/>igitur, quod utroque damnis alterius graviter 
+<lb/>insistente: Graeci etiam quasi in audaciam per<anchor rend="-" type="sillabazione_fine_rigo"/>moti, 
+<lb/>intempestae noctis silentio Nica<anchor rend="-" type="sillabazione_fine_rigo"/>strum 
+<lb/>coeperunt interfectis LX. Normannis 
+<lb/>ibidem ad civitatem servandam constitutis, 
+<lb/>quae res maxime ambos fratres, causa celerius 
+<lb/>et uberius ulciscendi illatum dedecus, ad 
+<lb/>concordiam provocavit. Concordati igitur, 
+<lb/>et diviso inter se Anchefolio, us<anchor rend="-" type="sillabazione_fine_rigo"/>que 
+<lb/>ad Regium Calabriam, et concesso 
+<lb/>Rogerio ut castrum in monte Me<anchor rend="-" type="sillabazione_fine_rigo"/>liti 
+<lb/>firmaret, et reddita Scylla ci<anchor rend="-" type="sillabazione_fine_rigo"/>vitate 
+<lb/>Roberto Biscardo, quam Rogerius 
+<lb/>diu eo invito tenuerat, iterum a Nicastra 
+<lb/>expulerunt. Quo facto Biscardus in Apuliam 
+<lb/>rediens, in eodem anno copiosam hominum 
+<lb/>congregavit multitudinem, atque jun<anchor rend="-" type="sillabazione_fine_rigo"/>ctoque 
+<lb/>sibi fidelissimo fratre suo cum gente 
+<cb n="755"/> 
+<lb/>quantamque potuit congregare, usque 
+<lb/>Regium perveniens, eam, licet natura, et 
+<lb/>arte virisque armatis munitissimam, non du<anchor rend="-" type="sillabazione_fine_rigo"/>bitavit, 
+<lb/>obsidere. Sed Cives, et si fama Nor<anchor rend="-" type="sillabazione_fine_rigo"/>manni 
+<lb/>nominis jam fere per totum Orbem di<anchor rend="-" type="sillabazione_fine_rigo"/>vulgata 
+<lb/>eos terruerat, tamen de fortitu<anchor rend="-" type="sillabazione_fine_rigo"/>dine 
+<lb/>civitatis suae non parum confidentes, et 
+<lb/>a Rege Constantinopolitano frustra venturum 
+<lb/>sibi auxilium expectantes, diu seditionem 
+<lb/>protraxerunt, tandem vero longa obsidione, 
+<lb/>et quotidianis insultibus fatigati, vi<anchor rend="-" type="sillabazione_fine_rigo"/>ribus 
+<lb/>atque animis jam pene languescentibus, 
+<lb/>et spe auxilii omnino evacuata, voluntati Nor<anchor rend="-" type="sillabazione_fine_rigo"/>mannorum 
+<lb/>et se, civitatem sua tradi<anchor rend="-" type="sillabazione_fine_rigo"/>derunt. 
+<lb/>Dedita Urbe, et Biscardo in Ducem 
+<lb/>solemniter elevato, post Legum statuta, et 
+<lb/>praesidia ibidem ordinata, ipse cum parte exer<anchor rend="-" type="sillabazione_fine_rigo"/>citus 
+<lb/>reversus est: caeteri vero excellentis<anchor rend="-" type="sillabazione_fine_rigo"/>simum 
+<lb/>Comitem Rogerium, cujus animus sem<anchor rend="-" type="sillabazione_fine_rigo"/>per 
+<lb/>in ardua tendebat, ultra Farum in Siciliam 
+<lb/>secuti sunt, qui apud Messanam applicantes, 
+<lb/>sola praedatione, et multa hominum inter<anchor rend="-" type="sillabazione_fine_rigo"/>fectione 
+<lb/>contenti in Calabriam redierunt, in 
+<lb/>iisdem temporibus Bentadus cum Domino 
+<lb/>Cathaniae, cui nomen Bothum erat, pro 
+<lb/>interfecto<!-- GDM il 2017-06-05 ha corretto l'errore OCR "intefecto" --> ab eodem sororis suae marito graves 
+<lb/>inimicitias exercens, eumque inquietando ma 
+<lb/>xima parte suae terrae fecerat expertem, cujus 
+<lb/>potentiae quibus Barthum per se minime 
+<lb/>resistere poterat, pro implorando auxilio ad 
+<lb/>Comitem Rogerium transfretavit, promisso<anchor rend="-" type="sillabazione_fine_rigo"/>que 
+<lb/>ei, quoniam in acquisitione totius Siciliae 
+<lb/>opibus, viris fideliter adjuvaret, atque castris, 
+<lb/>atque hoc Sacramentis, qualia fuit apud gen<anchor rend="-" type="sillabazione_fine_rigo"/>tes 
+<lb/>confirmato, Venerabilis Comes 
+<lb/>ea, in quibus agendis animus suus non 
+<lb/>mediocriter exaextuaverat, at rogatus, et adju<anchor rend="-" type="sillabazione_fine_rigo"/>tus 
+<lb/>more prudentis agere non recusat; congre<anchor rend="-" type="sillabazione_fine_rigo"/>gatis 
+<lb/>Cohortibus suis in Siciliam juxta locum, 
+<lb/>qui dicitur tres lacus, applicuit, quo 
+<lb/>Messanae habitatoribus cognito, armis assumptis 
+<lb/>nocturno tempore eum<!-- GDM il 2017-06-05 ha corretto l'errore OCR "cum" --> secuti sunt, illisque 
+<lb/>ademptis, unus Messanensium, ut erat stolidis<anchor rend="-" type="sillabazione_fine_rigo"/>simae 
+<lb/>audaciae, dolore interfecti fratris adhuc 
+<lb/>ejus animo imperante, et Senetani obli<anchor rend="-" type="sillabazione_fine_rigo"/>tus 
+<lb/>proverbii, quia in judicando criminosa est 
+<lb/>celeritas, dum Bithumen ante omnia quaerit 
+<lb/>occidere, infelix impari virtute in operibus, 
+<lb/>armis sine lorica, et clypeo, ut mos erat illius 
+<lb/>gentis inertiae, tamquam cervus leoni, Comiti 
+<lb/>Rogerio incautus occurrit, quem Comes ac<anchor rend="-" type="sillabazione_fine_rigo"/>cepto 
+<lb/>ense suscipiens, et quasi de hoc, quod 
+<lb/>ei occurrere praesumpsisset indignans, mirabile 
+<lb/>dictu, fide tamen plenum, una percussione, 
+<lb/>per ambo latera inter pectus et renes dimidia<anchor rend="-" type="sillabazione_fine_rigo"/>vit, 
+<lb/>et superiori parte humi cadente, reliquam 
+<lb/>partem effraenis sonipes per campi aper<anchor rend="-" type="sillabazione_fine_rigo"/>ta 
+<lb/>disportavit: quod factum aeterna memoria 
+<lb/>dignissimum, omnibus ante illa tempora inco<anchor rend="-" type="sillabazione_fine_rigo"/>gnitum, 
+<lb/>nostris audaciam, aliisque timorem 
+<lb/>multiplicavit, statimque omnibus in fugam 
+<lb/>conversis, et juxta maximam partem gladio 
+<lb/>interfectis; laudabilis Comes victoriam adeptus 
+<lb/>relicto Bithumine apud Cathaniam ad debel-<!-- Trattino da togliere a mano --> 
+<cb n="756"/> 
+<lb/>landos<!-- GDM il 2017-06-05 ha tolto un trattino a inizio rigo (errore OCR) --> Siculos, in Calabriam convertitur. 
+<lb/>Eodem anno Dux gloriosissimus Biscardus 
+<lb/>una et frater suus Rogerius, paratis ma<anchor rend="-" type="sillabazione_fine_rigo"/>nibus 
+<lb/>in Siciliam devenientes contra Messanen<anchor rend="-" type="sillabazione_fine_rigo"/>ses 
+<lb/>pugnaverunt, et iis devictis bellico 
+<lb/>insultu Civitatem pariter ceperunt. Urbe 
+<lb/>capta, et ad voluntatem eorum ordinata, 
+<lb/>paucis diebus ibidem commorantes<!-- GDM il 2017-06-05 ha corretto l'errore OCR "commorante" -->, apud 
+<lb/>castrum Joannis iter arripiunt. 
+</p> 
+<p> 
+<lb/>Quibus Venthavetus cum multis Ara<anchor rend="-" type="sillabazione_fine_rigo"/>bicis, 
+<lb/>et Africanis, praeter eos, quos de Si<anchor rend="-" type="sillabazione_fine_rigo"/>cilia 
+<lb/>habuerat milites, obviam procedens, 
+<lb/>contra eos armis parat decertare. Erat autem 
+<lb/>ejus exercitus quindena complens millia, et 
+<lb/>noster exercitus inter pedites, et milites septin<anchor rend="-" type="sillabazione_fine_rigo"/>gentos 
+<lb/>tunc Christianos obtinebat, qui 
+<lb/>quoniam non in multitudine victoriam belli 
+<lb/>esse, sed de Coelo fortitudinem advenire, jam 
+<lb/>dudum saepe<!-- GDM il 2017-06-05 ha corretto l'errore OCR "sepe" --> in simili negotio experti fue<anchor rend="-" type="sillabazione_fine_rigo"/>rant, 
+<lb/>in duas acies divisi juxta flumen 
+<lb/>Gadentum multitudini Saracenorum occurrunt, 
+<lb/>moraque omni remota, nostris consueto 
+<lb/>more dextra, et sinistra viriliter insistentibus, 
+<lb/>tandem multis eorum, et paucis nostrorum 
+<lb/>interfectis, sicut fuit Dei voluntas hostes Chri<anchor rend="-" type="sillabazione_fine_rigo"/>sti 
+<lb/>in fugam conversi sunt, quos Normanni 
+<lb/>cum summa audacia persequentes, decem mil<anchor rend="-" type="sillabazione_fine_rigo"/>lia 
+<lb/>gladio trucidarunt, caeteri quinque infra 
+<lb/>castrum Joannis<!-- GDM il 2017-06-05 ha corretto l'errore OCR "Joanis" --> fugiendo vitam servavere. 
+<lb/>Nostri itaque adepti victoriam et multa praeda 
+<lb/>onerati juxta Calotachibech, quia ibi op<anchor rend="-" type="sillabazione_fine_rigo"/>timi 
+<lb/>erant fontes, somno, et cibo se reficiunt, 
+<lb/>in crastino praeda generaliter omnibus distri<anchor rend="-" type="sillabazione_fine_rigo"/>buta. 
+<lb/>Comes Rogerius ad depraedandas Agri<anchor rend="-" type="sillabazione_fine_rigo"/>gentinas 
+<lb/>partes proficiscitur, unde maximam 
+<lb/>praedam reducens, totam fratri suo dividendam 
+<lb/>commisit; deinde ambo castra sua moventes 
+<lb/>castellum, quod Sancti Marci appellatur con<!-- Trattino da togliere a mano (riunire parola nella seconda riga) --> 
+<lb/>stituere. 
+</p> 
+<p> 
+<lb/>Et constituto ibidem, et apud Messanam re<anchor rend="-" type="sillabazione_fine_rigo"/>lictis 
+<lb/>optimis defensoribus, et Bithumine 
+<lb/>ad intendendum in Terra, in Calabriam re<anchor rend="-" type="sillabazione_fine_rigo"/>gressi 
+<lb/>sunt, qui una sola nocte apud Regium 
+<lb/>morati, Dux in Apuliam, Comes Mellitum 
+<lb/>proficiscitur. Nec multo post Comes 
+<lb/>Rogerius quinquaginta militibus congregatis 
+<lb/>Saracenici avidus exercitii, in Siciliam rever<anchor rend="-" type="sillabazione_fine_rigo"/>titur; 
+<lb/>factisque multis per diversa loca deprae<anchor rend="-" type="sillabazione_fine_rigo"/>dationibus, 
+<lb/>cum ad Tratatum perveniret, 
+<lb/>Graeci ejusdem loci habitatores, sibi jam 
+<lb/>de virtute illius, et audacia cognito, quod 
+<lb/>inviti facturi essent, sponte sua se in ci<anchor rend="-" type="sillabazione_fine_rigo"/>vitatem 
+<lb/>suam dominationi illius subdiderunt, 
+<lb/>ubi Nativitate Domini celebrata solemniter, 
+<lb/>et audito quoniam Legati sui de Normannia 
+<lb/>quaesitam sibi uxorem adduxerant, Mellitum 
+<lb/>veniens, cum dilecta sibi nupta Regio 
+<lb/>apparatu nuptias celebravit. Erat autem 
+<lb/>Jucta nobilissimis orta natalibus, facie pul<anchor rend="-" type="sillabazione_fine_rigo"/>cherrima, 
+<lb/>moribusque honestis informata. 
+<lb/>Celebratis nuptiis postquam Pistrelium 
+<lb/>Bithuminis auxilio coeperat, ad Ducem Ro<anchor rend="-" type="sillabazione_fine_rigo"/>bertum 
+<lb/>pro parte illa Calabriae, quam sibi pro 
+<lb/>miserat repetendam tendit in Apuliam, quem 
+<cb n="757"/> 
+<lb/>postquam solummodo inefficacibus pro<anchor rend="-" type="sillabazione_fine_rigo"/>missis 
+<lb/>tempus producere cognovit, remissa via 
+<lb/>apud Mellitum, et optimis militibus coaduna<anchor rend="-" type="sillabazione_fine_rigo"/>tis, 
+<lb/>alio modo quam pace Calabriam cum fra<anchor rend="-" type="sillabazione_fine_rigo"/>tre 
+<lb/>suo parat dividere. Sed Dux invictissimus, 
+<lb/>ne longiori mora aliquid sibi ad malum muta<anchor rend="-" type="sillabazione_fine_rigo"/>retur, 
+<lb/>paucis diebus congregato maximo exer<anchor rend="-" type="sillabazione_fine_rigo"/>citu 
+<lb/>Mellitum festinat obsidere: itaque illo Ur<anchor rend="-" type="sillabazione_fine_rigo"/>be 
+<lb/>appropinquante, Comes imperterritus, 
+<lb/>qui in nullo negotio fortunam sibi adversantem 
+<lb/>cognoverat, armatis cunctis per apertam<!-- GDM il 2017-06-05 ha corretto l'errore OCR "aperam" --> por<anchor rend="-" type="sillabazione_fine_rigo"/>tam 
+<lb/>pugnaturus ei obviam procedit. Igitur 
+<lb/>utrisque convenientibus, jamdiu alii aliis vi<anchor rend="-" type="sillabazione_fine_rigo"/>riliter, 
+<lb/>et impetuose, ut mos est militum, 
+<lb/>occurrerunt, et fugando saepe, atque iterum 
+<lb/>fugiendo sola virtutem ostendendi gratia, non 
+<lb/>nocendi, pari adhuc fortuna certaverant, cum 
+<lb/>Henaldus frater advenisset, miles, fere 
+<lb/>omnium, qui convenerant<!-- GDM il 2017-06-05 ha corretto l'errore OCR "convenenrant" -->, probatissimus, lan<anchor rend="-" type="sillabazione_fine_rigo"/>cea 
+<lb/>cujusdam sibi occurrentis loricam 
+<lb/>penetrante interfectus occubuit. Et quia 
+<lb/>ipse omnibus, et praecipue Normannis utrius<anchor rend="-" type="sillabazione_fine_rigo"/>que 
+<lb/>partis notus, et valde dilectus fuerat, 
+<lb/>mors ejus tam suos, quam hostes et maxime 
+<lb/>ipsum Ducem, atque Comitem ad lachry<anchor rend="-" type="sillabazione_fine_rigo"/>mandum 
+<lb/>provocans, certamen sine dubio 
+<lb/>adhuc aliquid simile commissurum di<anchor rend="-" type="sillabazione_fine_rigo"/>remit, 
+<lb/>dimisso itaque certamine, Co<anchor rend="-" type="sillabazione_fine_rigo"/>mes 
+<lb/>et sui maximo fletu miserandum corpus 
+<lb/>infra moenia deferentes, pie illud, atque ho<anchor rend="-" type="sillabazione_fine_rigo"/>norifice, 
+<lb/>ut tantum, ac talem decebat 
+<lb/>militem, sepelierunt. Dux vero Biscardus, 
+<lb/>licet mors Henlandi valde displicuerit, 
+<lb/>et Normanni sui non parum de fraterna dis<anchor rend="-" type="sillabazione_fine_rigo"/>cordia 
+<lb/>conquerentes pacem quaerendam, et 
+<lb/>deinde reditum persuadent, ipse tamen nihil 
+<lb/>incoeptum volens imperfectum relinquere, duo<anchor rend="-" type="sillabazione_fine_rigo"/>bus 
+<lb/>castellis ligneis compositis civitatem ex 
+<lb/>utraque parte, idest sursum, et deorsum ob<anchor rend="-" type="sillabazione_fine_rigo"/>sedit, 
+<lb/>nec prius inde recedere, quam fratrem 
+<lb/>famae aut siti coactum in vinculis habere in<!-- Trattino da togliere a mano (riunire parola nella seconda riga) --> 
+<lb/>tendit. 
+</p> 
+<p> 
+<lb/>Dum sibi fratres, nominis ac dignitatis sui 
+<lb/>obliti, graviter adeo minitarentur, Bithumi<anchor rend="-" type="sillabazione_fine_rigo"/>ne 
+<lb/>de Cathania, qui parti Normannorum in 
+<lb/>Sicilia favebat, sub deditionis nomine 
+<lb/>ab habitatoribus cujusdam castri, cujus no<anchor rend="-" type="sillabazione_fine_rigo"/>men 
+<lb/>Aniclion dicebatur, proditus et interfe<anchor rend="-" type="sillabazione_fine_rigo"/>ctus 
+<lb/>fuit: neque idcirco Geratiani prae morte 
+<lb/>illius, qui maximum Normannis praestare vi<anchor rend="-" type="sillabazione_fine_rigo"/>debatur 
+<lb/>auxilium, neque pro Mileti obsidio<anchor rend="-" type="sillabazione_fine_rigo"/>nem 
+<lb/>dimiserunt, quando apud Mellitum 
+<lb/>Comiti Rogerio literae pro proditione sui castri 
+<lb/>mitterentur. Unde magnanimus Comes suo<anchor rend="-" type="sillabazione_fine_rigo"/>rum 
+<lb/>fidelium satis confidens, centeno 
+<lb/>eum sequente milite, aliis vero ad cu<anchor rend="-" type="sillabazione_fine_rigo"/>stodiam 
+<lb/>relictis, festino itinere in Siciliam 
+<lb/>tendit, et Giracium spontanea voluntate Grae<anchor rend="-" type="sillabazione_fine_rigo"/>corum 
+<lb/>ibidem habitantium redditum, et Sa<anchor rend="-" type="sillabazione_fine_rigo"/>cramentis 
+<lb/>innodatum gaudens, et laetus acce<anchor rend="-" type="sillabazione_fine_rigo"/>pit. 
+<lb/>Quo Duce audito, ipse de utroque Co<anchor rend="-" type="sillabazione_fine_rigo"/>mitis 
+<lb/>absentia, et castri deditione vehementer 
+<lb/>iratus, dimissis ad obsidionem militibus, quot<anchor rend="-" type="sillabazione_fine_rigo"/>quot 
+<lb/>fuerunt necessari, aliisque secum dedu<anchor rend="-" type="sillabazione_fine_rigo"/>ctis, 
+<lb/>remota omni mora finem insequi<anchor rend="-" type="sillabazione_fine_rigo"/>tur. 
+<lb/>Sperabat et ipse cui nil arduum, nihil<anchor rend="-" type="sillabazione_fine_rigo"/>que 
+<lb/>difficile videbatur, aut vi, aut ingenio, 
+<lb/>quo multum ipse praevalebat, in eodem infra 
+<cb n="758"/> 
+<lb/>castrum vel extra capiendo se fortunam 
+<lb/>invenire. Quod Dei disponente gratia in con<anchor rend="-" type="sillabazione_fine_rigo"/>trariam 
+<lb/>postea partem sibi relapsum est. Co<anchor rend="-" type="sillabazione_fine_rigo"/>mes 
+<lb/>namque Mellitanis suis subveniendi avi<anchor rend="-" type="sillabazione_fine_rigo"/>dus, 
+<lb/>statim post castri deditionem per aliam 
+<lb/>viam Duci non obvians, Mellitum reversus 
+<lb/>est, Dux vero ubi ad praesens capiendi fratrem 
+<lb/>spem omnino amiserat, ne in tanto labore ni<anchor rend="-" type="sillabazione_fine_rigo"/>hil 
+<lb/>fecisse videretur, vel diceretur, ad 
+<lb/>castrum quoquo modo capiendum animum in<anchor rend="-" type="sillabazione_fine_rigo"/>tendit, 
+<lb/>sed quoniam natura, artificioque, et 
+<lb/>defensoribus adeo munitum erat, quod neque 
+<lb/>bellica manu, neque ullis machinis posse capi 
+<lb/>videbatur, alio modo placuit sibi fortunam 
+<lb/>tentare. Militari ergo habitu deposito, Grae<anchor rend="-" type="sillabazione_fine_rigo"/>cum 
+<lb/>se Monachum simulare non contemnens, 
+<lb/>solus, et inermis<!-- GDM il 2017-06-05 ha corretto l'errore OCR "ineris" --> diuturno itinere inimicum 
+<lb/>sibi Gerachium ausus est ascendere. 
+<lb/>Erat autem in eoque castro Graecus quidam 
+<lb/>nomine Basiliscus, genere et opibus praepo<anchor rend="-" type="sillabazione_fine_rigo"/>tens, 
+<lb/>cum quo Dux, quoniam et amorem 
+<lb/>et notitiam habuerat, circumspecta, et ex<anchor rend="-" type="sillabazione_fine_rigo"/>plorata 
+<lb/>civitate, tandem ad domum illius, ut 
+<lb/>eum de quaesito negotio consuleret, pervenit; 
+<lb/>qui dum satis hilari vultu, et honorifice ab 
+<lb/>eodem susciperetur, a quodam eius servo com<anchor rend="-" type="sillabazione_fine_rigo"/>pertus, 
+<lb/>intimae continuo revelatus fuit. 
+<lb/>Nec mora, rustici undique civitatis convenien<anchor rend="-" type="sillabazione_fine_rigo"/>tes, 
+<lb/>armati omnes<!-- GDM il 2017-06-05 ha corretto l'errore OCR "omens" --> insimul domum Basilisci 
+<lb/>impetuose irrumpunt, quorum subita acces<anchor rend="-" type="sillabazione_fine_rigo"/>sione 
+<lb/>ipse conterritus, fugiendo ad Ecclesiam 
+<lb/>ab eisdem compraehensus, et crudeliter occi<anchor rend="-" type="sillabazione_fine_rigo"/>sus 
+<lb/>est, uxoremque ipsius, et si immerita vi<anchor rend="-" type="sillabazione_fine_rigo"/>deri 
+<lb/>poterat, indigno tamen eam supplicio 
+<lb/>cruciarunt. Quod nisi Divina Clementia im<anchor rend="-" type="sillabazione_fine_rigo"/>modicae 
+<lb/>Ducis audaciae pepercisset, in eadem 
+<lb/>hora ab eisdem rusticis turpiter, et sine omni 
+<lb/>honore Vir tantus occubuisset. Ipsi ergo om<anchor rend="-" type="sillabazione_fine_rigo"/>nes 
+<lb/>non minus quam mortem uno ore promit<anchor rend="-" type="sillabazione_fine_rigo"/>tentes, 
+<lb/>ligatum et bene custoditum, nihil ejus 
+<lb/>Majestati deferentes, in carcere posuerunt. 
+<lb/>Haec ubi militibus ejus qui cum eo castrum 
+<lb/>obsederant, cognita fuerunt, plorantes, et 
+<lb/>omnino quidnam consilii caperent ignorantes, 
+<lb/>cum summa festinatione per unum militem, 
+<lb/>quid de Domino suo apud Gerachium minus 
+<lb/>contigerat, nuntiaverunt Rogerio, qui frater<anchor rend="-" type="sillabazione_fine_rigo"/>na 
+<lb/>pietate motus, et quod erga se non satis 
+<lb/>juste egerat penitus postponens, deductis se<anchor rend="-" type="sillabazione_fine_rigo"/>cum 
+<lb/>militibus, et suis et illis, quos apud Mel<anchor rend="-" type="sillabazione_fine_rigo"/>litum 
+<lb/>Dux in obsidione reliquerat, ad liberan<anchor rend="-" type="sillabazione_fine_rigo"/>dum 
+<lb/>fratrem in Siciliam festinabat, positis 
+<lb/>itaque extra civitatem tentoriis, Geratiorum 
+<lb/>illos, quos potentiores sibi seu prudentiores 
+<lb/>esse cognoverat, ad se convocatos cum eisdem 
+<lb/>talibus verbis usus est: «Quoniam fidelitatem, 
+<lb/>quam nullo cogente, sed sola sponte oblatam 
+<lb/>vestra mihi dilectio promiserat, praeclaro ope<anchor rend="-" type="sillabazione_fine_rigo"/>re, 
+<lb/>et famosissimo manifestare studuistis, ideo 
+<lb/>universorum conditioni, et vobis filiis, et 
+<lb/>amicis meis fidelissimis grates defero debitas, 
+<lb/>et in omni vita referre, ac retribuere conabor. 
+<lb/>Hostem enim meum quamvis fratrem, tamen 
+<lb/>omnium, quos usque ad haec tempora habui, 
+<lb/>infestissimum, eorum quae strenue acquisive<anchor rend="-" type="sillabazione_fine_rigo"/>ram 
+<lb/>raptorem avidissimum, cujus avaritiae to<anchor rend="-" type="sillabazione_fine_rigo"/>tus 
+<lb/>Orbis vix posset sufficere, sanguinis mei 
+<lb/>super omnia sitientem, vobis ipsis perpetuum 
+<cb n="759"/> 
+<lb/>exilium manifeste et occulte machinantem, 
+<lb/>fidelis vestra prudentia cepit, ligavit, atque 
+<lb/>ut dignum erat sua nequitia in carcere posuit, 
+<lb/>cruciandum usque ad adventum meum reser<anchor rend="-" type="sillabazione_fine_rigo"/>vavit: 
+<lb/>praeclare quidem omnia; ex quo uno 
+<lb/>opere quot, et quanta mihi in vobis commo<anchor rend="-" type="sillabazione_fine_rigo"/>da 
+<lb/>perveniant, licet sint manifesta, prae ma<anchor rend="-" type="sillabazione_fine_rigo"/>gnitudine 
+<lb/>tamen relatu sunt difficilia, primum 
+<lb/>siquidem Mellitum civitatem meam, quam in<anchor rend="-" type="sillabazione_fine_rigo"/>juste 
+<lb/>obsederat, liberastis ab obsidione, ter<anchor rend="-" type="sillabazione_fine_rigo"/>ram 
+<lb/>quam mihi penitus auferre parabat, li<anchor rend="-" type="sillabazione_fine_rigo"/>beram, 
+<lb/>atque quietam mihi restituistis; mihi 
+<lb/>vitam, vobis libertatem, opes reservando, sum<anchor rend="-" type="sillabazione_fine_rigo"/>mam 
+<lb/>gloriam, summum honorem ab homini<anchor rend="-" type="sillabazione_fine_rigo"/>bus, 
+<lb/>a Deo, et a meipso maximam retribu<anchor rend="-" type="sillabazione_fine_rigo"/>tionem, 
+<lb/>a multis amicitias<!-- GDM il 2017-06-05 ha corretto l'errore OCR "amicitas" -->, et a nullo inimi<anchor rend="-" type="sillabazione_fine_rigo"/>citias 
+<lb/>pro tali facto meruistis. Ipse namque, 
+<lb/>omnino a nostris moribus degenerans, nulli 
+<lb/>amicus, omnibus, et suis odiosus, neminem, 
+<lb/>qui de suo malo doleat invenit. Praeterea mi<anchor rend="-" type="sillabazione_fine_rigo"/>lites 
+<lb/>sui, quorum fretus auxilio in tantam su<anchor rend="-" type="sillabazione_fine_rigo"/>perbiam 
+<lb/>efferebatur, laeti de ejus infortunio, 
+<lb/>me, quem sibi inimicissimum cognoverant, Du<anchor rend="-" type="sillabazione_fine_rigo"/>cem 
+<lb/>elegerunt, de quo si dubitetis, licet ut 
+<lb/>hoc ab eis praesentibus inquiratis: quare agite, 
+<lb/>ipsum, quae mihi minatus fuerat sine dubio 
+<lb/>passurum, festinando in praesentiam meam ad<anchor rend="-" type="sillabazione_fine_rigo"/>ducite, 
+<lb/>parva enim, aut nulla mihi esse suppli<anchor rend="-" type="sillabazione_fine_rigo"/>cia 
+<lb/>viderentur, quaecumque ejus iniquitas me 
+<lb/>non vidente pateretur. Quod autem de Basili<anchor rend="-" type="sillabazione_fine_rigo"/>sco, 
+<lb/>et ejus uxore absente me fecistis, nequa<anchor rend="-" type="sillabazione_fine_rigo"/>quam 
+<lb/>mihi displicet. Iste vero, qui in multis 
+<lb/>multos offendit, multis praesentibus diversis tor<anchor rend="-" type="sillabazione_fine_rigo"/>mentorum 
+<lb/>generibus puniendum est; neque enim 
+<lb/>lex ulla justior esse videtur quam truce artifices 
+<lb/>arte perire sua». Haec ubi piissimus Comes coram 
+<lb/>gentibus, longe aliter in animo habens, 
+<lb/>captando eorum benevolentiam, protulerat ipsi 
+<lb/>multum de ejus commendatione et promissis 
+<lb/>congaudentes, confestim Ducem in praesentiam 
+<lb/>ejus adducunt, quem Comes fusis lachrymis 
+<lb/>prae gaudio suscipiens cum magna veneratione, 
+<lb/>tamquam Dominum, et fratrem dilectissimum, 
+<lb/>secum in Calabriam reduxit. Ex eo tempore 
+<lb/>Dux fraternam concordiam omnibus in vita 
+<lb/>sua habitis anteferens alteram par<anchor rend="-" type="sillabazione_fine_rigo"/>tem 
+<lb/>Siciliae, atque Calabriae possidendam, al<anchor rend="-" type="sillabazione_fine_rigo"/>teram 
+<lb/>custodiendam Sanctissimo Comiti fratri 
+<lb/>suo permisit. Ipso deinde in Apuliam profici<anchor rend="-" type="sillabazione_fine_rigo"/>scente, 
+<lb/>Comes cum uxore sua in Siciliam re<anchor rend="-" type="sillabazione_fine_rigo"/>greditur, 
+<lb/>cumque apud Tranquinum per 
+<lb/>aliquot dies moraretur, quodam die ipso apud 
+<lb/>Gitosiam causa praedationis<!-- GDM il 2017-06-05 ha corretto l'errore OCR "praedationem" --> pergente, 
+<lb/>Trajanenses communicato consilio, Comitissam 
+<lb/>cum paucis relictam, a Civitate tentarunt ex<anchor rend="-" type="sillabazione_fine_rigo"/>pellere. 
+<lb/>Qui tota die pugnando plus quam 
+<lb/>nihil profecerant, immodicam fossam in<anchor rend="-" type="sillabazione_fine_rigo"/>ter 
+<lb/>Consulare Palatium, et reliquam partem 
+<lb/>civitatis, Consulis adventum metuentes, tota 
+<lb/>nocte fabricaverunt<!-- GDM il 2017-06-05 ha corretto l'errore OCR "frabicaverunt" -->; sed adveniente Comite, 
+<lb/>ubi multoties inter se debellando graviter, ne<anchor rend="-" type="sillabazione_fine_rigo"/>que 
+<lb/>Graeci civitatem reddere volebant, neque 
+<lb/>Comes eam relinquere volebat. Jam multis 
+<lb/>diebus consumptis, et nostris hyemis fri<anchor rend="-" type="sillabazione_fine_rigo"/>gore, 
+<lb/>et ciborum indigentia vehementer 
+<lb/>acetis, contigit Deo volente, ut Graecis qua-<!-- Trattino da togliere a mano --> 
+<cb n="760"/> 
+<lb/>dam<!-- GDM il 2017-06-05 ha tolto un trattino a inizio rigo (errore OCR) --> nocte dormientibus, invictissimus Comes 
+<lb/>explorata continentia, et civitatem, et 
+<lb/>Turrim, quae in ea erat fortissima, cu<anchor rend="-" type="sillabazione_fine_rigo"/>stodibus 
+<lb/>interfectis caperet, et sic victoriam 
+<lb/>obtinuit, et die crastina Glotinum, et alios, 
+<lb/>qui principes conjurationis fuerant, suspen<anchor rend="-" type="sillabazione_fine_rigo"/>dium, 
+<lb/>et alias poenas scelere suo dignas coege<anchor rend="-" type="sillabazione_fine_rigo"/>rit 
+<lb/>sustinere. In eodem anno, Comite adhuc 
+<lb/>Trajani immorante, Castri-Joannenses 
+<lb/>quingentos probatos milites Africanorum, at<anchor rend="-" type="sillabazione_fine_rigo"/>que 
+<lb/>Arabicorum pro expellendis Normannis 
+<lb/>infra moenia sua receperunt; quorum Comes 
+<lb/>audito adventu, illuc cum militibus suis 
+<lb/>profectus est, cumque adhuc a Castro illo 
+<lb/>duobus adhuc milliariis distaret, missis 
+<lb/>triginta electis militibus, quibus Seilonem 
+<lb/>nepotem suum Serlonis fratris filium praefecit, 
+<lb/>ut de prope portas praedam adducendo illi in<anchor rend="-" type="sillabazione_fine_rigo"/>dignantes 
+<lb/>eos persequerentur. Ipse omni bel<anchor rend="-" type="sillabazione_fine_rigo"/>lorum 
+<lb/>industria edoctus, in nemorosa val<anchor rend="-" type="sillabazione_fine_rigo"/>lecula 
+<lb/>prope viam, per quam redituri erant, 
+<lb/>cum aliis, quos secum retinuerat se occultan<anchor rend="-" type="sillabazione_fine_rigo"/>do 
+<lb/>remansit, et jam collecta praeda Saraceni 
+<lb/>nostris insistentes ultra praedictam Vallem fu<anchor rend="-" type="sillabazione_fine_rigo"/>gaverant, 
+<lb/>cum magnanimus Comes, invocato 
+<lb/>summa voce Dei auxilio, hoc enim sem<anchor rend="-" type="sillabazione_fine_rigo"/>per 
+<lb/>fuit signum Normannorum in bellis inci<anchor rend="-" type="sillabazione_fine_rigo"/>piendis, 
+<lb/>ejus terga viriliter aggrediens, 
+<lb/>Serlone jam cum suis revertente, omnibus ibi<anchor rend="-" type="sillabazione_fine_rigo"/>dem 
+<lb/>interfectis, certissimo experimento docuit, 
+<lb/>quam stultum, quam miserum sit Africanos, 
+<lb/>sive Arabicos Normannis in proelio oc<anchor rend="-" type="sillabazione_fine_rigo"/>currere. 
+<lb/>His, et similibus Normannorum suc<anchor rend="-" type="sillabazione_fine_rigo"/>cessibus 
+<lb/>licet Saraceni valde attoniti red<anchor rend="-" type="sillabazione_fine_rigo"/>derentur, 
+<lb/>tamen Dominum contra suam ne<anchor rend="-" type="sillabazione_fine_rigo"/>quitiam 
+<lb/>pugnare penitus ignorantes, et in 
+<lb/>persecutione Christianorum magnum se Deo 
+<lb/>praestare obsequium arbitrantes, congregatis 
+<lb/>ergo triginta millibus equitum, et peditibus 
+<lb/>infinitis, numerositate sua<!-- GDM il 2017-06-05 ha corretto l'errore OCR "tua" --> Normannorum pau<anchor rend="-" type="sillabazione_fine_rigo"/>citatem 
+<lb/>tentarunt extirpare. 
+</p> 
+<p> 
+<lb/>Tanta ergo congregatione in audaciam ele<anchor rend="-" type="sillabazione_fine_rigo"/>vati, 
+<lb/>pugnandique locum invenire cupientes, 
+<lb/>apud Teranum causa illud obsidendi iter 
+<lb/>expediunt. Iamque ipsis non longe a castro 
+<lb/>illo juxta fluvium hospitatis, de ad<anchor rend="-" type="sillabazione_fine_rigo"/>ventu 
+<lb/>eorum Comiti nuntiatum est, qui misso 
+<lb/>Serlone clarissimo nepote cum triginta militi<anchor rend="-" type="sillabazione_fine_rigo"/>bus, 
+<lb/>ut Ceramensium animos confortaret, se 
+<lb/>illuc in crastinum promisit venturum. At ma<anchor rend="-" type="sillabazione_fine_rigo"/>gnanimus 
+<lb/>Serlo, probitatem generis nisi pro<anchor rend="-" type="sillabazione_fine_rigo"/>pria 
+<lb/>effulgeret parum sibi attinere repu<anchor rend="-" type="sillabazione_fine_rigo"/>tans, 
+<lb/>aliquid dignum memoria, quod propriae 
+<lb/>laudi adscriberetur ante adventum Con<anchor rend="-" type="sillabazione_fine_rigo"/>sulis 
+<lb/>perpetrare festinat. Mane itaque facto 
+<lb/>sequentis diei cum triginta sociis suis armatis 
+<lb/>a Castro descendens, de divino confisus auxi<anchor rend="-" type="sillabazione_fine_rigo"/>lio, 
+<lb/>hostilem exercitum ausus est invadere, 
+<lb/>statimque omnes subito timore percussi, seu 
+<lb/>quia ipsum Comitem cum multis ex improviso 
+<lb/>forsitan advenisse putabant, seu quae certissima 
+<lb/>res est, divina sic favente potentia cujus est, 
+<lb/>et dare, aut auferre victoriam, tamquam ma<anchor rend="-" type="sillabazione_fine_rigo"/>ximus 
+<lb/>contra eos pugnaret exercitus, in 
+<lb/>fugam conversi sunt; quos nostri virili audacia 
+<lb/>insequentes, postquam multa occisione fatigati 
+<cb n="761"/> 
+<lb/>fuerunt, per castra eorum revertentes, spo<anchor rend="-" type="sillabazione_fine_rigo"/>liisque 
+<lb/>pretiosioribus onerati, infra castrum se 
+<lb/>recipiunt. Eadem die Comes sicut promiserat, 
+<lb/>centeno milite comitatus, apud 
+<lb/>Ceramum accepit. At Saraceni postquam 
+<lb/>nostris revertentibus fugati residerunt, undique 
+<lb/>collecti, et multis aliunde venientibus multo 
+<lb/>plures quam prius in castra redire, 
+<lb/>tantaque illorum videbatur multitudo, 
+<lb/>ac si tota gentilitas ex diversis partibus 
+<lb/>Orbis convenisset, quantam nec ipse Comes, 
+<lb/>nec aliquis suorum se vidisse recordabatur. 
+<lb/>Nocte ergo transacta, et Sole jam tertiam 
+<lb/>partem sui curriculi ascendente, Comes 
+<lb/>invictissimus, ne propter hostium mul<anchor rend="-" type="sillabazione_fine_rigo"/>titudinem 
+<lb/>suis cor languesceret<!-- GDM il 2017-06-05 ha corretto l'errore OCR "laguesceret" -->, convo<anchor rend="-" type="sillabazione_fine_rigo"/>catos 
+<lb/>illos hujusmodi oratione confirmare in<anchor rend="-" type="sillabazione_fine_rigo"/>tendit: 
+<lb/>Utrum in multitudine exercitus sit belli 
+<lb/>victoria, an de Coelo victoria tantum veniat, 
+<lb/>neminem vestrum credo ambigere. Licet 
+<lb/>sibi ad praesens veterum exempla praetermit<anchor rend="-" type="sillabazione_fine_rigo"/>tam, 
+<lb/>quod vestra retinet memoria, in multis, 
+<lb/>et gravissimis bellis, quibus hic, et ultra Fa<anchor rend="-" type="sillabazione_fine_rigo"/>rum, 
+<lb/>Deo jubente, laetam semper victoriam 
+<lb/>habuimus, numquam nisi pauci contra multos 
+<lb/>certavimus, istudque certissima fide, et 
+<lb/>inconcussa credendum est, Deum uni<anchor rend="-" type="sillabazione_fine_rigo"/>versitatis 
+<lb/>auctorem posse dare, vel auferre vi<anchor rend="-" type="sillabazione_fine_rigo"/>ctoriam: 
+<lb/>qui quoniam quaecumque multorum, 
+<lb/>eadem et paucorum operatione, vel 
+<lb/>etiam nullo ministrante sine dubio potest effi<anchor rend="-" type="sillabazione_fine_rigo"/>cere, 
+<lb/>nequaquam dubitandum est nobis, qui 
+<lb/>pio affectu ejusdem servitio insistimus, cum 
+<lb/>paucis tentare, quod cum infinitis nulla<anchor rend="-" type="sillabazione_fine_rigo"/>tenus 
+<lb/>possemus impetrare. Quare, o fortissi<anchor rend="-" type="sillabazione_fine_rigo"/>mi 
+<lb/>milites, remota omni inertia securi de 
+<lb/>triumpho viriliter ad pugnam accedamus, si 
+<lb/>enim hodie, quod minime dubito, tantam 
+<lb/>hostium multitudinem ex diversis partibus con<anchor rend="-" type="sillabazione_fine_rigo"/>gregatam 
+<lb/>superare poterimus, parum nobis 
+<lb/>in Sicilia deinceps erit insudandum; in fuga 
+<lb/>siquidem, quod Deus omnino a genere nostro 
+<lb/>prohibeat, nulla salus est speranda, quam si 
+<lb/>omni summo opprobrio, et maxime vitae no<anchor rend="-" type="sillabazione_fine_rigo"/>strae 
+<lb/>periculo inire tentaremus, certe neque 
+<lb/>hostium undique circumfusa multitudo, ne<anchor rend="-" type="sillabazione_fine_rigo"/>que 
+<lb/>ipsa locorum asperitas nos impune 
+<lb/>tentavisse pateretur. Si vero vobis hic turpi<anchor rend="-" type="sillabazione_fine_rigo"/>ter 
+<lb/>inclusis, nullaque alia auxilia expe<anchor rend="-" type="sillabazione_fine_rigo"/>ctantibus, 
+<lb/>dum magis, magisque eorum exer<anchor rend="-" type="sillabazione_fine_rigo"/>citus 
+<lb/>augeatur, pugnam differre placuerit, ci<anchor rend="-" type="sillabazione_fine_rigo"/>bariorum 
+<lb/>indigentia istud omnino prohibet, 
+<lb/>solo enim ferro salus<!-- GDM il 2017-06-05 ha corretto l'errore OCR "saus" --> cum victoria nobis hodie 
+<lb/>quaerenda est. His, et similibus postquam suo<anchor rend="-" type="sillabazione_fine_rigo"/>rum 
+<lb/>animum ad pugnandum satis animaverit, 
+<lb/>omnibus uno ore ejus persuasioni assentienti<anchor rend="-" type="sillabazione_fine_rigo"/>bus, 
+<lb/>ipsos protinus armari jubet, deinde ex 
+<lb/>omni suorum numero duas tantum acies in<anchor rend="-" type="sillabazione_fine_rigo"/>struens, 
+<lb/>elevatis signis paulatim de monte in 
+<lb/>vallem pugnaturus descendit. Quem ubi ho<anchor rend="-" type="sillabazione_fine_rigo"/>stes 
+<lb/>armata manu contra aciem suam 
+<lb/>convenerunt accedere, laeti de oblata pugna, 
+<lb/>circumductis undique manipulis, ne fugiendo 
+<lb/>posset evadere, eum includere festinantes; 
+<lb/>sed nostris nil tale cogitantibus, cum jam dato 
+<cb n="762"/> 
+<lb/>signo ex praecepto Consulis eis pararent 
+<lb/>occurrere, in prima acie, quam Seilo magna<anchor rend="-" type="sillabazione_fine_rigo"/>nimus 
+<lb/>ducebat, miles quidam incognitus cum 
+<lb/>niveo equo, et niveis armis, et albo vexillo 
+<lb/>crucem habente rubeam, statura immensa, 
+<lb/>facie admodum reverendus, cum nostris visus 
+<lb/>est incedere: qui summo impetu in con<anchor rend="-" type="sillabazione_fine_rigo"/>fertissimos 
+<lb/>hostes prorumpens, mirabilis ipse 
+<lb/>mirabiliter eos perturbare videbatur, quod 
+<lb/>nostri cernentes, in eis ultra modum audacia, 
+<lb/>atque viribus augmentatis, celsa voce Dei 
+<lb/>auxilium invocando, omnique tarditate remo<anchor rend="-" type="sillabazione_fine_rigo"/>ta, 
+<lb/>viriliter hostibus incurrendo ipsum inse<anchor rend="-" type="sillabazione_fine_rigo"/>quuntur. 
+<lb/>E contrario Saraceni virtute, atque 
+<lb/>animis omnino destituti, jamque Panormitano 
+<lb/>Archadio, quem mala sua fortuna illuc 
+<lb/>deduxerat, lancea gloriosissimi Comitis inter<anchor rend="-" type="sillabazione_fine_rigo"/>fecto, 
+<lb/>projectis armis in sola fuga montis in<anchor rend="-" type="sillabazione_fine_rigo"/>ducias 
+<lb/>requirunt. Sed Christicolae non prius 
+<lb/>ipsos funeste occidendo persequi dimiserunt, 
+<lb/>priusquam XX. Millium animas in solis mili<anchor rend="-" type="sillabazione_fine_rigo"/>tibus 
+<lb/>ad visenda tartara coegerunt. Reliqui 
+<lb/>vero quibus fortuna, et res superveniens 
+<lb/>pepercit, fugiendo fastigia montis ascen<anchor rend="-" type="sillabazione_fine_rigo"/>dentes, 
+<lb/>nocte illa vita lugubrem sine somno, 
+<lb/>et cibis duxerunt. Normanni vero multa 
+<lb/>interfectione fatigati, cum gaudio tamen ad 
+<lb/>tentoria recurrentes, praeda aequaliter in<anchor rend="-" type="sillabazione_fine_rigo"/>ter 
+<lb/>se divisa, artus labore inanitos cibis 
+<lb/>et quiete reficiunt. In crastinum vero ad mon<anchor rend="-" type="sillabazione_fine_rigo"/>tem 
+<lb/>ubi hostes reliquerant summo mane ve<anchor rend="-" type="sillabazione_fine_rigo"/>nientes, 
+<lb/>aliis eorum gladio interfectis, alios in 
+<lb/>Calabriam, atque Apuliam vendentes 
+<lb/>transmiserunt; Trajano taliter obsidione libe<anchor rend="-" type="sillabazione_fine_rigo"/>rato, 
+<lb/>venerandus Comes apud Agrigentum 
+<lb/>cum ducentis militibus iter expediens, cum 
+<lb/>infinitam praedam a partibus illis reduceret, 
+<lb/>septingenti milites Arabici a civitate progre<anchor rend="-" type="sillabazione_fine_rigo"/>diuntur 
+<lb/>occulte per compendiosam<!-- GDM il 2017-06-05 ha corretto l'errore OCR "compediosam" --> viam no<anchor rend="-" type="sillabazione_fine_rigo"/>strorum, 
+<lb/>illos, qui praedam ducebant, inter 
+<lb/>duos montes, ubi via erat arcta, et caverno<anchor rend="-" type="sillabazione_fine_rigo"/>sa, 
+<lb/>et nostris ibidem transitus, pervenerunt. 
+<lb/>Cumque illi in latere utriusque montis supra 
+<lb/>viam se occultarent, Comite cum majori par<anchor rend="-" type="sillabazione_fine_rigo"/>te 
+<lb/>equitum retro a longe veniente, et jam il<anchor rend="-" type="sillabazione_fine_rigo"/>lis, 
+<lb/>qui praedam ducebant in praedictas caver<anchor rend="-" type="sillabazione_fine_rigo"/>nas 
+<lb/>introeuntibus, repentino clamore, atque 
+<lb/>jactu lapidum, et telorum creberrimo nostris 
+<lb/>armigeris interfectis, alios fugientes montem 
+<lb/>ascendere coegerunt. At Comes audito cla<anchor rend="-" type="sillabazione_fine_rigo"/>more, 
+<lb/>cursu celeri superveniens, vix suos a 
+<lb/>monte, in quem fugerat revocare poterat, 
+<lb/>tandemque omnes hostes viriliter insequens, 
+<lb/>excussa praeda satis laetam de iis habuit victo<anchor rend="-" type="sillabazione_fine_rigo"/>riam. 
+<lb/>Quia ibidem Gualterus de Cul<anchor rend="-" type="sillabazione_fine_rigo"/>lejo 
+<lb/>miles optimus, nimis audacter hostibus 
+<lb/>incurrendo interfectus est. Post paucos dies 
+<lb/>dum Comes a Panormitanis partibus praedam 
+<lb/>reducendo magnam remearet, ex improviso 
+<lb/>maxima hostium multitudo superveniens<!-- GDM il 2017-06-05 ha corretto l'errore OCR "supervenien" --> sini<anchor rend="-" type="sillabazione_fine_rigo"/>stro 
+<lb/>omine bellum cum Normannis ausa est 
+<lb/>incipere, quos nostri adeo omnes in ore gla<anchor rend="-" type="sillabazione_fine_rigo"/>dii 
+<lb/>posuerunt, quod nec etiam unus, qui mi<anchor rend="-" type="sillabazione_fine_rigo"/>serabilem 
+<lb/>eorum fortunam Panormi renuntia<anchor rend="-" type="sillabazione_fine_rigo"/>ret, 
+<lb/>aliquis superfuit. 
+<cb n="763"/> 
+<lb/>In iisdem temporibus Dux Apuliae Biscardus 
+<lb/>Agellum in Calabria obsedit, qui tandem 
+<lb/>Agelli feroces ejus insultus diutius non susti<anchor rend="-" type="sillabazione_fine_rigo"/>nentes 
+<lb/>se dederunt, interfectis ibi Rogerio 
+<lb/>osculant, et Guiberto ejusdem Rogerii nepote, 
+<lb/>viris bello probatissimis, quorum corpora 
+<lb/>apud Sanctam Euphemiam sepulta sunt. De<anchor rend="-" type="sillabazione_fine_rigo"/>dito 
+<lb/>Agello, Dux magnanimus, mens cujus, 
+<lb/>numquam in audendis, et perpetrandis<!-- GDM il 2017-06-05 ha corretto l'errore OCR "perpretrandis" --> 
+<lb/>majoribus haesitabat, Normannis, atque Lom<anchor rend="-" type="sillabazione_fine_rigo"/>bardis 
+<lb/>per Apuliam, atque Calabriam publico 
+<lb/>edicto universaliter congregatis. Barum civi<anchor rend="-" type="sillabazione_fine_rigo"/>tatem 
+<lb/>maximam natura, et arte, et viribus bel<anchor rend="-" type="sillabazione_fine_rigo"/>lantibus 
+<lb/>munitam omnino ante illa tempora 
+<lb/>Latinae subjectionis ignaram, super omnia Nor<anchor rend="-" type="sillabazione_fine_rigo"/>manni 
+<lb/>nominis invidam, undique, et terra, et 
+<lb/>mari fraterno confidens auxilio non du<anchor rend="-" type="sillabazione_fine_rigo"/>bitavit 
+<lb/>assidere. Ipso igitur circumducto 
+<lb/>exercitu, Civibus a Terra omnino egres<anchor rend="-" type="sillabazione_fine_rigo"/>sis 
+<lb/>prohibente gloriosissimo fratre suo 
+<lb/>Mellicanorum Consule navali proelio non me<anchor rend="-" type="sillabazione_fine_rigo"/>diocriter 
+<lb/>ipsos urgente, ut facilius alter alteri 
+<lb/>laborantium bello posset conferre subsidium, 
+<lb/>et utroque latere civitatis a terra usque ad 
+<lb/>naves funibus, vineisque suppositis geminum 
+<lb/>pontem placuit aedificare. Barenses, et si vir<anchor rend="-" type="sillabazione_fine_rigo"/>tus 
+<lb/>egregia Normannorum super omnia sibi 
+<lb/>formidabilis esset, tamen quia penitus timo<anchor rend="-" type="sillabazione_fine_rigo"/>rem 
+<lb/>dissimulare, et spem capiendae civitatis 
+<lb/>hostibus imminere nolebant, quidquid 
+<lb/>auri, et argenti, seu pretiosarum rerum pos<anchor rend="-" type="sillabazione_fine_rigo"/>sidebant, 
+<lb/>die primo, quo nostri ad obsidionem 
+<lb/>venerant, in Cytharis, aliorumque Instrumen<anchor rend="-" type="sillabazione_fine_rigo"/>torum 
+<lb/>Musicorum generibus modulantes, su<anchor rend="-" type="sillabazione_fine_rigo"/>per 
+<lb/>propugnacula murorum videnda hostibus 
+<lb/>exponebant. Sed Dux omnium, quos terra su<anchor rend="-" type="sillabazione_fine_rigo"/>stinebat 
+<lb/>prudentissimus, cognita eorum astu<anchor rend="-" type="sillabazione_fine_rigo"/>tia, 
+<lb/>non ideo nisi magis ac magis ad 
+<lb/>civitatem expugnandam animum intendit. Bre<anchor rend="-" type="sillabazione_fine_rigo"/>vi 
+<lb/>itaque spatio ligneis turribus, aliisque ma<anchor rend="-" type="sillabazione_fine_rigo"/>chinis 
+<lb/>diversorum generum compositis, omni 
+<lb/>die terrifico insultu muros hostiles non cessat 
+<lb/>concutere. Cives ex diversa parte, et jactu 
+<lb/>lapidum, atque telorum creberrimo, et vi<anchor rend="-" type="sillabazione_fine_rigo"/>nearum 
+<lb/>oppositione satis audacter in princi<anchor rend="-" type="sillabazione_fine_rigo"/>pio 
+<lb/>Civitatem suam<!-- GDM il 2017-06-05 ha corretto l'errore OCR "sua" --> nituntur propugnare: ne<anchor rend="-" type="sillabazione_fine_rigo"/>que 
+<lb/>tamen umquam, sicut in tali casu solet 
+<lb/>contingere, praesumebant apertis portis eque<anchor rend="-" type="sillabazione_fine_rigo"/>stri, 
+<lb/>sive pedestri agmine cum Normannis 
+<lb/>manum conserere. Sed ubi Ducem 
+<lb/>doctissimum praeter spem suam in expu<anchor rend="-" type="sillabazione_fine_rigo"/>gnatione 
+<lb/>vident persistere, quod multitudine 
+<lb/>sua posse facere diffidebant, per manus unius 
+<lb/>dolose, atque latenter tentaverunt efficere. 
+<lb/>Noctis ergo optime silentio, cum Dux 
+<lb/>in tentorio cum militibus coenaret, Barensis 
+<lb/>quidam, cui ingens avaritia pernitiosa praesta<anchor rend="-" type="sillabazione_fine_rigo"/>bat 
+<lb/>audaciam, pacta sibi pecunia jaculum in 
+<lb/>manu accipiens, solus e Civitate progreditur, 
+<lb/>cumque per Castra ambulando, si quibus ob<anchor rend="-" type="sillabazione_fine_rigo"/>viabat, 
+<lb/>nomen, et causam dissimulando 
+<lb/>uvae, tandem cum ad Ducis tentoria perveni<anchor rend="-" type="sillabazione_fine_rigo"/>ret, 
+<lb/>quasi unus ex ministrantibus esset, intro<anchor rend="-" type="sillabazione_fine_rigo"/>grediens, 
+<lb/>jaculum, quod occulte deferebat, 
+<lb/>in aspectum Ducis contorquere praesumpsit, 
+<lb/>quod Dei miseratio a persona sua avertens, 
+<lb/>vestem incisam corpus illaesum servavit. Immis<anchor rend="-" type="sillabazione_fine_rigo"/>so 
+<lb/>jaculo perfidus ille veloci saltu in fugam 
+<cb n="764"/> 
+<lb/>prosiliens, noctis umbra sibi favente capi non 
+<lb/>potuit. Dux itaque tam repentino facto stupe<anchor rend="-" type="sillabazione_fine_rigo"/>factus, 
+<lb/>tantamque perfidiam licuisse Barensibus 
+<lb/>indignans, ut deinceps eorum fraudes, et insidias 
+<lb/>posset vitare facilius, domum sibi lapideam in 
+<lb/>castris brevi tempore jubet aedificare. Tempo<anchor rend="-" type="sillabazione_fine_rigo"/>re 
+<lb/>illo quidam<!-- GDM il 2017-06-05 ha corretto l'errore OCR "illoquidam" --> Agereces nomine sub Dio<anchor rend="-" type="sillabazione_fine_rigo"/>gene 
+<lb/>Imperatore Graecorum Civitatem Baren<anchor rend="-" type="sillabazione_fine_rigo"/>sem 
+<lb/>triennio transacto custodiebat, quam 
+<lb/>postquam vidit neque dolis, neque viribus, 
+<lb/>quas apud se praesentes<!-- GDM il 2017-06-05 ha corretto l'errore OCR "parentes" --> habebant ab oppu<anchor rend="-" type="sillabazione_fine_rigo"/>gnatione 
+<lb/>Normannorum posse liberari. Lega<anchor rend="-" type="sillabazione_fine_rigo"/>tos 
+<lb/>Constantinopolim pro implorando auxilio 
+<lb/>mitti, qui euntes, et cum navibus mul<anchor rend="-" type="sillabazione_fine_rigo"/>tis 
+<lb/>viris, et dapibus oneratis redeuntes, post<anchor rend="-" type="sillabazione_fine_rigo"/>quam 
+<lb/>usque Durachium pervenerunt. Ge<anchor rend="-" type="sillabazione_fine_rigo"/>rolinus 
+<lb/>quidam Normannigena Dux Corinthio<anchor rend="-" type="sillabazione_fine_rigo"/>rum, 
+<lb/>quem Imperator navibus in Apuliam 
+<lb/>ituris perfecerat, eos cum literis hujusmodi 
+<lb/>Barum praemisit. 
+</p> 
+<p> 
+<lb/>«Gerolinus Dux Corinthiorum Archerio Du<anchor rend="-" type="sillabazione_fine_rigo"/>ci 
+<lb/>Barensium salutem. 
+</p> 
+<p> 
+<lb/>Pro certo habeas me cum magno subsidio 
+<lb/>in quarta sive citius ad te venturum, quare 
+<lb/>monitum te facio, ut nocte illa ignes, atque 
+<lb/>lucernas plurimas, ne forte a retro cursu de<anchor rend="-" type="sillabazione_fine_rigo"/>viemus, 
+<lb/>super muros Civitatis vestre facias 
+<lb/>accendere. Nos vero iterum, ut de nobis cer<anchor rend="-" type="sillabazione_fine_rigo"/>tiorem 
+<lb/>habeas fiduciam, in navibus nostris lu<anchor rend="-" type="sillabazione_fine_rigo"/>cernas 
+<lb/>accensas habebimus.» 
+</p> 
+<p> 
+<lb/>Barenses in nocte illa, qua venturum sibi 
+<lb/>audierant subsidium, cum cantibus, et musicis 
+<lb/>instrumentis insolitam agentes laetitiam, faces, 
+<lb/>atque ardentes<!-- GDM il 2017-06-05 ha corretto l'errore OCR "ardenteos" --> cereos moenibus suis supposue<anchor rend="-" type="sillabazione_fine_rigo"/>runt, 
+<lb/>quod nostri cernentes, nec sine causa, 
+<lb/>tam repente talia fieri arbitrantes, rem ut fu<anchor rend="-" type="sillabazione_fine_rigo"/>tura 
+<lb/>erat non penitus ignotam habuere. Ar<anchor rend="-" type="sillabazione_fine_rigo"/>matis 
+<lb/>itaque navibus Venerandus<!-- GDM il 2017-06-05 ha corretto l'errore OCR "Venetandus" --> Comes Ro<anchor rend="-" type="sillabazione_fine_rigo"/>gerius, 
+<lb/>ut primum naves Graecorum accensis 
+<lb/>luminibus, quasi stellas cognovit accedere, 
+<lb/>tranquillo cursu eis obviam progrediens, simi<anchor rend="-" type="sillabazione_fine_rigo"/>lem 
+<lb/>lucernam per unamquamque navium ju<anchor rend="-" type="sillabazione_fine_rigo"/>bet 
+<lb/>accendere, deinde paulatim, et sine tu<anchor rend="-" type="sillabazione_fine_rigo"/>multu 
+<lb/>hostili navigio se immiscens, ipse subi<anchor rend="-" type="sillabazione_fine_rigo"/>to 
+<lb/>clamore dato signo aggrediendi primus om<anchor rend="-" type="sillabazione_fine_rigo"/>nium 
+<lb/>Gerolini navem ingreditur, ipsum<anchor rend="-" type="sillabazione_fine_rigo"/>que 
+<lb/>captum, atque ligatum sociis servandum 
+<lb/>reliquit. Idem fere de omnibus aliis actum 
+<lb/>est. Barenses ubi se frustra a Graecis expe<anchor rend="-" type="sillabazione_fine_rigo"/>ctasse 
+<lb/>auxilium viderunt, versa in luctum lae<anchor rend="-" type="sillabazione_fine_rigo"/>titia, 
+<lb/>in crastino Duci suam Civitatem red<anchor rend="-" type="sillabazione_fine_rigo"/>diderunt. 
+<lb/>Baro dedito, et navali exercitu 
+<lb/>apud Ydrontum congregato, Dux, et Comes 
+<lb/>in Siciliam ad expugnationem Panormi pro<anchor rend="-" type="sillabazione_fine_rigo"/>fecti 
+<lb/>sunt. 
+</p> 
+<p> 
+<lb/>Erat autem Panormum civitas dives, et po<anchor rend="-" type="sillabazione_fine_rigo"/>pulosa, 
+<lb/>totius Siciliae caput, et principali Se<anchor rend="-" type="sillabazione_fine_rigo"/>des 
+<lb/>Tyrannorum, magisque opere, quam na<anchor rend="-" type="sillabazione_fine_rigo"/>tura 
+<lb/>munita, juxta mare delitiosa planitie non 
+<lb/>longe a Pelero monte, longo circuitu 
+<lb/>sita, nullius bonae rei indigens, praeterquam 
+<lb/>quod Christiani nominis erat aliena. Cir<anchor rend="-" type="sillabazione_fine_rigo"/>cumsedentibus 
+<lb/>ergo eam ex altera parte Du<anchor rend="-" type="sillabazione_fine_rigo"/>cis, 
+<lb/>ex altera parte Comitis exercitibus, na<anchor rend="-" type="sillabazione_fine_rigo"/>vibusque 
+<lb/>omnino maris iter prohibentibus, 
+<lb/>omni die graviter utrinque pugnabatur; tan<anchor rend="-" type="sillabazione_fine_rigo"/>taque 
+<lb/>inerat Civibus audacia, quod plurimum 
+<lb/>de sua multitudine, et Civitatis fortitudine 
+<cb n="765"/> 
+<lb/>confidentes, nostris, licet acerrime invadenti<anchor rend="-" type="sillabazione_fine_rigo"/>bus, 
+<lb/>portas claudere dedignarentur. Contigit 
+<lb/>itaque die una, dum quidam Arabicus miles 
+<lb/>audacissimus, qui jam de nostris multos inter 
+<lb/>fecerat aliquem sibi in portam occurrentem 
+<lb/>expectaret armatus, quod unus Normannige<anchor rend="-" type="sillabazione_fine_rigo"/>na, 
+<lb/>Ducis atque Comitis nepos strenuae ani<anchor rend="-" type="sillabazione_fine_rigo"/>mositatis 
+<lb/>equum acriter urgens per medium 
+<lb/>pectus illius lanceam acriter contorsit, et cum 
+<lb/>hoste interfecto ad socios redire festinaret, 
+<lb/>porta subito clausa, et praesens hostium con<anchor rend="-" type="sillabazione_fine_rigo"/>geries 
+<lb/>reditum sibi per eamdem viam prohi<anchor rend="-" type="sillabazione_fine_rigo"/>buit. 
+<lb/>Mox ipse impiger per medios hostes, 
+<lb/>quam velocissime longum iter arripiens, 
+<lb/>tamen per appositam partem saevos insequen<anchor rend="-" type="sillabazione_fine_rigo"/>tium 
+<lb/>manus Christo ducente illaesus evasit; 
+<lb/>quem ad socios pro morte ipsius sperata la<anchor rend="-" type="sillabazione_fine_rigo"/>chrymantes 
+<lb/>redeuntem, ipsi quasi redivivum 
+<lb/>admirantes deosculari non cessant. Quadam 
+<lb/>alia die Normannis partem illam Civitatis, 
+<lb/>quam Comes obsederat acerrime cum multi<anchor rend="-" type="sillabazione_fine_rigo"/>moda 
+<lb/>oppugnatione aggredientibus, cum Ci<anchor rend="-" type="sillabazione_fine_rigo"/>ves 
+<lb/>universalius solito ad defensionem ejus 
+<lb/>partis convenissent, Dux omnium sapientissi<anchor rend="-" type="sillabazione_fine_rigo"/>mus, 
+<lb/>cui ab astutia nomen inerat, ex alia 
+<lb/>parte cum trecentis militibus viriliter aggre<anchor rend="-" type="sillabazione_fine_rigo"/>diendo 
+<lb/>portas frangit, et maximam partem 
+<lb/>Civitatis usque ad interiores muros occupat, 
+<lb/>et retinet. Quo audito, ne collecti in unum 
+<lb/>Cives viribus retro Ducem expellere praesume<anchor rend="-" type="sillabazione_fine_rigo"/>rent, 
+<lb/>Comes ad eumdem locum cum parte 
+<lb/>sui exercitus se transtulit.<!-- GDM il 2017-06-05 ha corretto l'errore OCR "transtulit-" --> In crastino autem 
+<lb/>Cives, cum nullo modo virtuti Normanno<anchor rend="-" type="sillabazione_fine_rigo"/>rum 
+<lb/>se posse resistere viderent, communicato 
+<lb/>consilio, missis, et remissis utrinque Nuntiis, 
+<lb/>et pactionibus, quales adhuc in eadem Urbe 
+<lb/>tenentur, conformatis, Panormum Urbem 
+<lb/>Regiam totius Regni Dominam, atque Me<anchor rend="-" type="sillabazione_fine_rigo"/>tropolim 
+<lb/>Duci, atque Comiti Fratribus, et 
+<lb/>viris invictissimis<!-- GDM il 2017-06-05 ha corretto l'errore OCR "invictissimi" --> regendam, et possidendam 
+<lb/>tradiderunt. Qui, ne Cives immutato animo, 
+<lb/>et temeritatis<!-- GDM il 2017-06-05 ha corretto l'errore OCR "temeratis" --> legibus aliquando bella de inte<anchor rend="-" type="sillabazione_fine_rigo"/>gro 
+<lb/>auderent, ad removendam injuriarum<!-- GDM il 2017-06-05 ha corretto l'errore OCR "injuriam" --> li<anchor rend="-" type="sillabazione_fine_rigo"/>centiam, 
+<lb/>duo fortissima Castra, alterum juxta 
+<lb/>mare, alterum in loco, qui dicitur Ga<anchor rend="-" type="sillabazione_fine_rigo"/>lea, 
+<lb/>brevi tempore constituerunt<!-- GDM il 2017-06-05 ha corretto l'errore OCR "constiterunt" -->. Demum ve<anchor rend="-" type="sillabazione_fine_rigo"/>dro 
+<lb/> GDM il 2017-06-05 ha corretto l'errore OCR "do" -->, quia in eadem Civitate ad sacrificandum 
+<lb/>Idolis composita ingens, atque pulcherrima 
+<lb/>aedificiis habebatur, expulsis Idolis in hono<anchor rend="-" type="sillabazione_fine_rigo"/>rem 
+<lb/>Dei Genitricis, ac semper Virginis Glo<anchor rend="-" type="sillabazione_fine_rigo"/>riosae 
+<lb/>Mariae, Archiepiscopali Sede ibidem 
+<lb/>constituta, consecrari fecerunt. In iis per<anchor rend="-" type="sillabazione_fine_rigo"/>agendis 
+<lb/>dum fratres invictissimi adhuc Panor<anchor rend="-" type="sillabazione_fine_rigo"/>mi 
+<lb/>morarentur, Seilo eorum nepos clarissimus 
+<lb/>apud Ceranum probitati suae confidendo, Sa<anchor rend="-" type="sillabazione_fine_rigo"/>racenorum 
+<lb/>insidias omnino superare non pote<anchor rend="-" type="sillabazione_fine_rigo"/>rat. 
+<lb/>Quadam enim die quidam Castri-Joannis 
+<lb/>notus sibi, et familiaris inimicus, tam<anchor rend="-" type="sillabazione_fine_rigo"/>quam 
+<lb/>plurimum de ipsius utilitate curaret 
+<lb/>septem Arabicos milites tantum pro praeda 
+<lb/>ante Ceramum equitaturos ei nuntiavit; et 
+<lb/>cum facta mandatis fidem adhiberet, 
+<lb/>ipsum audacter cum paucis inse<anchor rend="-" type="sillabazione_fine_rigo"/>quentibus 
+<lb/>multitudo hostium occulte in subsi<anchor rend="-" type="sillabazione_fine_rigo"/>dio 
+<lb/>collocata, sociis, jam amissis, et equo 
+<lb/>deficiente, vicinam rupem coegit ascendere, 
+<lb/>unde securus a tergo, tamquam aper inter 
+<cb n="766"/> 
+<lb/>latrones saevissimus, quotquot sibi occurrere 
+<lb/>praesumebant, impune accessisse non permit<anchor rend="-" type="sillabazione_fine_rigo"/>tebat. 
+<lb/>Cumque jam multis virili dextra ejus 
+<lb/>interfectis, tota multitudo in eum circumfusa 
+<lb/>convenisset, missis<!-- GDM il 2017-06-05 ha corretto l'errore OCR "missi" --> eminus jaculis corpus ejus 
+<lb/>in mille locis perforatum, tandem feli<anchor rend="-" type="sillabazione_fine_rigo"/>cem 
+<lb/>animam ejus exhalare coegerunt: et tunc 
+<lb/>accedentes, quia animositatem a corde proce<anchor rend="-" type="sillabazione_fine_rigo"/>dere 
+<lb/>audierunt, aperto corpore, cor illius, 
+<lb/>quod fere omnium audacissimum fuisse cogno<anchor rend="-" type="sillabazione_fine_rigo"/>verant, 
+<lb/>per singulos divisum sibi incorporare 
+<lb/>festinaverunt: Caput vero abscissum ad Regem 
+<lb/>suum nomine Tervernum pro magno mune<anchor rend="-" type="sillabazione_fine_rigo"/>re, 
+<lb/>et valde placituro transmiserunt. In iis<anchor rend="-" type="sillabazione_fine_rigo"/>dem 
+<lb/>temporibus Gisolfius Salernitanorum 
+<lb/>Princeps cum Amalfitanis bellum habebat, 
+<lb/>cujus erat causa Pater suus in obsidione 
+<lb/>Amalfi interfectus. Hi postquam viribus 
+<lb/>propriis ejus oppressioni nequeunt resistere, 
+<lb/>Duci Biscardo se, et Civitatem suam regen<anchor rend="-" type="sillabazione_fine_rigo"/>dos, 
+<lb/>et defendendos committunt; qui qua<anchor rend="-" type="sillabazione_fine_rigo"/>tuor 
+<lb/>Castellis in vicinis Collibus aedificatis, 
+<lb/>postquam Gisolfus pacem cum eo intemera<anchor rend="-" type="sillabazione_fine_rigo"/>tam 
+<lb/>servare non voluit, non amplius cum 
+<lb/>Du…. quae erat soror Principis retinente, 
+<lb/>congregato exercitu Salernum obsedit; tandem<anchor rend="-" type="sillabazione_fine_rigo"/>que 
+<lb/>ipsius diuturna obsidione, et victualium 
+<lb/>penuria vehementer coacti, Abealardus 
+<lb/>nepos Ducis, filius Comitis Biscardi, qui 
+<lb/>in auxilio Salernitanorum, quoniam duo 
+<lb/>minitabantur, a Principe intro receptus 
+<lb/>fuerat, postquam tempus deditionis instare vi<anchor rend="-" type="sillabazione_fine_rigo"/>det, 
+<lb/>montano itinere hostilia castra apud 
+<lb/>Sanctam Severinam, quae est in Calabria, cum 
+<lb/>paucis profectus est. Post cujus recessum Prin<anchor rend="-" type="sillabazione_fine_rigo"/>ceps 
+<lb/>omnium auxilio destitutus, civitatem suam 
+<lb/>reddere non distulit. In eodem anno Dux apud 
+<lb/>Rogerium Comitem Hermannum fratrem 
+<lb/>Abealardi, quia pacem suam turbare ni<anchor rend="-" type="sillabazione_fine_rigo"/>tebatur 
+<lb/>cepit, et apud Mellitum incar<anchor rend="-" type="sillabazione_fine_rigo"/>cerandum 
+<lb/>transmisit, pro cujus liberatione 
+<lb/>Abealardus, castrum quod eo invito posside<anchor rend="-" type="sillabazione_fine_rigo"/>bat 
+<lb/>Duci reddidit. Tali inter eos habita pa<anchor rend="-" type="sillabazione_fine_rigo"/>ctione, 
+<lb/>quia quam citius Dux Gargantum vi<anchor rend="-" type="sillabazione_fine_rigo"/>sitaret, 
+<lb/>fratrem suum a carcere liberaret, jam<anchor rend="-" type="sillabazione_fine_rigo"/>que 
+<lb/>aliquot mensibus transactis Humano 
+<lb/>nondum liberato, Abealardo, prout fra<anchor rend="-" type="sillabazione_fine_rigo"/>ternus 
+<lb/>amor suadebat, moras juratae pactionis 
+<lb/>increpanti Dux respondit, se neque infra an<anchor rend="-" type="sillabazione_fine_rigo"/>nos 
+<lb/>septem Gargantum esse perrecturum, ne<anchor rend="-" type="sillabazione_fine_rigo"/>que 
+<lb/>prius Humanum esse liberandum. Tali 
+<lb/>responsione Abealardus vehementer in 
+<lb/>iram accensus, castrum, quod in Apulia rupes 
+<lb/>S. Agathae nuncupatur, ingrediens, Terram 
+<lb/>Ducis viriliter inquietare non cessabat. Sed 
+<lb/>Duce illuc ad obsidionem veniente, missis, et 
+<lb/>remissis utrinque pacificatoribus, castrum Duci 
+<lb/>redditur, et Humanus a carcere liberatur<!-- GDM il 2017-06-05 ha corretto l'errore OCR "liberantur" -->. 
+<lb/>Quo facto utrique fratres ad Regem Constan<anchor rend="-" type="sillabazione_fine_rigo"/>tinopolim 
+<lb/>se transferentes, postquam ipsum ad 
+<lb/>pugnandum contra Ducem nequeunt impel<anchor rend="-" type="sillabazione_fine_rigo"/>lere, 
+<lb/>nimium dolorem causam mortis dicuntur 
+<lb/>habuisse. Nondum eodem anno finito, 
+<lb/>Africani apud Vicotrum in Calabriam 
+<lb/>navali exercitu venientes, senibus interfectis, 
+<lb/>aliorum partem pro pretio reddiderunt, par<anchor rend="-" type="sillabazione_fine_rigo"/>tem 
+<lb/>vero in Africam ad Regem suum deferen-<!-- Trattino da togliere a mano --> 
+<cb n="767"/> 
+<lb/>tes, augmentato navigio apud Macariam in 
+<lb/>secundo anno iter habuere, et violenter navi<anchor rend="-" type="sillabazione_fine_rigo"/>bus 
+<lb/>portum introgressi, civitate depredata, 
+<lb/>Castellum, quod in ea Comes construxerat, 
+<lb/>per octo dies non cessant oppugnare; sed qui 
+<lb/>infra erant audacissime ipsis resistentes, a pri<anchor rend="-" type="sillabazione_fine_rigo"/>ma 
+<lb/>die applicationis eorum ad Comitem 
+<lb/>Legatum unum, qui talia<!-- GDM il 2017-06-05 ha corretto l'errore OCR "tali" --> nuntiaret, transmi<anchor rend="-" type="sillabazione_fine_rigo"/>serunt: 
+<lb/>quo ex improviso cum suis Norman<anchor rend="-" type="sillabazione_fine_rigo"/>nis 
+<lb/>accedente, absque mora Saraceni fere om<anchor rend="-" type="sillabazione_fine_rigo"/>nes 
+<lb/>interfecti sunt, pauci vero ad naves, et 
+<lb/>deinde in Africam fugiendo, non satis 
+<lb/>laetos rumores de sociis in patriam retulere. 
+<lb/>Habita victoria Comes apud Mellitum per 
+<lb/>Cathaniam proficiscens, Hugonem de 
+<lb/>Brachio generum suum, quem Dominum Ca<anchor rend="-" type="sillabazione_fine_rigo"/>thaniae 
+<lb/>praefecerat, nulla admonitione Sarace<anchor rend="-" type="sillabazione_fine_rigo"/>norum 
+<lb/>insidias, et maxime Syracusanorum vi<anchor rend="-" type="sillabazione_fine_rigo"/>tare 
+<lb/>jubet. Quo recedente Hugo immodicae 
+<lb/>suae audaciae magis, quam prudentissimi Co<anchor rend="-" type="sillabazione_fine_rigo"/>mitis 
+<lb/>persuasioni acquiescens, vocato sibi in 
+<lb/>auxilium Jordano egregio milite, et Comitis 
+<lb/>filio, Syracusanos ad pugnam non cessat invi<anchor rend="-" type="sillabazione_fine_rigo"/>tare. 
+<lb/>Quadam ergo die Benervetus eo<anchor rend="-" type="sillabazione_fine_rigo"/>rum 
+<lb/>Princeps, congregata multitudine, non 
+<lb/>longe a Cathania in Valle se abscondens, tri<anchor rend="-" type="sillabazione_fine_rigo"/>ginta 
+<lb/>electos milites ante civitatem pro extra<anchor rend="-" type="sillabazione_fine_rigo"/>hendis 
+<lb/>civibus delegavit. Quibus Hugoni, et 
+<lb/>Jordano compertis, missis post eos statim ad 
+<lb/>faciendam moram triginta aliis militibus, ipsi 
+<lb/>deinde glomerato agmine, et tardiori gressu 
+<lb/>prodeuntes, ultra hostium insidias<!-- GDM il 2017-06-05 ha corretto l'errore OCR "insidiam" --> sinistro omi<anchor rend="-" type="sillabazione_fine_rigo"/>ne 
+<lb/>prosequi non dimiserunt, ex tunc Ben<anchor rend="-" type="sillabazione_fine_rigo"/>nieto 
+<lb/>cum multitudine a tergo eis insistente, 
+<lb/>Hugo statim a primo concursu occiditur: 
+<lb/>Jordanus vero hostiles manus cum paucis vix 
+<lb/>evadere potuit. Triginta, qui in prio agmi<anchor rend="-" type="sillabazione_fine_rigo"/>ne 
+<lb/>hostes insecuti fuerant, apud Patmo<anchor rend="-" type="sillabazione_fine_rigo"/>num 
+<lb/>per divortia fugiendo vitam sibi servavere. 
+<lb/>Haec ubi venerando Comiti relata sunt, 
+<lb/>ipse multum de interfectione suorum do<anchor rend="-" type="sillabazione_fine_rigo"/>lens, 
+<lb/>castrum quoddam opulentissimum, quod 
+<lb/>in partibus Syracusiae Bervento so<anchor rend="-" type="sillabazione_fine_rigo"/>nuebat 
+<lb/>festinat invadere. Cujus summa 
+<lb/>audacia, et virtute insuperata, fractis moeni<anchor rend="-" type="sillabazione_fine_rigo"/>bus, 
+<lb/>et contritis quoscumque ibi viros pugnae 
+<lb/>idoneos<!-- GDM il 2017-06-05 ha corretto l'errore OCR "idoenos" --> invenerat, omnes nemine excepto 
+<lb/>mortem subire coegit. Mulieres vero, 
+<lb/>ac pueros vendentes in Calabriam trans<anchor rend="-" type="sillabazione_fine_rigo"/>misit, 
+<lb/>deinde cum exercitu suo per totam Val<anchor rend="-" type="sillabazione_fine_rigo"/>lem 
+<lb/>nocte progrediens, segetes omnes 
+<lb/>comburendo, et falcibus resecando devastavit, 
+<lb/>unde in sequenti anno per totam Siciliam fa<anchor rend="-" type="sillabazione_fine_rigo"/>mes 
+<lb/>acerba pervenit.<!-- GDM il 2017-06-05 ha corretto l'errore OCR "pervenit-" --> His expletis Co<anchor rend="-" type="sillabazione_fine_rigo"/>mes, 
+<lb/>et Jordanus filius ejus apud Trabulum 
+<lb/>castra promoventes, ipsum circumsedendo op<anchor rend="-" type="sillabazione_fine_rigo"/>pugnare 
+<lb/>intendunt. Erat autem Campus juxta 
+<lb/>Trabulum in longitudinem porrectus, fere un<anchor rend="-" type="sillabazione_fine_rigo"/>dique 
+<lb/>a mare collustratus; huc Trabulen<anchor rend="-" type="sillabazione_fine_rigo"/>ses, 
+<lb/>quoniam ad alia prohibente exercitu 
+<lb/>sibi transitus non patebat, omni die boves, et 
+<lb/>pecora sua pascenda deducebant. Quod ubi 
+<lb/>Jordanus, paternae probitatis imitator magna-<!-- Trattino da togliere a mano --> 
+<cb n="768"/> 
+<lb/>nimus<!-- GDM il 2017-06-05 ha tolto un trattino dall'inizio del rigo (errore OCR) --> comperit, centeno comitante milite 
+<lb/>clam patre suo nocte illuc navigando cum so<anchor rend="-" type="sillabazione_fine_rigo"/>ciis 
+<lb/>suis in umbrosa Valle latitabat; et jam 
+<lb/>Phoebo primam diei horam terminante, pasto<anchor rend="-" type="sillabazione_fine_rigo"/>res 
+<lb/>longe a castro greges infinitos ad pascen<anchor rend="-" type="sillabazione_fine_rigo"/>dum 
+<lb/>compulerant, et egressis a Valle mi<anchor rend="-" type="sillabazione_fine_rigo"/>litibus, 
+<lb/>decem solummodo, ne tota multitudo 
+<lb/>apparens Cives moenibus inclusos retine<anchor rend="-" type="sillabazione_fine_rigo"/>ret, 
+<lb/>pastoralis clamor<!-- GDM il 2017-06-05 ha corretto l'errore OCR "pastorali clamore" --> fere universos Trabulen<anchor rend="-" type="sillabazione_fine_rigo"/>ses 
+<lb/>ad fugandos hostes, et greges retinen<anchor rend="-" type="sillabazione_fine_rigo"/>dos 
+<lb/>veloci itinere compellit. Jamque primi se<anchor rend="-" type="sillabazione_fine_rigo"/>quentibus 
+<lb/>aliis usque ad nostros decem 
+<lb/>pervenerant<!-- GDM il 2017-06-05 ha corretto l'errore OCR "pervenerat" -->, cum Jordanus, et caeteri omnes a 
+<lb/>Valle progredientes, hostibus, et civitati se 
+<lb/>interponendo, unumquemque, aut repugnan<anchor rend="-" type="sillabazione_fine_rigo"/>tem 
+<lb/>interficiunt, aut ligatum cum gregibus ad 
+<lb/>naves, et inde ad castra reducunt. Quo 
+<lb/>facto caeteri, qui in civitate remanserunt, ul<anchor rend="-" type="sillabazione_fine_rigo"/>tra 
+<lb/>diem illum deditionem non differunt<!-- GDM il 2017-06-05 ha corretto l'errore OCR "disserunt" -->, Co<anchor rend="-" type="sillabazione_fine_rigo"/>mite 
+<lb/>a Trabulo revertente, Castrinovenses idem 
+<lb/>faciunt. 
+</p> 
+<p> 
+<lb/>Post superatam omnino Apuliam, atque Ca<anchor rend="-" type="sillabazione_fine_rigo"/>labriam, 
+<lb/>cum admirabilis Ducis Biscardi ma<anchor rend="-" type="sillabazione_fine_rigo"/>gnanimitas 
+<lb/>exercendae virtutis ulterius loci op<anchor rend="-" type="sillabazione_fine_rigo"/>portunitatem 
+<lb/>non habens, in acquisitione Con<anchor rend="-" type="sillabazione_fine_rigo"/>stantinopolitani 
+<lb/>Imperii, non deficientibus 
+<lb/>et honestis causis, miro modo affectatur. 
+<lb/>Altera causarum erat, quod Graecorum gens 
+<lb/>infidelissima debitam Romanae Ecclesiae obe<anchor rend="-" type="sillabazione_fine_rigo"/>dientiam 
+<lb/>exhibere contemnebat; altera<!-- GDM il 2017-06-05 ha corretto l'errore OCR "alter" --> erat 
+<lb/>injuria, quam sibi turpiter, et perfide in<anchor rend="-" type="sillabazione_fine_rigo"/>tulerat 
+<lb/>ulciscenda. Contigerat namque, 
+<lb/>Michaële Graecorum Imperium sapienter gu<anchor rend="-" type="sillabazione_fine_rigo"/>bernante, 
+<lb/>cum super omnia egregiam virtutem 
+<lb/>Normannorum sibi posse fieri nocituram prae<anchor rend="-" type="sillabazione_fine_rigo"/>videret, 
+<lb/>perpetuam cum illis pacem voluit foe<anchor rend="-" type="sillabazione_fine_rigo"/>derare; 
+<lb/>modisque ergo quibus potuit filiam 
+<lb/>Ducis filio suo primogenito dare <!-- GDM il 2017-06-05 ha sostituito il trattino finale con un punto (errore OCR) -->perquisivit. 
+<lb/>Quo impetrato, Graeci non solum Normanni<anchor rend="-" type="sillabazione_fine_rigo"/>genae, 
+<lb/>verum et totius Latinae gentis sem<anchor rend="-" type="sillabazione_fine_rigo"/>per 
+<lb/>execrabiles inimici, invidia Do<anchor rend="-" type="sillabazione_fine_rigo"/>minum 
+<lb/>suum Michaëlem, (pessimum 
+<lb/>scelus) a Sede Regia expulit longe 
+<lb/>a Constantinopoli et Monachum fieri 
+<lb/>coegit, filiumque ejus, qui etiam simul 
+<lb/>cum uxore in Palatio fuerat coronatus, ne 
+<lb/>si in filia Ducis, et Latina muliere filios pro<anchor rend="-" type="sillabazione_fine_rigo"/>crearet, 
+<lb/>Normannis, et omnibus aliis La<anchor rend="-" type="sillabazione_fine_rigo"/>tinis 
+<lb/>in Regnum suum ingressus pateret, 
+<lb/>erimithaverunt, uxorem vero ejus<!-- GDM il 2017-06-05 ha corretto l'errore OCR "eju" --> clau<anchor rend="-" type="sillabazione_fine_rigo"/>sam 
+<lb/>tenuerunt. Timebant enim, quod si illa, 
+<lb/>quae semel apud illos coronam gestaverat 
+<lb/>ad patrem suum rediens alicui probo, et forti 
+<lb/>viro nuberet, ille ex consueto jure Graecorum 
+<lb/>Imperium sibi vellet acquirere. Praeter hoc 
+<lb/>Graecus quidam pater veneno, et arte 
+<lb/>simulatoria non mediocriter instructus, Mi<anchor rend="-" type="sillabazione_fine_rigo"/>chaëlem 
+<lb/>se esse, et forte perfidus suorum ma<anchor rend="-" type="sillabazione_fine_rigo"/>nus 
+<lb/>evasisse, mentiendo, pro implorando in sui 
+<lb/>Regni restitutionem Auxilio probari dedi<anchor rend="-" type="sillabazione_fine_rigo"/>ctionem, 
+<lb/>ad Ducem nostrum se contulerat, 
+<lb/>quem Dux omnium sibi contemporaneo<anchor rend="-" type="sillabazione_fine_rigo"/>rum 
+<lb/>prudentissimus<!-- GDM il 2017-06-05 ha corretto l'errore OCR "prudentissius" -->, licet et multorum judicio 
+<cb n="769"/> 
+<lb/>mendacia sibi proferre non dubitaret, quia ta<anchor rend="-" type="sillabazione_fine_rigo"/>men 
+<lb/>hujusmodi commentum sibi apud 
+<lb/>Graecos in deditionem castrorum perutile 
+<lb/>futurum esse putabat, secum honorifice, tam<anchor rend="-" type="sillabazione_fine_rigo"/>quam 
+<lb/>suis mendaciis fidem adhiberet per duos 
+<lb/>annos retinuit. Talibus de causis, et ad<anchor rend="-" type="sillabazione_fine_rigo"/>miranda 
+<lb/>Ducis audacia justitiam suam corro<anchor rend="-" type="sillabazione_fine_rigo"/>borans, 
+<lb/>post Ducatus sui pacificam ordinatio<anchor rend="-" type="sillabazione_fine_rigo"/>nem, 
+<lb/>anno ab Incarnatione Domini MXC. 
+<lb/>navalem exercitum apud Ydiotum con<anchor rend="-" type="sillabazione_fine_rigo"/>gregavit, 
+<lb/>cujus partem pro exploranda Grae<anchor rend="-" type="sillabazione_fine_rigo"/>corum 
+<lb/>continentia, et si fors tulisset castri, 
+<lb/>aut civitatis alicujus occupationem trans fre<anchor rend="-" type="sillabazione_fine_rigo"/>tum 
+<lb/>delegata. Illi euntes, et nihil proficiendo 
+<lb/>redeuntes, se magnam Graecorum multitudi<anchor rend="-" type="sillabazione_fine_rigo"/>nem 
+<lb/>in Insula Corphoë invenisse, minime ta<anchor rend="-" type="sillabazione_fine_rigo"/>men 
+<lb/>eam posse Duci resistere retulerunt. Tunc 
+<lb/>sine mora cum exercitu suo Dux paratas naves 
+<lb/>ingrediens<!-- GDM il 2017-06-05 ha corretto l'errore OCR "ingredies" -->, favente aura, brevi tempore ad 
+<lb/>hostilem terram Graecorum iuxta Ericho  
+<lb/>applicuerunt. Quaedam <!-- GDM il 2017-06-05 ha aggiunto il testo mancante (per errore OCR) "iuxta Ericho applicuerunt. Quaedam" --> vero navium, vento 
+<lb/>cogente, apud Bausum cursum te<anchor rend="-" type="sillabazione_fine_rigo"/>nuere; 
+<lb/>sed postea ipsis ad Ducem re<anchor rend="-" type="sillabazione_fine_rigo"/>vertentibus, 
+<lb/>et Cassiople, et Corphoë 
+<lb/>aliisque civitatibus, et castris Ducis potentiae 
+<lb/>solo timore subjugatis, usque Libaniam 
+<lb/>ventum est. Tunc primum Graeci Normannis 
+<lb/>frustra resistere tentaverant, Duce vero para<anchor rend="-" type="sillabazione_fine_rigo"/>tis 
+<lb/>machinis ibi semel insultum faciente, 
+<lb/>nihil amplius morantes, et se, et civitatem 
+<lb/>suam dominationi ejus subdiderunt, similiter<!-- GDM il 2017-06-05 ha corretto l'errore OCR "simileter" -->, 
+<lb/>et qui vicinum castrum habitabant faciunt, et 
+<lb/>deinde nostri Dorachium venientes, positis 
+<lb/>extra tentoriis, ipsum circumsedendo viriliter 
+<lb/>omni die oppugnare non cessant: e con<anchor rend="-" type="sillabazione_fine_rigo"/>trario 
+<lb/>Cives multa lapidum, atque telorum 
+<lb/>immissione, civitatem suam, in quantum eis 
+<lb/>naturalis<!-- GDM il 2017-06-05 ha corretto l'errore OCR "naturali" --> permittebat inertia, defensare inten<anchor rend="-" type="sillabazione_fine_rigo"/>debant, 
+<lb/>et quod viribus, atque animis eorum 
+<lb/>deficiebat, numerus, situsque loci, et 
+<lb/>Civitatis munitio supplebat. 
+</p> 
+<p> 
+<lb/>Jam de hostili adventu Normannorum, et 
+<lb/>terrifica ipsorum ad quemcumque locum ve<anchor rend="-" type="sillabazione_fine_rigo"/>nerant 
+<lb/>oppugnatione; allecti, Constanti<anchor rend="-" type="sillabazione_fine_rigo"/>nopolitano 
+<lb/>Regi diversis nuntiis indubitanter 
+<lb/>relato, ipse innumeras acies sui Imperii ad 
+<lb/>resistendum eis congregaverat: jamque 
+<lb/>Veneti multa largitione munerum, et 
+<lb/>majoribus promissis ad auxilium ejus convo<anchor rend="-" type="sillabazione_fine_rigo"/>cati, 
+<lb/>usque Durachium navigaverant. Sed 
+<lb/>Dux, cujus potentia nihil remissum, nihilque 
+<lb/>prorsus inexploratum relinquebat, eis a 
+<lb/>late<!-- GDM il 2017-06-05 ha corretto l'errore OCR "lare" --> cognitis partem suorum contra eos 
+<lb/>pugnaturam ante portum Ysdroti praemi<anchor rend="-" type="sillabazione_fine_rigo"/>sit, 
+<lb/>quibus more solito bellum audacter inci<anchor rend="-" type="sillabazione_fine_rigo"/>pientibus, 
+<lb/>Veneti postquam feroces 
+<lb/>eorum ingressus non valerent sustinere, 
+<lb/>terga vertentes, usque in crastinum pro pace 
+<lb/>cum nostris foederanda inducias requirunt, 
+<lb/>nostri datis utrinque induciis ad castra redeunt. 
+<lb/>Sed Veneti, et frequenti Graecorum cohabita-<!-- Trattino da togliere a mano --> 
+<cb n="770"/> 
+<lb/>tione<!-- GDM il 2017-06-05 ha tolto un trattino a inizio rigo (errore OCR) -->, et assumptis convicus satis in 
+<lb/>fallaciam instructi, tota nocte naves suas 
+<lb/>lapidibus, et telis, et acutis sudibus munien<anchor rend="-" type="sillabazione_fine_rigo"/>do 
+<lb/>supra malos earum lignea pro<anchor rend="-" type="sillabazione_fine_rigo"/>pugnacula 
+<lb/>machinaverunt, in cra<anchor rend="-" type="sillabazione_fine_rigo"/>stino 
+<lb/>pro confirmanda pace promissa ad 
+<lb/>eas immittere, non solum ipsi pacem de<anchor rend="-" type="sillabazione_fine_rigo"/>negant, 
+<lb/>sed contumeliose minas ingerunt. 
+<lb/>Nocte ergo sequenti Durachianos sibi adjun<anchor rend="-" type="sillabazione_fine_rigo"/>gentes, 
+<lb/>Luna, et vento faventibus, contra 
+<lb/>nos certamen inituri maris iter expedie<anchor rend="-" type="sillabazione_fine_rigo"/>bant. 
+<lb/>Quorum cognito accessu, protinus 
+<lb/>obviam eis navigantes, audacter cum ipsis 
+<lb/>bellum incipiunt. Tandemque una Venetorum 
+<lb/>navi cum omnibus submersa, aliis versis in fu<anchor rend="-" type="sillabazione_fine_rigo"/>gam, 
+<lb/>bellum dimittitur. Veniente autem di<anchor rend="-" type="sillabazione_fine_rigo"/>luculo, 
+<lb/>cum nostri armigeri ad remota 
+<lb/>loca pro efferendis victualibus iter haberent, 
+<lb/>a supercilio montis in Vale prospicientes, ar<anchor rend="-" type="sillabazione_fine_rigo"/>matam 
+<lb/>hostium multitudinem infinitam, ac si 
+<lb/>totus Orbis convenisset, Alexio eos ducente, 
+<lb/>viderunt accedere; qui summa festinatio<anchor rend="-" type="sillabazione_fine_rigo"/>ne 
+<lb/>ad castra redeuntes, rem uti cognoverant 
+<lb/>Duci invictissimo retulere. Sed ille, cujus ani<anchor rend="-" type="sillabazione_fine_rigo"/>mositatis 
+<lb/>experientia tot plena successibus, 
+<lb/>nihil arduum, nihilque formidabile reputabat, 
+<lb/>ne forte suorum aliqui tanta multitudine per<anchor rend="-" type="sillabazione_fine_rigo"/>territi 
+<lb/>spem salutis in fugam ponendo, minus 
+<lb/>audacter contra hostes decertarent, na<anchor rend="-" type="sillabazione_fine_rigo"/>ves 
+<lb/>suas extractas ab aequore animato igne jussit 
+<lb/>omnes illico concremare. O admiranda 
+<lb/>prudentis audacia, o sapiens, et memorando 
+<lb/>semper animo Ducis providentia! 
+<lb/>Ne casu aliquo consuetam sibi victoriam posset 
+<lb/>amittere, id quod eam in bello frequentius 
+<lb/>timidis solet auferre, spem fugiendi videlicet, 
+<lb/>omnino ab exercitu suo festinavit 
+<lb/>removere. Crematis navibus, et spe salutis 
+<lb/>tantummodo ad pugnandum viriliter confirma<anchor rend="-" type="sillabazione_fine_rigo"/>ta, 
+<lb/>cum Alexius forte adhuc duobus milliariis 
+<lb/>a nostrorum exercitu<!-- GDM il 2017-06-05 ha corretto l'errore OCR "exercitus" --> remotus jam castra po<anchor rend="-" type="sillabazione_fine_rigo"/>suisset, 
+<lb/>quia maxima pars diei praecesserat. 
+<lb/>Dux noster tamen, et ordinatione suarum 
+<lb/>rerum, et hostium exploratione intentus, licet 
+<lb/>jam venturam sibi palmam laetus conciperet 
+<lb/>animus, tamen usque in crastinum cum hosti<anchor rend="-" type="sillabazione_fine_rigo"/>bus 
+<lb/>pugnare distulit, et nocte praesenti ipse 
+<lb/>cum Beamundo filio suo excubandi vices 
+<lb/>suscipiens, mane facto, et Missis devote cele<anchor rend="-" type="sillabazione_fine_rigo"/>bratis, 
+<lb/>et prius peccatorum confessione, et 
+<lb/>Dominica Eucharistia reverenter ab omnibus 
+<lb/>accepta, suos ante dignitatis suae praesentiam 
+<lb/>convocatos diligenti exhortatione in viri<anchor rend="-" type="sillabazione_fine_rigo"/>lem 
+<lb/>audaciam confirmat. Demum ex praecepto 
+<lb/>ipsius, armatis omnibus, et aciebus ordinatis, 
+<lb/>tranquillo itinere<!-- GDM il 2017-06-05 ha corretto l'errore OCR "itienere" --> apud hostilia castra eos trium<anchor rend="-" type="sillabazione_fine_rigo"/>phaturus 
+<lb/>deducit. At ex alia parte Alexius 
+<lb/>Legiones suas multipliciter instruens, Anglicos 
+<lb/>suos, quos viribus, atque animis Graecis prae<anchor rend="-" type="sillabazione_fine_rigo"/>stare 
+<lb/>cognoverat, in prima acie collocat, cae<anchor rend="-" type="sillabazione_fine_rigo"/>teros 
+<lb/>vero ubi alii aliis in pugnando praevale-<!-- Trattino da togliere a mano --> 
+<cb n="771"/> 
+<lb/>bant<!-- GDM il 2017-06-05 ha tolto un trattino a inizio riga (errore OCR) -->, alios in dextra parte, alios in sini<anchor rend="-" type="sillabazione_fine_rigo"/>stra, 
+<lb/>alios in medio, alios in postremo<!-- GDM il 2017-06-05 ha corretto l'errore OCR "postermo" --> agmi<anchor rend="-" type="sillabazione_fine_rigo"/>ne 
+<lb/>curare jubet; sed ipse, quam velocissimo 
+<lb/>equo invectus, jam prae timore congelato sibi 
+<lb/>animo, inter postrema agmina, sibi praevidens 
+<lb/>qualis futura esset fortuna Anglicorum prospi<anchor rend="-" type="sillabazione_fine_rigo"/>ciebat. 
+<lb/>Postquam exercitus ambo convene<anchor rend="-" type="sillabazione_fine_rigo"/>rant, 
+<lb/>dati signis utrimque bellum violenter 
+<lb/>incipitur. Anglici in principio cum bipennibus 
+<lb/>suis fortiter feriendo, primis nostrorum incur<anchor rend="-" type="sillabazione_fine_rigo"/>sibus 
+<lb/>audacissime resistunt; sed quia neque cly<anchor rend="-" type="sillabazione_fine_rigo"/>peis, 
+<lb/>neque lorica utebantur, postquam Dux 
+<lb/>insuperabilis cum sua acie tamquam leo, 
+<lb/>et audaciam multiplicavit, ipsis oppositis clypeis 
+<lb/>mucronibus, atque lanceis eos per latera 
+<lb/>transfigendo multos eorum interficiebat. Cum<anchor rend="-" type="sillabazione_fine_rigo"/>que 
+<lb/>jam superatis Anglicis, Ducis magnanimitas 
+<lb/>per media hostium agmina ad locum ubi Alexius 
+<lb/>trepidabat festinaret, ille audito terrifico no<anchor rend="-" type="sillabazione_fine_rigo"/>mine 
+<lb/>Biscardi, quo totus sibi aër resonare vi<anchor rend="-" type="sillabazione_fine_rigo"/>debatur, 
+<lb/>urgendo corrui pedem, quam<anchor rend="-" type="sillabazione_fine_rigo"/>velocissime 
+<lb/>in fugam convertitur. Idem facit 
+<lb/>totus exercitus, quos diu nostri perse<anchor rend="-" type="sillabazione_fine_rigo"/>quendo 
+<lb/>aliis in vinculis positis, alios in<anchor rend="-" type="sillabazione_fine_rigo"/>numerabiles 
+<lb/>interficiunt<!-- GDM il 2017-06-05 ha corretto l'errore OCR "interficiut" -->. Erat autem in cam<anchor rend="-" type="sillabazione_fine_rigo"/>pis 
+<lb/>illis Ecclesia quaedam S. Nicolai, ad quam 
+<lb/>tanta multitudo victorum confugerat 
+<lb/>quod etiam secus tectum ascendentes, fractis 
+<lb/>trabibus ipsam ruere coëgerint, et quotquot 
+<lb/>infra, et superius continebantur suffocare <!-- GDM il 2017-06-05 ha corretto l'errore OCR "coe-" -->coë<anchor rend="-" type="sillabazione_fine_rigo"/>gerint. 
+<lb/>Postquam Dux adepta victoriae laetitia 
+<lb/>fugientem Alexium manus suas videt evasisse, 
+<lb/>suos ulterius persequi prohibet. Inde ad ca<anchor rend="-" type="sillabazione_fine_rigo"/>stra 
+<lb/>hostium redeundo, ex intemato 
+<lb/>ipsius praecepto, quod quicumque 
+<lb/>tentoriam seu pauper, seu dives contingebat 
+<lb/>illud idem cum rebus intra repertis quie<anchor rend="-" type="sillabazione_fine_rigo"/>te 
+<lb/> GDM il 2017-06-05 ha corretto l'errore OCR "re" --> possidebat. Hoc tamen solum generaliter 
+<lb/>omnibus edictum fuit, ut prima vita 
+<lb/>Alexii<!-- GDM il 2017-06-05 ha corretto l'errore OCR "alexii" --> tentoria soli Duci Victori glo<anchor rend="-" type="sillabazione_fine_rigo"/>rioso 
+<lb/>contingerent. Nocte illa et sequenti 
+<lb/>die triumphantibus gaudiis solemnibus 
+<lb/>ibidem celebratis, omnibusque divitibus Grae<anchor rend="-" type="sillabazione_fine_rigo"/>corum 
+<lb/>spoliis abundanter locupletatis; 
+<lb/>sollemnia, ut securus in eisdem partibus hye<anchor rend="-" type="sillabazione_fine_rigo"/>mare, 
+<lb/>et Durachianos ad deditionem cogere 
+<lb/>posset, in colle uno juxta unum flu<anchor rend="-" type="sillabazione_fine_rigo"/>vium, 
+<lb/>castrum quoddam fortissimum, quod 
+<lb/>postea mons Biscardi appellatum est, brevi 
+<lb/>tempore constituit. Cumque diu in oppugna<anchor rend="-" type="sillabazione_fine_rigo"/>tione 
+<lb/>Durachii persisterent, quidam Veneticus 
+<lb/>negotiator, Dominicus nomine, Graecorum fa<anchor rend="-" type="sillabazione_fine_rigo"/>miliaris 
+<lb/>amicus, turrim quamdam, quae in ci<anchor rend="-" type="sillabazione_fine_rigo"/>vitate 
+<lb/>erat fortissima custodiebat. Cum eo 
+<lb/>Dux noster nocte una secretum habens collo<anchor rend="-" type="sillabazione_fine_rigo"/>quium, 
+<lb/>ut infra turrim milites suos armatos 
+<lb/>clam reciperet, pacta sibi pecunia impetravit. 
+<lb/>Quibus receptis, et vexillo clarissimi Ducis 
+<lb/>superius elevato, Cives non mediocriter ter<anchor rend="-" type="sillabazione_fine_rigo"/>rore 
+<lb/>percussi, ultra triduum deditionem 
+<lb/>differunt in urbe dedita, et fourmento 
+<lb/>de Rossano ibidem ad custodiam deputato, 
+<lb/>Dux infatigabilis ad Casteriam expu<anchor rend="-" type="sillabazione_fine_rigo"/>gnandam 
+<lb/>exercitum suum deducit. In hac ci<anchor rend="-" type="sillabazione_fine_rigo"/>vitate 
+<lb/>Alexius, quia pusillanimitati Graecorum 
+<lb/>diffidebat<!-- GDM il 2017-06-05 ha corretto l'errore OCR "dissidebat" -->, trecentos Anglicos ad defensionem 
+<lb/>posuerat, qui Duce ad obsidionem veniente, 
+<cb n="772"/> 
+<lb/>cum se minus ad protegendum paratos esse 
+<lb/>ostenderent, ubi paratis hostibus diversorum 
+<lb/>generum machinis plus facto, quam verbis 
+<lb/>opus esse compererant, immutato animo pa<anchor rend="-" type="sillabazione_fine_rigo"/>riter 
+<lb/>omnes, et Graeci, et Anglici, ipsos, et 
+<lb/>civitatem Ducis voluntati subjiciunt: quibus 
+<lb/>benigna ejus liberalitas, sicut et alios omnes, 
+<lb/>quos in Graecia subjugaverat, eadem liberali<anchor rend="-" type="sillabazione_fine_rigo"/>tate 
+<lb/>possessiones, quas sub Alexio tenuerant 
+<lb/>habendas permisit; unde jam ipse in tanta 
+<lb/>amicorum amicitia devenerat, quod multae 
+<lb/>urbes, et castra munitissima absque ulla op<anchor rend="-" type="sillabazione_fine_rigo"/>pugnatione 
+<lb/>sponte sua ejus dominationi se 
+<lb/>subjiciebant. 
+</p> 
+<p> 
+<lb/>Anno quo Ducis Biscardi magnanimitas Ca<anchor rend="-" type="sillabazione_fine_rigo"/>storiam 
+<lb/>oppugnavit, Henricus Imperator Theo<anchor rend="-" type="sillabazione_fine_rigo"/>tonicus 
+<lb/>Orbis Papam Romae in turre Crescen<anchor rend="-" type="sillabazione_fine_rigo"/>tii 
+<lb/>reclusum obsedit, et Romani plus livori 
+<lb/>suo, et avaritiae<!-- GDM il 2017-06-05 ha corretto l'errore OCR "avaritae" -->, quam Apostolicae Institutio<anchor rend="-" type="sillabazione_fine_rigo"/>ni 
+<lb/>Ecclesiasticae unionis servandae consulentes, 
+<lb/>Gilbertum Ravenensem<!-- GDM il 2017-06-05 ha corretto l'errore OCR "Ravvenensem" --> Episcopum ponere in 
+<lb/>Sede Apostolica praesumserant. Ob haec nun<anchor rend="-" type="sillabazione_fine_rigo"/>tianda 
+<lb/>Legatus quidam Romanus ad Ducem 
+<lb/>Biscardum<!-- GDM il 2017-06-05 ha corretto l'errore OCR "biscardum" --> transfretaverat ex parte Gregorii, 
+<lb/>festinum ab eo implorans auxilium. Quo rem 
+<lb/>sibi referente, Dux noster fidelitatis constantia 
+<lb/>plenissimus, anxius non mediocriter habebatur. 
+<lb/>Dubitabat siquidem ea, quae tanto labore ac<anchor rend="-" type="sillabazione_fine_rigo"/>quisiverat, 
+<lb/>tam recenter alieno regimini intus 
+<lb/>Graecorum multiplices dolos relinquere; at 
+<lb/>contra ipse sibi, et suae fidei puritate prosus 
+<lb/>alienum videbatur in tanta necessitate Domino 
+<lb/>suo roganti non subvenire. Boamundo ergo 
+<lb/>filio suo, in regendis terra, et exercitu <!-- GDM il 2017-06-05 ha aggiunto il trattino mancante a fine riga (errore OCR) -->prae<anchor rend="-" type="sillabazione_fine_rigo"/>fecto, 
+<lb/>una sola nave contentus Ydrontum fe<anchor rend="-" type="sillabazione_fine_rigo"/>stinus 
+<lb/>applicuit; inde missis per omnem Du<anchor rend="-" type="sillabazione_fine_rigo"/>catum 
+<lb/>suum expedite literis, ubique generale 
+<lb/>edictum habebatur, ut quicumque milites, 
+<lb/>seu pedites armis deferendis erant idonei, re<anchor rend="-" type="sillabazione_fine_rigo"/>mota 
+<lb/>omni mora Ducem gloriosum apud Ro<anchor rend="-" type="sillabazione_fine_rigo"/>mam 
+<lb/>sequerentur. Universis itaque Norman<anchor rend="-" type="sillabazione_fine_rigo"/>nis, 
+<lb/>atque Longobardis inescusabiliter apud 
+<lb/>Campaniae fines convenientibus, cum jam ad 
+<lb/>locum unde Roma videri poterat perventum 
+<lb/>fuisset, admiranda Ducis integritas, cujus nec 
+<lb/>audacia, nec providentia animositatem unquam 
+<lb/>minuebat ordinatis aciebus, et semper ad pu<anchor rend="-" type="sillabazione_fine_rigo"/>gnandum 
+<lb/>paratis, tranquillo gressu agmina 
+<lb/>conducebat: sperabat enim sine dubio Ale<anchor rend="-" type="sillabazione_fine_rigo"/>mannos 
+<lb/>cum Normannis collectis in 
+<lb/>unum viriliter sibi obvios cum armis esse pro<anchor rend="-" type="sillabazione_fine_rigo"/>cessuros, 
+<lb/>nec tamen idcirco minus audacter 
+<lb/>incoeptum peragebat. At Romanus Impera<anchor rend="-" type="sillabazione_fine_rigo"/>tor, 
+<lb/>ubi de hostili ejus accessu per explorato<anchor rend="-" type="sillabazione_fine_rigo"/>res 
+<lb/>indubitanter cognoverat, Norman<anchor rend="-" type="sillabazione_fine_rigo"/>norum 
+<lb/>levitate cum insuperabili Ducis fortuna 
+<lb/>non parum incutiente timore, expedite urbem 
+<lb/>relinquendo, quae incomparabili Biscardi pro<anchor rend="-" type="sillabazione_fine_rigo"/>bitate 
+<lb/>audierat, manifestius praesens experiri 
+<lb/>non curabat. Jam fugientibus Alemannis, Dux 
+<lb/>noster cum exercitu suo appropinquans, moe<anchor rend="-" type="sillabazione_fine_rigo"/>nibus 
+<lb/>violenter dirutis, Romam ingressus <!-- GDM il 2017-06-05 ha corretto l'errore OCR "fuer-" -->-fue<anchor rend="-" type="sillabazione_fine_rigo"/>rat, 
+<lb/>et Romanis victis, Papam Gregorium a 
+<lb/>Turre Crescentii, summa exercituum audacia, 
+<lb/>ad Papalem Sedem Laterani reduxerat, cum 
+<lb/>Cives tanta et impune licuisse indignantes, 
+<lb/>die tertia ex improviso Ducem Egregium fru-<!-- Trattino da togliere a mano --> 
+<cb n="773"/> 
+<lb/>stra<!-- GDM il 2017-06-05 ha corretto l'errore OCR "-stra" --> bello tentaverunt superare. Dux namque 
+<lb/>impiger suis festinando in arma convocatis, 
+<lb/>modo solito viriliter eis resistens, per diversa 
+<lb/>loca Civitatis miscere jubet incendia, quibus 
+<lb/>intenti Romani, nostrorum aggressibus mini<anchor rend="-" type="sillabazione_fine_rigo"/>me 
+<lb/>possunt resistere. Ipsis ergo superatis, et 
+<lb/>Civitate in magna sui parte collisa, eadem die 
+<lb/>Legatos ad Dominum Papam, et ad Ducem 
+<lb/>invictissimum pro pace oranda miserunt, qia 
+<lb/>vix vioque vollirate multiplici Sacramentorum 
+<lb/>innodatione foedata; Papa tamen liberalita<anchor rend="-" type="sillabazione_fine_rigo"/>tem 
+<lb/>suam sibi a fidelissimo Duce suo restitu<anchor rend="-" type="sillabazione_fine_rigo"/>tam, 
+<lb/>Normannorum inconstantia metuens 
+<lb/>eam recenter amictere, cum triumphali eo<anchor rend="-" type="sillabazione_fine_rigo"/>dem 
+<lb/>Duce nostro in Apuliam iter habuit. Dum 
+<lb/>fugiente Henrico Alemannorum Rege Dux 
+<lb/>Normannigena tanto apud Romam triumpho 
+<lb/>potiretur, Boamundus proles ejusdem cla<anchor rend="-" type="sillabazione_fine_rigo"/>rissima, 
+<lb/>Civitatem quandam apud Graecos Ar<anchor rend="-" type="sillabazione_fine_rigo"/>sen 
+<lb/>nomine circumducta obsidione virili<anchor rend="-" type="sillabazione_fine_rigo"/>ter 
+<lb/>oppugnabat, ad cujus liberationem olim 
+<lb/>Alexius Tancredi Ducis absentia invita<anchor rend="-" type="sillabazione_fine_rigo"/>tus, 
+<lb/>cum innumera gente accessiset, Boamun<anchor rend="-" type="sillabazione_fine_rigo"/>dus 
+<lb/>miles egregius, plurimumque in se pater<anchor rend="-" type="sillabazione_fine_rigo"/>nae 
+<lb/>probitatis retinens, relicta obsidione 
+<lb/>cum instructis agminibus obviam ei pugnatu<anchor rend="-" type="sillabazione_fine_rigo"/>rus 
+<lb/>cucurrit, belloque inito, et Graecis 
+<lb/>consueto more fugientibus, laeta super eis<anchor rend="-" type="sillabazione_fine_rigo"/>dem 
+<lb/>victoria potitus est, sicque factum est, 
+<lb/>ut eadem, et singulari die, geminos 
+<lb/>Mundi fere totius imperatores ditissimos, et 
+<lb/>potentissimos Dux Biscardus, et Bora<anchor rend="-" type="sillabazione_fine_rigo"/>mundus 
+<lb/>Dux filius ejus, alter in Graecia, 
+<lb/>superarent. Quod de aliis contigisse num<anchor rend="-" type="sillabazione_fine_rigo"/>quam 
+<lb/>apud historias reperitur. Relicto apud 
+<lb/>Beneventum Apostolico, Dux insuperabilis cum 
+<lb/>militaris animus numquam poterat ge<anchor rend="-" type="sillabazione_fine_rigo"/>staret, 
+<lb/>ad Terram Graecorum jam ex maxima 
+<lb/>parte suma festinus remeavit; cujus solemnis 
+<lb/>reditus ingentem suis laetitiam, Alexio vero 
+<lb/>timorem anxium, atque moestitiam generavit. 
+<lb/>In hyeme illa multas Urbes, et Castra, num<anchor rend="-" type="sillabazione_fine_rigo"/>quam 
+<lb/>deinceps Alexio sibi occurrente, 
+<lb/>expugnando acquisivit. Sed aestate ve<anchor rend="-" type="sillabazione_fine_rigo"/>niente 
+<lb/>cum jam prope Constantinopolim solo 
+<lb/>itinere trium dierum remotus acquirendo per<anchor rend="-" type="sillabazione_fine_rigo"/>venisset, 
+<lb/>cum jam Alexius bis superatus Im<anchor rend="-" type="sillabazione_fine_rigo"/>perium 
+<lb/>potius omnino relinquere, quam pu<anchor rend="-" type="sillabazione_fine_rigo"/>gnam 
+<lb/>denuo tentare decrevisset. Cumque jam 
+<lb/>dies, Civitas Constantini nihil aliud erga 
+<lb/>ipsum quam deditionem cogitaret, XII. Kal. 
+<lb/>Augusti, Sole movente Leonem, mors sem<anchor rend="-" type="sillabazione_fine_rigo"/>per 
+<lb/>laetorum invida, Ducem invictissimum, 
+<lb/>singularem<!-- GDM il 2017-06-05 ha corretto l'errore OCR "singularemo" --> militiae leonem, totius Mundi ter<anchor rend="-" type="sillabazione_fine_rigo"/>rorem, 
+<lb/>et futurum dominatorem, cujus cly<anchor rend="-" type="sillabazione_fine_rigo"/>peus 
+<lb/>numquam declinavit in bello, vicit, do<anchor rend="-" type="sillabazione_fine_rigo"/>muit, 
+<lb/>tenuit, superavit, vitam simul, et 
+<lb/>Imperium ejus terminavit. 
+</p> 
+<p> 
+<lb/>Anno, quo apud Ydrontum congregatis na<anchor rend="-" type="sillabazione_fine_rigo"/>vibus 
+<lb/>Dux admirabilis Graecorum deduxit exer<anchor rend="-" type="sillabazione_fine_rigo"/>citum, 
+<lb/>Venerandus Comes Rogerius XXII. 
+<lb/>extra compositis Travirmenium obsedit, 
+<lb/>cumque die uno de Castro Castris ad Castrum, 
+<lb/>uno solo Comitatus milite, cui nomen 
+<lb/>Casaldus pro ordinandis rebus equitaret, Sa<anchor rend="-" type="sillabazione_fine_rigo"/>raceni, 
+<lb/>qui prope viam inter densitatem ve-<!-- Trattino da togliere a mano --> 
+<cb n="774"/> 
+<lb/>prium latuerant, eis ex improviso curtellis in<anchor rend="-" type="sillabazione_fine_rigo"/>currentes 
+<lb/>fidelissimum, Causaldum, ho<anchor rend="-" type="sillabazione_fine_rigo"/>stibus, 
+<lb/>et Comiti se interponentem, interfe<anchor rend="-" type="sillabazione_fine_rigo"/>cerunt. 
+<lb/>Comes, qui solus, et inermis contra 
+<lb/>multos armatos pugnare non sufficiebat, vix 
+<lb/>eorum insidias potuit evadere. Tandem ipsi 
+<lb/>longa obsidione, et necessariorum<!-- GDM il 2017-06-05 ha corretto l'errore OCR "necessatiorum" --> indigentia 
+<lb/>coacti, Civitatem obsessam Comiti red<anchor rend="-" type="sillabazione_fine_rigo"/>diderunt. 
+<lb/>Dedita Taurimenia et Comite in 
+<lb/>Calabriam redeunte, Paganus, quem 
+<lb/>ipse Custodem Cathaniae praefecerat, magna 
+<lb/>corruptus avaritia, Beneto multa sibi danti, et 
+<lb/>compromittenti, cum summa fraude tradere 
+<lb/>Cathaniam non erubuit. Quo audito Jordanus 
+<lb/>filius Comitis illuc festinabat<!-- GDM il 2017-06-05 ha corretto l'errore OCR "festnabat" -->, quem secuti 
+<lb/>sunt Robertus de Surdavalle, miles egre<anchor rend="-" type="sillabazione_fine_rigo"/>gius 
+<lb/>Normannigena, et Helias, qui prius 
+<lb/>fuerat Saracenus, sed tunc Fide Catholi<anchor rend="-" type="sillabazione_fine_rigo"/>cus, 
+<lb/>et gentilis gentis extirpator magnanimus, 
+<lb/>usum militiae juxta morem Normanno<anchor rend="-" type="sillabazione_fine_rigo"/>rum, 
+<lb/>cuilibet electus. Hic postea in par<anchor rend="-" type="sillabazione_fine_rigo"/>tibus 
+<lb/>Castri-Joannis a Saracenis comprehen<anchor rend="-" type="sillabazione_fine_rigo"/>sus, 
+<lb/>quia ipsum negare noluit, ab eis<anchor rend="-" type="sillabazione_fine_rigo"/>dem 
+<lb/>minutissime trucidatus, vitae inte<anchor rend="-" type="sillabazione_fine_rigo"/>gritatem 
+<lb/>cum Christo suscipere promeruit. 
+<lb/>His cum Jordano Cathaniam venientibus, Be<anchor rend="-" type="sillabazione_fine_rigo"/>nevertus 
+<lb/>ingenti suorum multitudine ele<anchor rend="-" type="sillabazione_fine_rigo"/>vatus, 
+<lb/>apertis portis hostiliter extra Civita<anchor rend="-" type="sillabazione_fine_rigo"/>tem 
+<lb/>occurrit. Sed nostri quibus ex diuturno 
+<lb/>usu pugnandi, et prosperis successibus jam 
+<lb/>nulla multitudo formidabilis habebatur, glo<anchor rend="-" type="sillabazione_fine_rigo"/>meratis 
+<lb/>agminibus, hostes quam audacissime 
+<lb/>aggrediuntur, et dum Jordanus jam multis vi<anchor rend="-" type="sillabazione_fine_rigo"/>rili 
+<lb/>ejus dextra cadentibus sibi inter caeteros 
+<lb/>Beneverto<!-- GDM il 2017-06-05 ha corretto l'errore OCR "Benerverto" --> quaerit occurrere, Benevertus so<anchor rend="-" type="sillabazione_fine_rigo"/>lius 
+<lb/>Jordani occursum, tamquam cervus leo<anchor rend="-" type="sillabazione_fine_rigo"/>nem, 
+<lb/>er agmina fugiendo quaerit effugere. 
+<lb/>Quod quia multum fortuna suis adversante  
+<lb/>diutius in apertis campis sibi non jace<anchor rend="-" type="sillabazione_fine_rigo"/>bat, 
+<lb/>infra muros se recepit, suis <!-- GDM il 2017-06-05 ha aggiunto il testo "adversante  diutius in apertis campis sibi non jace- bat, infra muros se recepit, suis", che mancava per un errore OCR --> idem facien<anchor rend="-" type="sillabazione_fine_rigo"/>tibus, 
+<lb/>portae clauduntur, multi quibus introire 
+<lb/>non licuit a nostris interfecti sunt. Hostibus 
+<lb/>infra moenia receptis, Jordanus prius recede<anchor rend="-" type="sillabazione_fine_rigo"/>re, 
+<lb/>quam Civitate potiri recusat. Ipso ergo 
+<lb/>tamquam cum maximo exercitu eum circum<anchor rend="-" type="sillabazione_fine_rigo"/>sedente, 
+<lb/>Benevertus neque suorum viribus, 
+<lb/>neque Civitati satis confidens, in nocte pro<anchor rend="-" type="sillabazione_fine_rigo"/>xima 
+<lb/>Paganum proditorem secum ducendo 
+<lb/>apud Syragusiam refugit, ubi eum<!-- GDM il 2017-06-05 ha corretto l'errore OCR "cum" --> quasi ex 
+<lb/>merito promissa repetentem, Syragusani pro 
+<lb/>munere sibi mortem non promissam, tamen 
+<lb/>sceleri suo debitam intulerunt. Insequenti 
+<lb/>tempore Benevertus multa rabie in persecu<anchor rend="-" type="sillabazione_fine_rigo"/>tione 
+<lb/>Christianorum insaniens, apud In<anchor rend="-" type="sillabazione_fine_rigo"/>cotrum 
+<lb/> GDM il 2017-06-05 ha corretto l'errore OCR "contrum" --> nocturno tempore navibus de<anchor rend="-" type="sillabazione_fine_rigo"/>ductis 
+<lb/>ipsum funditus evertit, senibus, et la<anchor rend="-" type="sillabazione_fine_rigo"/>ctantibus 
+<lb/>utriusque sexus universaliter interfe<anchor rend="-" type="sillabazione_fine_rigo"/>ctis, 
+<lb/>alios in captivitatem duxit: inde re<anchor rend="-" type="sillabazione_fine_rigo"/>misso 
+<lb/>itinere prope Regiam Ecclesiam quan<anchor rend="-" type="sillabazione_fine_rigo"/>dam 
+<lb/>in honorem S. Nicolai, et aliam in ho<anchor rend="-" type="sillabazione_fine_rigo"/>norem 
+<lb/>S. Gregorii consecratam furibun<anchor rend="-" type="sillabazione_fine_rigo"/>dus 
+<lb/>devastavit, deinde apud Squillacium na<anchor rend="-" type="sillabazione_fine_rigo"/>vigando, 
+<lb/>destructo ibidem quodam Coenobio, 
+<lb/>Sanctimoniales mulieres, quae in eodem ha<anchor rend="-" type="sillabazione_fine_rigo"/>bebantur, 
+<lb/>turpia, et inhonesta a suis praedo<anchor rend="-" type="sillabazione_fine_rigo"/>nibus 
+<lb/>pati violenter coëgit, quas redeundo 
+<cb n="775"/> 
+<lb/>secum apud Syragusiam captivavit. His audi<anchor rend="-" type="sillabazione_fine_rigo"/>ris 
+<lb/>Venerandus Comes pius Fundator Ec<anchor rend="-" type="sillabazione_fine_rigo"/>clesiae, 
+<lb/>et Defensor egregius, ipsis pauperibus 
+<lb/>compatiendo lachrymas non retinens, oratio<anchor rend="-" type="sillabazione_fine_rigo"/>ne, 
+<lb/>et jejuniis trium in hebdomada dierum, 
+<lb/>et multa eleemosynarum<!-- GDM il 2017-06-05 ha corretto l'errore OCR "eleemosyraum" --> largitione per 40. 
+<lb/>dies Omnipotenti Deo ultori scelerum justissi<anchor rend="-" type="sillabazione_fine_rigo"/>mo 
+<lb/>non cessat supplicare; demum congrega<anchor rend="-" type="sillabazione_fine_rigo"/>tis 
+<lb/>undique auxiliis, et multitudine navium 
+<lb/>parata, ipse per mare, Jordanus per terram, 
+<lb/>apud Syragusiam direxerunt exercitum, tan<anchor rend="-" type="sillabazione_fine_rigo"/>taque 
+<lb/>miraculi aperitione Dominus haec 
+<lb/>pia vota Consulis exaudisse certificare digna<anchor rend="-" type="sillabazione_fine_rigo"/>tus 
+<lb/>est, quod demissis velis nulloque remigan<anchor rend="-" type="sillabazione_fine_rigo"/>te, 
+<lb/>et penitus cessante aura, recto, et veloci 
+<lb/>cursu naves ad optatum locum advenere. 
+<lb/>Quod pius Comes, et caeteri considerantes, 
+<lb/>securi de victoria grates Deo debitas cum lau<anchor rend="-" type="sillabazione_fine_rigo"/>dibus 
+<lb/>referunt. Navibus, et Jordano apud 
+<lb/>Rafalinum convenientibus ex praecepto Co<anchor rend="-" type="sillabazione_fine_rigo"/>mitis, 
+<lb/>quidam Philippus nomine fidelis ejus, 
+<lb/>Latina, et Saracenica lingua eruditus, loqui 
+<lb/>cum XII. sibi electis sociis pro exploranda 
+<lb/>Syragusanorum continentia, usque infra por<anchor rend="-" type="sillabazione_fine_rigo"/>tum 
+<lb/>Civitatis parva devectus navicella in no<anchor rend="-" type="sillabazione_fine_rigo"/>ctis 
+<lb/>silentium<!-- GDM il 2017-06-05 ha corretto l'errore OCR "silntium" --> navigavit, qui rediens ad Con<anchor rend="-" type="sillabazione_fine_rigo"/>sulem 
+<lb/>Benervetum navale<!-- GDM il 2017-06-05 ha corretto l'errore OCR "nanvale" --> bellum parantem, 
+<lb/>et sine dubio pugnaturum nuntiavit. Tali ru<anchor rend="-" type="sillabazione_fine_rigo"/>more 
+<lb/>Consul, et Normanni sui magnam agen<anchor rend="-" type="sillabazione_fine_rigo"/>tes 
+<lb/>laetitiam, Dominum in primis collaudando, 
+<lb/>ad celebrandum Divini ordinem officii Capel<anchor rend="-" type="sillabazione_fine_rigo"/>lanos 
+<lb/>invitat. Quo expleto, et post peccato<anchor rend="-" type="sillabazione_fine_rigo"/>rum 
+<lb/>Confessionem, Dominico Corpore 
+<lb/>ab omnibus reverenter recepto, Comes Jor<anchor rend="-" type="sillabazione_fine_rigo"/>danum 
+<lb/>in agendis rebus, et Urbe obsidenda 
+<lb/>docet, instruit, et ne priusquam navale bel<anchor rend="-" type="sillabazione_fine_rigo"/>lum 
+<lb/>omnino finiatur, insultum facere <!-- GDM il 2017-06-05 ha corretto l'errore OCR "praefu" -->praesu<anchor rend="-" type="sillabazione_fine_rigo"/>mat, 
+<lb/>et monet, atque praecipit. Deinde Jor<anchor rend="-" type="sillabazione_fine_rigo"/>dano 
+<lb/>cum ordinatis aciebus Civitatem appro<anchor rend="-" type="sillabazione_fine_rigo"/>pinquante, 
+<lb/>ipse paratis, quae paranda erant, 
+<lb/>vela dari vento, et ad hostilem Syragusiam 
+<lb/>cursum jubet expedire. Mane quodam die Lu<anchor rend="-" type="sillabazione_fine_rigo"/>nae, 
+<lb/>navibus suis cum Benerveto convenienti<anchor rend="-" type="sillabazione_fine_rigo"/>bus, 
+<lb/>navale proelium utrinque audacter hor<anchor rend="-" type="sillabazione_fine_rigo"/>rifice 
+<lb/>telorum, et lapidum emissione inchoa<anchor rend="-" type="sillabazione_fine_rigo"/>tur. 
+<lb/>Sed quoniam nostri in arcu, et ba<anchor rend="-" type="sillabazione_fine_rigo"/>lista, 
+<lb/>quorum nec usus, nec doctrina hostibus 
+<lb/>inerat, abundabant, multos eorum im<anchor rend="-" type="sillabazione_fine_rigo"/>pune 
+<lb/>vulnerabant, quod Benervetus super om<anchor rend="-" type="sillabazione_fine_rigo"/>nia 
+<lb/>damna suis inferre prospiciens, dum 
+<lb/>adhuc pugnae fortuna in incerto habebatur, 
+<lb/>manum prius conferre accelerat. Itaque 
+<lb/>celeri navigatione in aspectum Consulis cur<anchor rend="-" type="sillabazione_fine_rigo"/>sum 
+<lb/>expediens, navem ejus quibusdam un<anchor rend="-" type="sillabazione_fine_rigo"/>cis 
+<lb/>ferreis, quos secum detulerat occupare, 
+<lb/>aut diruptam, etiam undis submergere pa<anchor rend="-" type="sillabazione_fine_rigo"/>rabat, 
+<lb/>quem magnanimus Comes <!-- GDM il 2017-06-05 ha corretto l'errore OCR "toti" -->totis 
+<lb/>invicendo viribus, gemina licet in<anchor rend="-" type="sillabazione_fine_rigo"/>dutum 
+<lb/>lorica, per medium pectus lancea 
+<lb/>transfigens, extracto ense in hostilem na<anchor rend="-" type="sillabazione_fine_rigo"/>vem 
+<lb/>persequitur. Sed Benervetus, jam sibi 
+<lb/>mutato animo prae omnibus eum volens effu<anchor rend="-" type="sillabazione_fine_rigo"/>gere, 
+<lb/>dum infelicem animam, quam jam ple<anchor rend="-" type="sillabazione_fine_rigo"/>ne 
+<lb/>amiserat in proximam sociorum navem <!-- GDM il 2017-06-05 ha corretto l'errore OCR "fa" -->sa<anchor rend="-" type="sillabazione_fine_rigo"/>liendo 
+<lb/>quaerit retinere, pressus pondere lorica<anchor rend="-" type="sillabazione_fine_rigo"/>rum, 
+<lb/>decidendo sub undis eam cogitur 
+<lb/>relinquere. Quo facto suos statim in fugam 
+<cb n="776"/> 
+<lb/>conversos nostri audacissime ense alios detrun<anchor rend="-" type="sillabazione_fine_rigo"/>cando 
+<lb/>persequuntur. At adepta vi<anchor rend="-" type="sillabazione_fine_rigo"/>ctoriae 
+<lb/>laetitia, Comes priusquam ad litus velit 
+<lb/>descendere, Benervetum quaesitum, et a fundo 
+<lb/>maris extractum capite detruncare, et per 
+<lb/>unum cujus vitae pepercerat caput ad Africa<anchor rend="-" type="sillabazione_fine_rigo"/>num 
+<lb/>Regem deferri jubet. At Syracusani licet 
+<lb/>Benervetis, et aliorum interitus maximam ejus 
+<lb/>desolationem attulisset, tamen multitudini Si<anchor rend="-" type="sillabazione_fine_rigo"/>culorum, 
+<lb/>quae plurima in eorumdem 
+<lb/>convenerat auxilio, et civitatis suae munitioni 
+<lb/>confidentes, constanti animo deditionem facere 
+<lb/>recusant, et ut Comiti animum morandi diu<anchor rend="-" type="sillabazione_fine_rigo"/>tius 
+<lb/>ad obsidionem minuerent, Christianos om<anchor rend="-" type="sillabazione_fine_rigo"/>nes, 
+<lb/>qui apud ipsos captivi tenebantur, libe<anchor rend="-" type="sillabazione_fine_rigo"/>ros 
+<lb/>abire permiserunt. Sed Comes, cujus pro<anchor rend="-" type="sillabazione_fine_rigo"/>bitatis 
+<lb/>constantia nihil unquam honeste incoep<anchor rend="-" type="sillabazione_fine_rigo"/>tum 
+<lb/>nisi peractum relinquere volebat, non 
+<lb/>prius inde recedere, quam civitate potiri affir<anchor rend="-" type="sillabazione_fine_rigo"/>mando, 
+<lb/>perseverat<!-- GDM il 2017-06-05 ha corretto l'errore OCR "perserverat" --> igitur eam hostiliter cir<anchor rend="-" type="sillabazione_fine_rigo"/>cumsedendo, 
+<lb/>et omni die diversis machinarum 
+<lb/>generibus viriliter expugnando, magis atque 
+<lb/>magis vires, atque animos Civibus minuebat. 
+<lb/>Jamque illis penitus imminutis, et cibariorum 
+<lb/>cogente indigentia uxore Benerveti nocte apud 
+<lb/>Nothum oppidum cum filio suo fugiente, Sy<anchor rend="-" type="sillabazione_fine_rigo"/>ragusani, 
+<lb/>qui totiens Christianorum sanguinem 
+<lb/>effunderant, ulterius deditionem protrahere 
+<lb/>non festinant. Post deditam Syragusiam Co<anchor rend="-" type="sillabazione_fine_rigo"/>mes 
+<lb/>iterum congregato exercitu Agrigentum 
+<lb/>obsessum XXV. die Julii expugnavit, ubi cum 
+<lb/>Deo ita<!-- GDM il 2017-06-05 ha corretto l'errore OCR "ira" --> disponente uxorem Castri-Joannis Ty<anchor rend="-" type="sillabazione_fine_rigo"/>ranni, 
+<lb/>qui Hamus dicebatur, cum pueris suis 
+<lb/>inventam apprehenderet, absque ulla laesio<anchor rend="-" type="sillabazione_fine_rigo"/>ne 
+<lb/>cum honore maximo, et nostrorum 
+<lb/>afficientia, custodiri praecepit. Quod factum 
+<lb/>marito ejus indubitanter relatum, ipsum non 
+<lb/>solummodo ad Castri-Joannis deditionem, ve<anchor rend="-" type="sillabazione_fine_rigo"/>rumetiam 
+<lb/>ad Christianae Fidei conversionem 
+<lb/>plurimum animavit. Post paucos ergo dies 
+<lb/>rebus sibi, et pactionibus cum Comite nostro 
+<lb/>per fideles nuntios ordinatis, et die constituto 
+<lb/>Comite ad determinatum locum cum 
+<lb/>militibus accedente, ipse simulans ad remota 
+<lb/>loca se esse iturum pro perquirendis, quorum 
+<lb/>auxilio Normannorum viribus posset resistere; 
+<lb/>dum quasi nescius ad locum ubi Comes tran<anchor rend="-" type="sillabazione_fine_rigo"/>situm 
+<lb/>ipsius expectabat cum paucis pervenis<anchor rend="-" type="sillabazione_fine_rigo"/>set, 
+<lb/>Consul eum velut captivum honorifice 
+<lb/>secum apud Agrigentum deduxit. De captio<anchor rend="-" type="sillabazione_fine_rigo"/>ne 
+<lb/>hujus Castrum-Joannis audito, habi<anchor rend="-" type="sillabazione_fine_rigo"/>tatores 
+<lb/>ulterius deditionem non differunt, qui<anchor rend="-" type="sillabazione_fine_rigo"/>bus 
+<lb/>ita potitis<!-- GDM il 2017-06-05 ha corretto l'errore OCR "positis" -->, Hamo et uxore sua, et 
+<lb/>pueris, et plurima parte familiae, sponte sua 
+<lb/>relicto veteri errore Baptismatis fonte sacro 
+<lb/>innovatis, et deinde in Calabriam, ubi prope 
+<lb/>Melfium provida Consulis benignitas ter<anchor rend="-" type="sillabazione_fine_rigo"/>ram 
+<lb/>eis, et redditus largita est delegatis, Co<anchor rend="-" type="sillabazione_fine_rigo"/>mes 
+<lb/>cum exercitu suo Buceimam accedens 
+<lb/>eam expugnavit. Eodem anno apud Tra<anchor rend="-" type="sillabazione_fine_rigo"/>num 
+<lb/>cum Papa Urbano colloquium celebra<anchor rend="-" type="sillabazione_fine_rigo"/>vit; 
+<lb/>post cujus recessum cum ipse ad Nothi 
+<lb/>expugnationem extremos labores Siciliae prae<anchor rend="-" type="sillabazione_fine_rigo"/>pararet, 
+<lb/>uxor Benerveti cum filio suo, et qui<anchor rend="-" type="sillabazione_fine_rigo"/>busdam 
+<lb/>sibi familiaribus nocte ad mare, et 
+<lb/>deinde in Africam ad Regem Tevinium 
+<lb/>profugiens; idem oppidum absque ullo belli 
+<cb n="777"/> 
+<lb/>honore sibi possidendum reliquit. 
+</p> 
+<p> 
+<lb/>Post debellatam egregia virtute Comitis ad 
+<lb/>plenum Siciliam<!-- GDM il 2017-06-05 ha corretto l'errore OCR "Siciliaem" -->, et eadem<!-- GDM il 2017-06-05 ha corretto l'errore OCR "aedem" --> in tranquilla pace 
+<lb/>ordinata, Creraborgi uxore illius defun<anchor rend="-" type="sillabazione_fine_rigo"/>cta, 
+<lb/>duxit alteram a nobilissimo sanguine Ca<anchor rend="-" type="sillabazione_fine_rigo"/>roli 
+<lb/>Magni ducentem prosapiam in partibus 
+<lb/>Lombardiae oriundam, et studiose a Parenti<anchor rend="-" type="sillabazione_fine_rigo"/>bus 
+<lb/>enutritam, et honestis moribus <!-- GDM il 2017-06-05 ha corretto l'errore OCR "inorma" -->informa<anchor rend="-" type="sillabazione_fine_rigo"/>tam, 
+<lb/>cujus nomen fuit Aëles Mabissa. 
+<lb/>Haec autem habuit duas sorores pulcherrimas, 
+<lb/>quas Comes duobus filiis suis, majiorem Ru<anchor rend="-" type="sillabazione_fine_rigo"/>frido, 
+<lb/>minorem Jordano, non satis dextro 
+<lb/>omine desponsavit. Goffridus namque post 
+<lb/>pauca tempora a gravissima et incurabili aegri<anchor rend="-" type="sillabazione_fine_rigo"/>tudine 
+<lb/>praeventus, adhuc vivente uxore clau<anchor rend="-" type="sillabazione_fine_rigo"/>strum 
+<lb/>soli deo militare disposuit; at Jordanum 
+<lb/>neque genus, neque probitas, neque honestis<anchor rend="-" type="sillabazione_fine_rigo"/>sima 
+<lb/>morum elegantia diu in praesenti vita ser<anchor rend="-" type="sillabazione_fine_rigo"/>vare 
+<lb/>potuere. Hic apud Syragusiam, ubi Pa<anchor rend="-" type="sillabazione_fine_rigo"/>ter 
+<lb/>suus ipsum Principem constituerat, febre 
+<lb/>acuta superveniente defunctus, in Messa<anchor rend="-" type="sillabazione_fine_rigo"/>na 
+<lb/>apud Ecclesiam S. Nicolai sepultus est. 
+<lb/>Post sanctissimus Comes occulto Dei judicio 
+<lb/>penitus a virili prole orbatus, fusa ad Deum 
+<lb/>prece in spe sobolis procreandae uxorem 
+<lb/>suam cognovit, in eaque filios, et filias 
+<lb/>generavit. Qui usque ad senectutem honestis<anchor rend="-" type="sillabazione_fine_rigo"/>simam 
+<lb/>agens vitam, plurimum in aedifi<anchor rend="-" type="sillabazione_fine_rigo"/>catione 
+<lb/>Ecclesiarum intentus, easque, prout 
+<lb/>insolita ipsius posteritas adhuc et regit, 
+<lb/>et conservat, per totam terram suam copiose 
+<lb/>ditando, et juxta Gallietum religiose, 
+<lb/>atque decenter ordinando, pius orphanorum 
+<lb/>protector, et munificus pauperum Christi sub<anchor rend="-" type="sillabazione_fine_rigo"/>levator 
+<lb/>extitit. Cumque his, et similibus pro<anchor rend="-" type="sillabazione_fine_rigo"/>ficiendo 
+<lb/>semper in melius, honestae Sanctitatis 
+<lb/>exemplum cunctis existeret, tandem necessaria 
+<lb/>humanae conditionis lege naturalem in eo dis<anchor rend="-" type="sillabazione_fine_rigo"/>solutionem 
+<lb/>operante, illam illustrem ani<anchor rend="-" type="sillabazione_fine_rigo"/>mam 
+<lb/>tanta collustratione, vel meritorum col<anchor rend="-" type="sillabazione_fine_rigo"/>legio, 
+<lb/>ante conspectum Divinae<!-- GDM il 2017-06-05 ha corretto l'errore OCR "Diviane" --> Majestatis ex<anchor rend="-" type="sillabazione_fine_rigo"/>pirando 
+<lb/>delegavit, corpusque ejus apud Melli<anchor rend="-" type="sillabazione_fine_rigo"/>tum 
+<lb/>in Ecclesia, quam ipse fundaverat hono<anchor rend="-" type="sillabazione_fine_rigo"/>rifice, 
+<lb/>ut tantum virum decebat, sepultum est. 
+</p> 
+<p> 
+<lb/>Post hunc Simon, filiorum primogeni<anchor rend="-" type="sillabazione_fine_rigo"/>tus, 
+<lb/>regimen Consulare accepit: qui per paucos 
+<lb/>vivens annos, graves ab Apulis irritationes su<!-- Trattino da togliere a mano (riunire parola nella seconda riga) --> 
+<lb/>stinuit. 
+</p> 
+<p> 
+<lb/>Huic successit ille hominum maximus 
+<lb/>a Deo dilectus, et benedictus unicus leo, et 
+<lb/>pacis fundamentum Rogerius, Mundi admira<anchor rend="-" type="sillabazione_fine_rigo"/>tio, 
+<lb/>virtutum omnium splendor, et prae Re<anchor rend="-" type="sillabazione_fine_rigo"/>gibus 
+<lb/>haeres sapiens, et immensus 
+<lb/>omnia prius tamen Comes, postea 
+<lb/>Dei nutu, tum incomparabili ejus scientia 
+<lb/>operante dignus, feroces Apuliae, et Capuae 
+<lb/>Principatus, ad ultimum Rex Siciliae, Tripo<anchor rend="-" type="sillabazione_fine_rigo"/>lis 
+<lb/>Africae potentissimus, fines suos longe, la<anchor rend="-" type="sillabazione_fine_rigo"/>teque 
+<lb/>multiplici terrarum acquisitione amplia<anchor rend="-" type="sillabazione_fine_rigo"/>vit; 
+<lb/>ad cujus laudes, et gesta probita<anchor rend="-" type="sillabazione_fine_rigo"/>tis 
+<lb/>singulariter referenda, quoniam Ciceronis 
+<lb/>eloquentiam insufficientem fuisse reputo, ego 
+<lb/>qui fere nullus sum, tantae gravitatis onus mihi 
+<lb/>adhuc incognitum in praesenti temptare for<!-- Trattino da togliere a mano (riunire parola nella seconda riga) --> 
+<lb/>mido.) 
+</p> 
+<p> 
+<lb/>Post mortem Comitis Rogerii, prout 
+<cb n="778"/> 
+<lb/>continetur in Chronica, successit Rogerius sibi 
+<lb/>filius suus, sub Gubernatione Georgii Admirati 
+<lb/>existentis in Civitate Panormi, et dominabatur 
+<lb/>per totum Regnum Italiae. Tunc Papa sciens 
+<lb/>Rogerium, qui remanserat ad succedendum in 
+<lb/>Regno, esse parvulum, misit navigium contra 
+<lb/>eum, et venit Romam. Sentiens autem Geor<anchor rend="-" type="sillabazione_fine_rigo"/>gius 
+<lb/>Admiratus, quod Papa paraverat exercitum 
+<lb/>per mare, et per terram, contra eum bellum 
+<lb/>paravit, in quo bello maritimo Georgius debel<anchor rend="-" type="sillabazione_fine_rigo"/>lavit 
+<lb/>navigium Papae. Rogerius vero venit cum 
+<lb/>suo exercitu in Apuliam, et obsedit civitatem 
+<lb/>Venusiae, in qua erat Papa cum toto Collegio, 
+<lb/>ubi facientibus Venusinis, Papam, et Collegium 
+<lb/>totum captivum detinuit, qui ad cor rediens, 
+<lb/>et poenitentia ductus ipse Rogerius liberavit 
+<lb/>pontificem, et sibi cum magna reverentia, et 
+<lb/>cordis contritione cum corrigia in collo tam<anchor rend="-" type="sillabazione_fine_rigo"/>quam 
+<lb/>Sanctissimo veniam misericorditer postu<anchor rend="-" type="sillabazione_fine_rigo"/>lavit, 
+<lb/>ac etiam sui milites fecerunt. Tunc vero 
+<lb/>Sanctissimus Pontifex videns contritionem Co<anchor rend="-" type="sillabazione_fine_rigo"/>mitis 
+<lb/>Rogerii, et suorum, eis tamquam miseri<anchor rend="-" type="sillabazione_fine_rigo"/>cors 
+<lb/>Pater gratiose pepercit, et faciens cum 
+<lb/>suo Collegio consistorium in Venusio in Regem 
+<lb/>Siciliae Rogerium diademate coronavit. 
+</p> 
+<p> 
+<lb/>Eodem tempore Rex Alamanniae insurgens 
+<lb/>contra Ecclesiam Romanam venit, et non per<anchor rend="-" type="sillabazione_fine_rigo"/>mittebat 
+<lb/>Papam Romam ingredi, et tunc Ro<anchor rend="-" type="sillabazione_fine_rigo"/>gerius 
+<lb/>Rex una cum Pontifice secum suum 
+<lb/>exercitum ducens ivit Romam, et Regem Ale<anchor rend="-" type="sillabazione_fine_rigo"/>manniae 
+<lb/>manu potenti, et extenso brachio de<anchor rend="-" type="sillabazione_fine_rigo"/>bellavit, 
+<lb/>et Summum Pontificem in sua Sede 
+<lb/>restituit, demum venit Panormum, ibique de<anchor rend="-" type="sillabazione_fine_rigo"/>functus 
+<lb/>est, et ibidem sepultus relinquens in 
+<lb/>successorem suum legitimum Guilielmum Ma<anchor rend="-" type="sillabazione_fine_rigo"/>lum, 
+<lb/>qui sua Tyrannide totam Ecclesiam, et 
+<lb/>Dei Populum destruebat; de quo Guilielmo 
+<lb/>pessimo natus est Guilielmus Bonus, qui multas 
+<lb/>Ecclesias ad Dei, et Sanctorum honorem con<anchor rend="-" type="sillabazione_fine_rigo"/>struxit, 
+<lb/>videlicet Ecclesiam Sanctae Mariae de 
+<lb/>Monriale, et quamplures alias prout in sua 
+<lb/>Chronica continetur. Necnon dimisit unam 
+<lb/>filiam nomine Constantiam in Monasterio San<anchor rend="-" type="sillabazione_fine_rigo"/>ctae 
+<lb/>Mariae de Panormo claudam, in visu obli<anchor rend="-" type="sillabazione_fine_rigo"/>quam, 
+<lb/>et ob causam hanc extiterat in Mona<anchor rend="-" type="sillabazione_fine_rigo"/>sterio 
+<lb/>posita; qui quidem bonus Rex Guiliel<anchor rend="-" type="sillabazione_fine_rigo"/>mus 
+<lb/>habuit in uxorem filiam Regis Angliae, 
+<lb/>quam numquam carnaliter cognovit, et ultimo 
+<lb/>post ejus mortem virgo permansit, qui post<anchor rend="-" type="sillabazione_fine_rigo"/>quam 
+<lb/>mortuus est, cum patre suo Panormi se<anchor rend="-" type="sillabazione_fine_rigo"/>pultus 
+<lb/>est. 
+</p> 
+<p> 
+<lb/>Illo vero tempore Principes Alemanniae Im<anchor rend="-" type="sillabazione_fine_rigo"/>peratorem 
+<lb/>fecerunt Henricum, qui veniens 
+<lb/>Romam per Papam Imperii coronam accepit, et 
+<lb/>in uxorem Constantiam Monialem, quae stete<anchor rend="-" type="sillabazione_fine_rigo"/>rat 
+<lb/>in Monasterio per annos XL. cui Henrico 
+<lb/>quodam tempore per Calabriam transeunti apud 
+<lb/>Neocastrum Abbas Joachim eruditissimus dixit 
+<lb/>per Spiritum Prophetiae, quod uxor sua gra<anchor rend="-" type="sillabazione_fine_rigo"/>vida 
+<lb/>erat, quae adhuc gravedinem nullam ventris 
+<lb/>sentiens, de daemone erat praegnans. Tunc Hen<anchor rend="-" type="sillabazione_fine_rigo"/>ricus 
+<lb/>fecit coram se Joachim accersiri, ut ei 
+<lb/>indicaret; quare dixerat Reginam Constantiam 
+<lb/>Daemonem parituram, qui respondit ei, dixit 
+<lb/>quod filius suus nasciturus debebat mori ex<anchor rend="-" type="sillabazione_fine_rigo"/>communicatus, 
+<lb/>et ideo qui extra Communio-<!-- Trattino da togliere a mano --> 
+<cb n="779"/> 
+<lb/>nem<!-- GDM il 2017-06-05 ha tolto un trattino dall'inizio del rigo (errore OCR) --> Ecclesiae est positus, et moritur sine Ec<anchor rend="-" type="sillabazione_fine_rigo"/>clesiae 
+<lb/>Sacramentis, recte dici potest <!-- GDM il 2017-06-05 ha corretto l'errore OCR "Daemoni" -->Daemonis 
+<lb/>filius, et sic fuit, prout experientia<!-- GDM il 2017-06-05 ha corretto l'errore OCR "experentia" --> temporum 
+<lb/>manifestat. De qua Regina Constantia propter 
+<lb/>nimiam senectutem spem foecunditatis, seu pro<anchor rend="-" type="sillabazione_fine_rigo"/>lis 
+<lb/>omnis amiserat praecipue Romana Ecclesia, 
+<lb/>ipsa vero postmodum temporis peperit filium 
+<lb/>nomine Federicum, et volens tam Regnicolas, 
+<lb/>quam Romanam Ecclesiam de sua foecundita<anchor rend="-" type="sillabazione_fine_rigo"/>te 
+<lb/>certificari, Papa, quia<!-- GDM il 2017-06-05 ha corretto l'errore OCR "qia" --> anus erat jam effe<anchor rend="-" type="sillabazione_fine_rigo"/>cta, 
+<lb/>et tale quod difficile ad credendum, se 
+<lb/>per diversas civitates Imperii, et Regni con<anchor rend="-" type="sillabazione_fine_rigo"/>tulit 
+<lb/>Siciliae famosissimas<!-- GDM il 2017-06-05 ha corretto l'errore OCR "famosissima" -->, ostendendo cunctis hoc 
+<lb/>non credentibus nudas mammas, sive mam<anchor rend="-" type="sillabazione_fine_rigo"/>millas 
+<lb/>lacte plenas, quod quidem factum cun<anchor rend="-" type="sillabazione_fine_rigo"/>cti 
+<lb/>crediderunt Dei fore miraculum abjicientes 
+<lb/>incredulitatem concipiendi, quam de ipsa ha<anchor rend="-" type="sillabazione_fine_rigo"/>buerant 
+<lb/>cordibus suis totaliter. Sentiens<!-- GDM il 2017-06-05 ha corretto l'errore OCR "Senties" --> au<anchor rend="-" type="sillabazione_fine_rigo"/>tem 
+<lb/>hoc Papa, quod Regina in sobole erat 
+<lb/>foecunda<!-- GDM il 2017-06-05 ha corretto l'errore OCR "soecunda" -->, Henrico viro Constantiae concessit 
+<lb/>Imperium, quod tranquilla pace nullo tempo<anchor rend="-" type="sillabazione_fine_rigo"/>re 
+<lb/>obtinuit, et possedit. 
+</p> 
+<p> 
+<lb/>Natus vero Federicus de Constantia fuit Rex 
+<lb/>Italiae, et demum Romanorum extitit Impe<anchor rend="-" type="sillabazione_fine_rigo"/>rator, 
+<lb/>ipsoque regnante Soldanus Babiloniae 
+<lb/>Nuntios sibi misit, ut ei nuntiaret, qua erat 
+<lb/>causa, quare Christiani eum cum exercitu 
+<lb/>continue molestabant, qui Federicus ad eum 
+<lb/>Nuntium suum transmisit D. Corradum de 
+<lb/>Amicis cum infinitis donis, cui D. Corrado 
+<lb/>suadebat Soldanus, ut ejus<!-- GDM il 2017-06-05 ha aggiunto lo spazio dopo la virgola (errore OCR) --> manus reverenter 
+<lb/>osculari deberet, et ei multa munera exhibe<anchor rend="-" type="sillabazione_fine_rigo"/>ret, 
+<lb/>cui numquam voluit consentire, imo pe<anchor rend="-" type="sillabazione_fine_rigo"/>nitus 
+<lb/>denegavit, qui Soldanus callide ipsum 
+<lb/>Dominum Corradum volens suae voluntati de<anchor rend="-" type="sillabazione_fine_rigo"/>votum 
+<lb/>reddere fieri facit atrium parvum, in 
+<lb/>quo nullus nisi flexis genibus posset<!-- GDM il 2017-06-05 ha corretto l'errore OCR "posse" --> adire, et 
+<lb/>serio pavimentum tappetis Cruce-signatis ster<anchor rend="-" type="sillabazione_fine_rigo"/>nere 
+<lb/>fecit, et fecit ipsum vocari coram se 
+<lb/>tamquam Nuntium Imperatoris, ad cujus di<anchor rend="-" type="sillabazione_fine_rigo"/>ctum 
+<lb/>intravit, sed non prout credebat reve<anchor rend="-" type="sillabazione_fine_rigo"/>renter 
+<lb/>introivit, imo retro vestigio, seu re<anchor rend="-" type="sillabazione_fine_rigo"/>trorsum 
+<lb/>atrium ad ipsum introivit Soldanum, 
+<lb/>cui Corrado quidam Turchimannus Soldani 
+<lb/>dixit, «Quare tuis conculcas pedibus Domini 
+<lb/>Crucem», qui respondit, «Unam Christum ha<anchor rend="-" type="sillabazione_fine_rigo"/>buisse 
+<lb/>bonam, et Sanctam, alias vero Cru<anchor rend="-" type="sillabazione_fine_rigo"/>ces, 
+<lb/>quas meis pedibus conculco latronum 
+<lb/>sunt, et non Christi», sicque in ultimis cum 
+<lb/>magnis donis Corradus praedictus ad Impera<anchor rend="-" type="sillabazione_fine_rigo"/>torem 
+<lb/>revertitur. Legatio<!-- GDM il 2017-06-05 ha corretto l'errore OCR "Legato" --> ejus propter quam 
+<lb/>ipse Nuntius iverat ad Soldanum fuit, ut ad 
+<lb/>hoc quod cessaret a molestia Christianorum 
+<lb/>Sepulchrum Domini Nostri Jesu Christi de<anchor rend="-" type="sillabazione_fine_rigo"/>strueret, 
+<lb/>qui Soldanus per suos subjectos man<anchor rend="-" type="sillabazione_fine_rigo"/>davit, 
+<lb/>quod ipsum destrueretur Sepulchrum, 
+<lb/>et volentes Saraceni destruere, favilla ignis ar<anchor rend="-" type="sillabazione_fine_rigo"/>dentissimi 
+<lb/>de Sepulchro exiit, et arsit per cir<anchor rend="-" type="sillabazione_fine_rigo"/>cuitum 
+<lb/>aquas, terras, mare, et omnia fere 
+<lb/>per dictas septuaginta. Deinde Federicus re<anchor rend="-" type="sillabazione_fine_rigo"/>versus 
+<lb/>in Alemanniam, et post descendit Bo<anchor rend="-" type="sillabazione_fine_rigo"/>noniam, 
+<lb/>quae rebellata est sibi, et accepit 
+<lb/>filium Imperatoris Federici captivum, et in 
+<lb/>carcere mortuus est. Barones<!-- GDM il 2017-06-05 ha corretto l'errore OCR "Baronus" --> vero Regni con<anchor rend="-" type="sillabazione_fine_rigo"/>silium 
+<lb/>inierunt, ut Federicum Imperato<anchor rend="-" type="sillabazione_fine_rigo"/>rem 
+<lb/>occiderent, et euntes se locaverunt in 
+<lb/>Thuscia, quorum conspirationem per Comi<anchor rend="-" type="sillabazione_fine_rigo"/>tissam 
+<lb/>Casertae Imperator sentiens, eos capere 
+<lb/>voluit, et ipsi fugierunt ad Terram Capacii, 
+<lb/>se contra ipsum fortiter munientes, quos Im<anchor rend="-" type="sillabazione_fine_rigo"/>perator 
+<lb/>Federicus obsedit, et sibi ultimo se 
+<cb n="780"/> 
+<lb/>tradiderunt captivos, quorum quidam per eum 
+<lb/>capite truncati sunt, quidam coecati, quidam 
+<lb/>diversis poenarum generibus interemti sunt. Et 
+<lb/>post modicum tempus venit Imperator in Apu<anchor rend="-" type="sillabazione_fine_rigo"/>liam, 
+<lb/>et ivit venatum cum suis falconibus in 
+<lb/>quodam Casale<!-- GDM il 2017-06-05 ha corretto l'errore OCR "Cafale" -->, ubi intus quadam Ecclesia 
+<lb/>sub Imagine Virginis defloravit quandam mu<anchor rend="-" type="sillabazione_fine_rigo"/>lierem, 
+<lb/>ob quod scelus passus est dysenteriam, 
+<lb/>et deportatus est in Florentia, Princeps vero 
+<lb/>Manfredus Tarentinus naturalis suus habito 
+<lb/>consilio cum quodam Secretario, cossino sup<anchor rend="-" type="sillabazione_fine_rigo"/>posito 
+<lb/>faciei eum suffocavit, et mortuus est. 
+<lb/>Post mortem ipsius venit Corradus de Ale<anchor rend="-" type="sillabazione_fine_rigo"/>mannia 
+<lb/>ad vocationem quorumdam Baronum 
+<lb/>Regni, et Coronam accepit in civitate Panor<anchor rend="-" type="sillabazione_fine_rigo"/>mi; 
+<lb/>cui dedit Manfredus ad bibendum<!-- GDM il 2017-06-05 ha corretto l'errore OCR "hibendum" --> ut mo<anchor rend="-" type="sillabazione_fine_rigo"/>reretur 
+<lb/>lapidem adamantem, et misit visce<anchor rend="-" type="sillabazione_fine_rigo"/>ra 
+<lb/>sua, et mortuus est, qui Manfredus con<anchor rend="-" type="sillabazione_fine_rigo"/>tra 
+<lb/>voluntatem Ecclesiae Regnum accepit, et 
+<lb/>regnavit modico tempore. Papa autem sciens 
+<lb/>et Cardinales miserunt ad Comitem Provinciae 
+<lb/>Carolum filium Regis Franciae, ut veniret ad 
+<lb/>Regnum Ecclesiae suscipiendum<!-- GDM il 2017-06-05 ha corretto l'errore OCR "suspiciendum" -->, qui veniens 
+<lb/>cum Baronibus Regni, qui positi erant ob ti<anchor rend="-" type="sillabazione_fine_rigo"/>morem 
+<lb/>Manfredi in exilium, contra ipsum di<anchor rend="-" type="sillabazione_fine_rigo"/>micavit 
+<lb/>Manfredum juxta Beneventum in pla<anchor rend="-" type="sillabazione_fine_rigo"/>nitie, 
+<lb/>quae dicitur Rosech, quem vita, et Re<anchor rend="-" type="sillabazione_fine_rigo"/>gno 
+<lb/>privavit. Postea Carolus Rex regnavit in 
+<lb/>Regno Siciliae in pace tranquilla, deinde venit 
+<lb/>Corradinus filius Regis Corradi de Alemannia 
+<lb/>cum D. Henrico de Hispania fratre Regis His<anchor rend="-" type="sillabazione_fine_rigo"/>paniae, 
+<lb/>et commisit bellum cum eo in cam<anchor rend="-" type="sillabazione_fine_rigo"/>pum, 
+<lb/>qui dicitur Seruccula, qui convictus ex<anchor rend="-" type="sillabazione_fine_rigo"/>titit 
+<lb/>a Carolo, et captus in loco dicto <!-- GDM il 2017-06-05 ha corretto l'errore OCR "Aftore" -->Astore 
+<lb/>in maritima, et cum eo capti fuerunt Dux 
+<lb/>Sterlich, Comes Girardus de Pisis, Comes 
+<lb/>Galventus, et Galioth filius ejus; scientes au<anchor rend="-" type="sillabazione_fine_rigo"/>tem 
+<lb/>Barones<!-- GDM il 2017-06-05 ha corretto l'errore OCR "Baronem" --> Regni quamplures, scilicet de Terra 
+<lb/>Ydront, et de Calabria, quod Corradinus ve<anchor rend="-" type="sillabazione_fine_rigo"/>nerat, 
+<lb/>se rebellaverunt contra Carolum, et po<anchor rend="-" type="sillabazione_fine_rigo"/>suerunt 
+<lb/>in castro dicto . . . . . . quos Rex Ca<anchor rend="-" type="sillabazione_fine_rigo"/>rolus 
+<lb/>post victoriam obtentam de Corradino 
+<lb/>vita privavit. Postmodum Rex Carolus Cor<anchor rend="-" type="sillabazione_fine_rigo"/>radinum, 
+<lb/>et omnes alios, quos in bello cepe<anchor rend="-" type="sillabazione_fine_rigo"/>rat, 
+<lb/>decollari in civitate Neapolitana jussit: in 
+<lb/>locum autem, quo victoriam habuit Rex Ca<anchor rend="-" type="sillabazione_fine_rigo"/>rolus 
+<lb/>de Corradino, quandam Ecclesiam con<anchor rend="-" type="sillabazione_fine_rigo"/>struxit 
+<lb/>ad honorem Beatae Virginis, quae dici<anchor rend="-" type="sillabazione_fine_rigo"/>tur 
+<lb/>Sancta Maria de Victoria, in qua Cappel<anchor rend="-" type="sillabazione_fine_rigo"/>lani 
+<lb/>Gallici in Divinis continue administrant. 
+<lb/>Postea Rex Carolus paravit armatam contra 
+<lb/>Romaniam cum suis Baronibus cum magno 
+<lb/>exercitu navibus, et galeis, et usceriis, istoque 
+<lb/>medio tempore contra eum se rebellavit Sici<anchor rend="-" type="sillabazione_fine_rigo"/>lia, 
+<lb/>et primum Panormum, et postquam fuit 
+<lb/>rebellata Sicilia Rex Carolus venit Brundusium 
+<lb/>cum armata sua, et ivit postea Regium, et 
+<lb/>eum invenit rebellem, et transiens Messanam 
+<lb/>obsedit eam, et stetit apud Monasterium Roc<anchor rend="-" type="sillabazione_fine_rigo"/>cae 
+<lb/>Maduri, ubi fecit quamplures milites, et 
+<lb/>postea recepit, et venit Regnum suum sine 
+<lb/>triumpho. D. Comes Sancti Severini, et D. 
+<lb/>Comes Petrus de Catanzario stantes Nicotare 
+<lb/>venit D. Rogerius de Lauria, et combussit 
+<lb/>Tyrritas, et Uscerios<!-- GDM il 2017-06-05 ha corretto l'errore OCR "Ulcerios" -->, quos reperit apud 
+<lb/>Nicotarem, et fugierunt relictis terra, et eo<anchor rend="-" type="sillabazione_fine_rigo"/>rum 
+<lb/>arnesiis. Dictus D. Petrus de Aragonia 
+<lb/>venit de Sicilia apud Seminariam, et accepit 
+<lb/>eam furcife, et omnes, quos invenit ibidem 
+<lb/>Barones, crudeliter trucidavit. 
+</p> 
+</body> 
+</text> 
+</TEI> 

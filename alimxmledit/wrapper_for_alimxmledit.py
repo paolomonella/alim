@@ -1,6 +1,10 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+""" This scripts imports the alimxmledit module
+    and actually edits the files.
+    """
+
 ##################
 # Import modules #
 ##################

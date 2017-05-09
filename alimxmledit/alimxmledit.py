@@ -23,6 +23,7 @@
 
 from __future__ import print_function
 import os
+import re
 import xml.etree.ElementTree as ET
 
 #####################
@@ -135,30 +136,54 @@ def syllDash (myInputFile):
         for i in range(len(lines)):
             lines[i] = lines[i].rstrip() # This removes trailing whitespace, including the final '\n'
             if i < len(lines)-1:
+
                 first = lines[i]    # The first line
                 second = lines[i+1] # The second line
-                if len(first) > 1 and first[-1] == '-' and not second.startswith('<lb/>'):
-                    # If the first line ends with '-' but the second line starts with <lb/>,
-                    # write an XML comment at the end of the first line and do nothing
-                    first = first + '<!-- Trattino da togliere a mano -->'
-                    lines[i] = first
-                    tam.append('  ' + first + '\n  ' + second)
-                if len(first) > 1 and first[-1] == '-' and second.startswith('<lb/>'):
+
+                if len(first) > 1 and first[-1] == '-':
+                #if len(first) > 1 and first[-1] == '-' and not second.startswith('<lb/>'):
+                    if second.startswith('<lb/>'):
+                    # elif len(first) > 1 and first[-1] == '-' and second.startswith('<lb/>'):
                     # If the first line ends with '-' and the second line starts with <lb/>
-                    second_part, sep, rest_of_second_line = second.partition(' ') # The final part of the word
-                                                                                  # (e.g: in "ta- / men", this is "men")
-                    if '<!--' in second_part:       # If the string looks like '<lb/>men<!--'
-                        second_part, sep, rest_of_second_line = second.partition('<!--')   # The result will be '<lb/>men'
-                    second_part = second_part[5:]   # The first 4 characters of the line are '<lb/>'; the result is now 'men'
-                    first = first[:-1]  # Remove the final '-' from the first line
-                    first = first + '<anchor rend="-" type="sillabazione_fine_rigo"/>' + second_part # Join 2 parts of word
-                    second = '<lb/>' + rest_of_second_line   # Add <lb/> back to the 2nd line
+
+                        # Get the final part of the word (e.g: in "ta- / men", this is "men")
+                        second_part, sep, rest_of_second_line = second.partition(' ') 
+                        if '<!--' in second_part:       # If the string looks like '<lb/>men<!--'
+                            second_part, sep, rest_of_second_line = second.partition('<!--')   # The result will be '<lb/>men'
+                        second_part = second_part[5:]   # Strip the first 4 characters the line ('<lb/>') the result is now 'men'
+
+                        # Remove the final '-' from the first line
+                        first = first[:-1]  
+
+
+                        # Check if the rest of the second line is empty (i.e. if the final part of the word originally
+                        # was its only content. If so, write an XML comment and do nothing
+                        rest_check = rest_of_second_line
+                        rest_check = re.sub('<!--.*?>', '', rest_check) # Remove XML comments
+                        rest_check = rest_check.strip()                 # Remove start- and end-whitespace
+                        if rest_check == '':
+                        #if rest_of_second_line.strip() == '':
+                            first = first + '<!-- Trattino da togliere a mano (riunire parola nella seconda riga) -->'
+                            tam.append('  ' + first + '\n  ' + second)
+                        else:   # If the rest of the second line is not empty
+                            first = first + '<anchor rend="-" type="sillabazione_fine_rigo"/>' + second_part # Join 2 parts of word
+                            second = '<lb/>' + rest_of_second_line   # Add <lb/> back to the 2nd line
+
+                    else:
+                        # If the first line ends with '-' but the second line dows not start with <lb/>,
+                        # write an XML comment at the end of the first line and do nothing
+                        first = first + '<!-- Trattino da togliere a mano -->'
+                        tam.append('  ' + first + '\n  ' + second)
+
+
                     lines[i] = first
                     lines[i+1] = second
             print(lines[i], file=of, end=' \n')  # The final '\n' is added here
 
     of.close()
                     
+    """
     print('\nLines to edit manually (marked with an XML comment):\n')
     for t in tam:
         print(t + '  ---')
+        """
