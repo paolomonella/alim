@@ -24,18 +24,57 @@
 from __future__ import print_function
 import os
 import re
-import xml.etree.ElementTree as ET
+#import xml.etree.ElementTree as ET
+from lxml import etree as ET      # I built most methods below with etree. I'll have to check whether they still work with lxml
 
 #####################
 # Set the namespace #
 #####################
 
-n = '{http://www.tei-c.org/ns/1.0}' 
-ET.register_namespace('', 'http://www.tei-c.org/ns/1.0')
+n = '{http://www.tei-c.org/ns/1.0}'              # for XML/TEI
+#ET.register_namespace('', 'http://www.tei-c.org/ns/1.0')   # This used to work when I used ElementTree
+
+xml = '{http://www.w3.org/XML/1998/namespace}'   # for attributes like xml:id
+ns = {'tei': 'http://www.tei-c.org/ns/1.0',             # for TEI XML
+                'xml': 'http://www.w3.org/XML/1998/namespace'}  # for attributes like xml:id
+
+
+
 
 ########################
 # Define the functions #
 ########################
+
+def splitLargeXmlFile (myInputFile):
+    """ It takes myInputFile, including a sequence of
+        <div type="chapter" n="Cap. 1" xml:id="vol1-cap1">
+        and splits the large file to smaller XML files (not valid against TEI XML)
+        whose root element is one of those <div type="chapter">
+        and whose filename is the value of @xml:id. Those files are saved into
+        a folder "split_files" that should already exist.
+        """
+
+    tree = ET.parse(myInputFile)
+    with open(myInputFile) as f:
+        for x in tree.findall('.//' + n + 'div[@type="chapter"]'):
+
+            cap = x.find(n + 'head[@rend="small-caps"]')
+            if cap is not None:
+                cap.text = cap.text + '. ' 
+            rubr = x.find(n + 'head[@type="rubric"]')
+            if rubr is not None:
+                rubr.text = rubr.text + '. '
+
+            a = x.xpath('normalize-space()').encode('utf8')
+            outfn = x.get(xml + 'id')   # Output base filename
+            if not os.path.exists('split_files'):   # Create output folder
+                os.mkdir('split_files')
+            myPath = 'split_files/' + outfn + '.txt'    # Output path
+            #new_tree = ET.ElementTree(x)                # Create new tree
+            #new_tree.write(myPath, encoding="UTF-8", method="xml")  # Output new tree to file
+            with open (myPath, 'w') as o:
+                o.write(a)
+
 
 def outputTree (myTree, myInputFileName):
     # Create folder for edited files (if it does not exist)
@@ -109,7 +148,7 @@ def syllDash (myInputFile):
                 <lb/>omnia vani-
                 <lb/>tas, dixit Qohelet
             Output:
-                <lb/>omnia vani<anchor rend="-" type="sillabazione_fine_rigo"/>tas,
+                <lb/>omnia vani<!-- Trattino di sillabazione a fine riga -->tas,
                 <lb/>dixit Qohelet
 
         If the second line does not start with '<lb/>', the function does nothing
@@ -174,7 +213,7 @@ def syllDash (myInputFile):
                             first = first + '<!-- Trattino da togliere a mano (riunire parola nella seconda riga) -->'
                             tam_b.append('  ' + first + '\n  ' + second)
                         else:   # If the rest of the second line is not empty
-                            first = first + '<anchor rend="-" type="sillabazione_fine_rigo"/>' + second_part # Join 2 parts of word
+                            first = first + '<!-- Trattino di sillabazione a fine riga -->' + second_part # Join 2 parts of word
                             second = '<lb/>' + rest_of_second_line   # Add <lb/> back to the 2nd line
 
                     else:
