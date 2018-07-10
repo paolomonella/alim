@@ -18,7 +18,7 @@ import alimxmledit
 # Set customizable variables #
 ##############################
 #fileSuCuiLavorare               = "[PA-PM-0] Anonimo - Epistolae latinae anonymorum auctorum.xml"
-fileSuCuiLavorare               = "MP_v1.1.xml"
+fileSuCuiLavorare               = "[PI-CDM-1] Anonimo - Chronicon Salernitanum_v1.0.xml"
 elementoSuCuiLavorare           = "date"
 attributoIndesiderato           = "when"
 attributoDaMettereAlSuoPosto    = "when-iso"
@@ -32,4 +32,5 @@ attributoDaMettereAlSuoPosto    = "when-iso"
 #alimxmledit.setAttInElem(fileSuCuiLavorare, "pb", "n", "0")
 #alimxmledit.lineNumberStartWithNewPage(fileSuCuiLavorare)
 #alimxmledit.syllDash(fileSuCuiLavorare)
-alimxmledit.splitLargeXmlFile ('MP_v2.2.xml')
+#alimxmledit.splitLargeXmlFile ('MP_v2.2.xml')
+alimxmledit.lbizeFile (fileSuCuiLavorare)

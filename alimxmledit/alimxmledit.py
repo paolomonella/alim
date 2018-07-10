@@ -40,7 +40,6 @@ ns = {'tei': 'http://www.tei-c.org/ns/1.0',             # for TEI XML
 
 
 
-
 ########################
 # Define the functions #
 ########################
@@ -236,3 +235,56 @@ def syllDash (myInputFile):
     print('\nB) The word must be reunited in the second line, not in the first:\n')
     for t in tam_b:
         print(t + '  ---')
+
+
+
+def lbizeElement (e):
+    ''' Replace each line break with an element <lb/> in the text
+        and the tail of element myel '''
+    mytype = 'automaticallAddedByScript'
+    if e.text is not None:
+        lines = e.text.split('\n')  # Create a string for each line, those strings are now in list 'lines'
+        e.text = ''
+        for x in reversed(lines):            # For each line (in reverse order)
+            if len(x.strip()) > 0:
+                newlb = ET.Element(n + 'lb')
+                newlb.set('type', mytype)
+                newlb.tail = x.strip()  # Strip whitespace before and after
+                if e.tag is not ET.Comment and not (e.get('type') == mytype) and lines.index(x) > 0:
+                    e.insert(0, newlb)
+                else:
+                    e.text = x.strip()
+    if e.tail is not None:
+        lines = e.tail.split('\n')  # Create a string for each line, those strings are now in list 'lines'
+        e.tail = ''
+        for x in reversed(lines):            # For each line (in reverse order)
+            if len(x.strip()) > 0:
+                newlb = ET.Element(n + 'lb')
+                newlb.set('type', mytype)
+                newlb.tail = x.strip()  # Strip whitespace before and after
+                if e.tag is not ET.Comment and not (e.get('type') == mytype) and lines.index(x) > 0:
+                    e.addnext(newlb)
+                else:
+                    e.tail = x.strip()
+        
+def lbizeFile (inputfile):
+    ''' Take all elements in myfile, and for each text and tail of those elements
+        replace each \n with <lb/> '''
+
+    mytype = 'automaticallAddedByScript'
+    tree = ET.parse(inputfile)
+    els = tree.iter()
+
+    for myelem in els:
+        lbizeElement(myelem)
+
+    for newlb in tree.findall('.//tei:lb[@type="%s"]' % (mytype), ns):
+        ''' Remove the @type="automaticallAddedByScript" that the 'lbize'
+            function has added to avoid repeated <lb> insertions '''
+        try:
+            if newlb.get('type') == mytype:
+                del newlb.attrib['type']
+        except KeyError:
+            pass
+
+    tree.write('edited-%s' % (inputfile), encoding='UTF-8', method='xml', pretty_print=True, xml_declaration=True)
