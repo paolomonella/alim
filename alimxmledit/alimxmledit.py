@@ -77,7 +77,8 @@ def splitLargeXmlFile (myInputFile):
 
 
 def outputTree (myTree, myInputFileName):
-    # Create folder for edited files (if it does not exist)
+    '''Create folder for edited files (if it does not exist).
+    '''
     if not os.path.exists('edited_files'):
         os.mkdir('edited_files')
     # Save the edited file
@@ -97,7 +98,8 @@ def setAttInElem (myInputFile, myElem, myAtt, myValue):
         for e in tree.iter('*'):    # Iterate all elements in file 
             if e.tag == n + myElem:
                 if myAtt in e.attrib:
-                    print('\nAttribute @'+myAtt+' exists, with value "'+e.get(myAtt)+'". The value will be changed to "'+myValue+'"')
+                    print('\nAttribute @'+myAtt+' exists, with value "'+e.get(myAtt)+'".
+                            The value will be changed to "'+myValue+'"')
                     del e.attrib[myAtt]      # This deletes the old attribute altogether
                 e.set(myAtt, myValue)
                 #print('Setting \t@' + myAtt + '="' + myValue + '"\tin element\t@' + myElem)
@@ -246,7 +248,7 @@ def syllDash (myInputFile):
 def lbizeElement (e):
     ''' Replace each line break with an element <lb/> in the text
         and the tail of element myel '''
-    mytype = 'automaticallAddedByScript'
+    mytype = 'automaticallyAddedByScript'
     if e.text is not None:
         lines = e.text.split('\n')  # Create a string for each line, those strings are now in list 'lines'
         e.text = ''
@@ -276,7 +278,7 @@ def lbizeFile (inputfile):
     ''' Take all elements in myfile, and for each text and tail of those elements
         replace each \n with <lb/> '''
 
-    mytype = 'automaticallAddedByScript'
+    mytype = 'automaticallyAddedByScript'
     tree = ET.parse(inputfile)
     els = tree.iter()
 
@@ -284,7 +286,7 @@ def lbizeFile (inputfile):
         lbizeElement(myelem)
 
     for newlb in tree.findall('.//t:lb[@type="%s"]' % (mytype), ns):
-        ''' Remove the @type="automaticallAddedByScript" that the 'lbize'
+        ''' Remove the @type="automaticallyAddedByScript" that the 'lbize'
             function has added to avoid repeated <lb> insertions '''
         try:
             if newlb.get('type') == mytype:
@@ -327,3 +329,4 @@ def checkIfAllPsHaveCorrectNAttribute (myInputFile):
                         'Calcolato:', ncount,
                         cfr, div.get('type'), div.get('n'), ''.join(e.itertext())
                         )
+
