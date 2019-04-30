@@ -10,7 +10,7 @@
 # Warning: files in the 'edited_files' folder will be overwritten.
 # 
 # What are the script system requirements?
-# It's written in Python 3.4, but it should work in
+# It's written in Python 3.6, but it should work in
 # Python 2.7 too, thanks to the __future__ module:
 #   from __future__ import print_function
 # It should work in Linux. I did not test it in OSX or
@@ -35,8 +35,9 @@ n = '{http://www.tei-c.org/ns/1.0}'              # for XML/TEI
 #ET.register_namespace('', 'http://www.tei-c.org/ns/1.0')   # This used to work when I used ElementTree
 
 xml = '{http://www.w3.org/XML/1998/namespace}'   # for attributes like xml:id
-ns = {'tei': 'http://www.tei-c.org/ns/1.0',             # for TEI XML
-                'xml': 'http://www.w3.org/XML/1998/namespace'}  # for attributes like xml:id
+ns = {'t': 'http://www.tei-c.org/ns/1.0',               # for TEI XML
+        'xml': 'http://www.w3.org/XML/1998/namespace',  # for attributes like xml:id
+        'h': 'http://www.w3.org/1999/xhtml'}            # for (X)HTML output  
 
 
 
@@ -195,8 +196,11 @@ def syllDash (myInputFile):
                         # Get the final part of the word (e.g: in "ta- / men", this is "men")
                         second_part, sep, rest_of_second_line = second.partition(' ') 
                         if '<!--' in second_part:       # If the string looks like '<lb/>men<!--'
-                            second_part, sep, rest_of_second_line = second.partition('<!--')   # The result will be '<lb/>men'
-                        second_part = second_part[5:]   # Strip the first 4 characters the line ('<lb/>') the result is now 'men'
+
+                            second_part, sep, rest_of_second_line = second.partition('<!--')    
+                            # The result after previous line will be '<lb/>men'
+                        second_part = second_part[5:]
+                        # Previous line strips the first 4 characters the line ('<lb/>'): the result is now 'men'
 
                         # Remove the final '-' from the first line
                         first = first[:-1]  
@@ -212,7 +216,8 @@ def syllDash (myInputFile):
                             first = first + '<!-- Trattino da togliere a mano (riunire parola nella seconda riga) -->'
                             tam_b.append('  ' + first + '\n  ' + second)
                         else:   # If the rest of the second line is not empty
-                            first = first + '<!-- Trattino di sillabazione a fine riga -->' + second_part # Join 2 parts of word
+                            first = first + '<!-- Trattino di sillabazione a fine riga -->' + second_part
+                            # Previous line joins 2 parts of word
                             second = '<lb/>' + rest_of_second_line   # Add <lb/> back to the 2nd line
 
                     else:
@@ -278,7 +283,7 @@ def lbizeFile (inputfile):
     for myelem in els:
         lbizeElement(myelem)
 
-    for newlb in tree.findall('.//tei:lb[@type="%s"]' % (mytype), ns):
+    for newlb in tree.findall('.//t:lb[@type="%s"]' % (mytype), ns):
         ''' Remove the @type="automaticallAddedByScript" that the 'lbize'
             function has added to avoid repeated <lb> insertions '''
         try:
@@ -288,3 +293,37 @@ def lbizeFile (inputfile):
             pass
 
     tree.write('edited-%s' % (inputfile), encoding='UTF-8', method='xml', pretty_print=True, xml_declaration=True)
+
+
+def getListOfAllElementsInBody (myInputFile):
+    '''Get a list (in fact, a set) with the tag names of all elements in the <body>.'''
+    tree = ET.parse(myInputFile)
+    body = tree.find('.//t:body', ns)
+    E =  body.findall('.//t:*', ns)
+    F = [e.tag.replace('{http://www.tei-c.org/ns/1.0}', '') for e in E]
+    S = set(F)
+    return(S)
+
+def checkIfAllPsHaveCorrectNAttribute (myInputFile):
+    '''This assumes that all <p> elements have an @n attribute, whose value
+    is a sequential number and that this sequence starts over at each new
+    <div>. The function and checkes if the sequence of numbers is correct.
+    '''
+    tree = ET.parse(myInputFile)
+    body = tree.find('.//t:body', ns)
+    D =  body.findall('.//t:div', ns)
+    for div in D:
+        ncount = 0
+        E =  div.findall('.//t:p', ns)
+        for e in E:
+            ncount = ncount + 1
+            nxml = int(  e.get('n')  )
+            if nxml == ncount:
+                cfr = '(sono uguali)'
+                #print(nxml, ncount, cfr)
+            else:
+                cfr = '(sono diversi)'
+                print(  'Valore di n:', nxml,
+                        'Calcolato:', ncount,
+                        cfr, div.get('type'), div.get('n'), ''.join(e.itertext())
+                        )

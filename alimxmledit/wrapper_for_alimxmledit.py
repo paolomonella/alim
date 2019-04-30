@@ -17,20 +17,21 @@ import alimxmledit
 ##############################
 # Set customizable variables #
 ##############################
-#fileSuCuiLavorare               = "[PA-PM-0] Anonimo - Epistolae latinae anonymorum auctorum.xml"
-fileSuCuiLavorare               = "[PI-CDM-1] Anonimo - Chronicon Salernitanum_v1.0.xml"
-elementoSuCuiLavorare           = "date"
-attributoIndesiderato           = "when"
-attributoDaMettereAlSuoPosto    = "when-iso"
+myInputFile               = "input.xml"
+myElement           = "date"
+attributeYouDontLike           = "when"
+attributeYouLikeInstead    = "when-iso"
 
 ################
 # Do the stuff #
 ################
 
-#alimxmledit.substituteAttInElem(fileSuCuiLavorare, elementoSuCuiLavorare, attributoIndesiderato, attributoDaMettereAlSuoPosto)
-#alimxmledit.setAttInElem(fileSuCuiLavorare, "TEI", "xmlns", "0")
-#alimxmledit.setAttInElem(fileSuCuiLavorare, "pb", "n", "0")
-#alimxmledit.lineNumberStartWithNewPage(fileSuCuiLavorare)
-#alimxmledit.syllDash(fileSuCuiLavorare)
+#alimxmledit.substituteAttInElem(myInputFile, myElement, attributeYouDontLike, attributeYouLikeInstead)
+#alimxmledit.setAttInElem(myInputFile, "TEI", "xmlns", "0")
+#alimxmledit.setAttInElem(myInputFile, "pb", "n", "0")
+#alimxmledit.lineNumberStartWithNewPage(myInputFile)
+#alimxmledit.syllDash(myInputFile)
 #alimxmledit.splitLargeXmlFile ('MP_v2.2.xml')
-alimxmledit.lbizeFile (fileSuCuiLavorare)
+#alimxmledit.lbizeFile (myInputFile)
+print(  alimxmledit.getListOfAllElementsInBody ('input.xml') )
+#alimxmledit.checkIfAllPsHaveCorrectNAttribute ('input.xml')
