@@ -33,5 +33,6 @@ attributeYouLikeInstead    = "when-iso"
 #alimxmledit.syllDash(myInputFile)
 #alimxmledit.splitLargeXmlFile ('MP_v2.2.xml')
 #alimxmledit.lbizeFile (myInputFile)
-print(  alimxmledit.getListOfAllElementsInBody ('input.xml') )
+print('Elements in <body>:',  alimxmledit.getListOfAllElementsInBody ('input.xml') )
 #alimxmledit.checkIfAllPsHaveCorrectNAttribute ('input.xml')
+alimxmledit.wordCount('input.xml')

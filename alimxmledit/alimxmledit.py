@@ -98,8 +98,8 @@ def setAttInElem (myInputFile, myElem, myAtt, myValue):
         for e in tree.iter('*'):    # Iterate all elements in file 
             if e.tag == n + myElem:
                 if myAtt in e.attrib:
-                    print('\nAttribute @'+myAtt+' exists, with value "'+e.get(myAtt)+'".
-                            The value will be changed to "'+myValue+'"')
+                    print('\nAttribute @' + myAtt + ' exists, with value "' + e.get(myAtt) + \
+                    '". The value will be changed to "'+myValue+'"')
                     del e.attrib[myAtt]      # This deletes the old attribute altogether
                 e.set(myAtt, myValue)
                 #print('Setting \t@' + myAtt + '="' + myValue + '"\tin element\t@' + myElem)
@@ -307,10 +307,10 @@ def getListOfAllElementsInBody (myInputFile):
     return(S)
 
 def checkIfAllPsHaveCorrectNAttribute (myInputFile):
-    '''This assumes that all <p> elements have an @n attribute, whose value
-    is a sequential number and that this sequence starts over at each new
-    <div>. The function and checkes if the sequence of numbers is correct.
-    '''
+    ''' This assumes that all <p> elements have an @n attribute, whose value
+        is a sequential number and that this sequence starts over at each new
+        <div>. The function and checkes if the sequence of numbers is correct.
+        '''
     tree = ET.parse(myInputFile)
     body = tree.find('.//t:body', ns)
     D =  body.findall('.//t:div', ns)
@@ -330,3 +330,26 @@ def checkIfAllPsHaveCorrectNAttribute (myInputFile):
                         cfr, div.get('type'), div.get('n'), ''.join(e.itertext())
                         )
 
+
+def wordCount (myInputFile):
+    from string import punctuation
+    ''' Get text content of <body> (i.e. strip markup), remove punctuation,
+        tokenize text and count words.'''
+    tree = ET.parse(myInputFile)
+    body = tree.find('.//t:body', ns)
+    myText = ''.join(body.itertext())
+
+    myCharsCountWithSpacesWithPunct = len(myText)
+
+    myTextNoSpacesWithPunct = ''.join(myText.split())
+    myCharsCountNoSpacesWithPunct = len(myTextNoSpacesWithPunct)
+
+    for p in punctuation:
+        myTextWithSpacesNoPunct = myText.replace(p, '')
+    myTokens = myTextWithSpacesNoPunct.split()
+    myWordCount = len(myTokens)
+
+    print('\nWord count: ', myWordCount,
+            '\nChars count (incl. spaces, incl. punctuation) not included', myCharsCountWithSpacesWithPunct,
+            '\n Chars count (without spaces, incl. punctuation)', myCharsCountNoSpacesWithPunct
+            )
